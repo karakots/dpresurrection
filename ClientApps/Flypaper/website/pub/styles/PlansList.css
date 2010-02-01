@@ -1,0 +1,215 @@
+﻿@import url(MainStyles.css);
+
+#SubTitle { padding-top: 0px; margin-left: 20px; }
+#NextButton
+{
+	width:220px;
+	height:26px;
+	font-size:12px;
+	font-weight: 600;
+}
+#NextButtonDiv
+{
+	display: none;
+	position: absolute;
+	left: 630px;
+	top: 445px;
+	background: Blue;
+	border-style:groove;
+	border-width:5;
+	border-color:#00A;
+	z-index:1;
+
+/*	width:84px;
+	height:19px;
+	z-index:60;*/
+}
+
+#SavedItemsList
+{
+	position: absolute;
+	left: 130px;
+	top: 75px;
+
+}
+
+.RegRow, .AltRow
+{
+	font-size: 10pt;
+}
+
+.RegRow 
+{
+	background-color:#DFD;
+	height: 25px;
+	width: 500px;
+	margin: 4px;
+	border-bottom: solid 1px #00A;
+}
+
+.AltRow 
+{
+	background-color:#DDF;
+	height: 25px;
+	width: 500px;
+	margin: 4px;
+	border-bottom: solid 1px #00A;
+}
+
+.RegRowButton 
+{
+	background-color:#DFD;
+	margin: 4px;
+	border-bottom: solid 1px #00A;
+}
+
+.AltRowButton 
+{
+	background-color:#DDF;
+	margin: 4px;
+	border-bottom: solid 1px #00A;
+}
+
+.RegRowButtonItem
+{
+	font-size:8pt;
+}
+
+.AltRowButtonItem
+{
+	font-size:8pt;
+}
+
+#PlanListDiv 
+{
+	position: absolute;
+	top: 160px;
+	margin-left: 40px;
+	width:760px;
+}
+
+#DataListPanel 
+{
+	position: absolute;
+	top: 90px;
+}
+
+#DataListDiv
+{
+	width:675px;
+	max-height:390px;
+	border-bottom: solid 2px Black;
+	margin-top: 95px;
+	margin-left: 40px;
+}
+
+.itemtable
+{
+	font-family:Calibri;
+	font-size:10pt;
+	border: solid 1px #00A;	
+	background: White;
+}
+
+.itemtable td
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	vertical-align:top;
+}
+
+.headings, .headings td
+{
+	font-family:Arial;
+	font-size:8pt;
+	background-color: #ABE;
+	border-bottom: solid 2px #00A;	
+	height: 20px;
+	vertical-align:bottom;
+	padding-top: 5px;
+}
+
+.itemseprow
+{
+
+}
+
+.itemrow
+{
+/*	background-color: #DDFFFF;*/
+	background-color: #DCE6F2;
+	height: 34px;
+}
+
+.itemrowalt
+{
+/*	background-color: #EEFFDD;*/
+	background-color: #DCE6F2;
+	height: 34px;
+}
+
+.itemrowsel
+{
+	background-color: #FD8;
+	font-weight:600;
+	color:#040;
+}
+
+.itemname
+{
+	font-size:12pt;
+	font-weight:bold;
+}
+
+.itemscore
+{
+	font-size:10pt;
+	font-weight:bold;
+}
+
+.itembudget
+{
+	font-family:Arial Narrow;
+	font-size:8pt;
+}
+
+.itemreasons
+{
+	font-family:Arial Narrow;
+	font-size:8pt;
+}
+
+#OverButton
+{
+	width:140px;
+	height:26px;
+	font-size:11px;
+	font-weight: 500;
+}
+#OverButtonDiv
+{
+	position: absolute;
+	left: 670px;
+	top: 455px;
+	z-index:1;
+}
+
+#BackgroundPanel
+{
+	height: 0px;
+}
+
+#Intro1 
+{
+	position:absolute;
+	top: 45px;
+	left: 50px;
+	width: 400px;
+	font-size:16pt;
+	font-weight:700;
+}
+
+.Ad1 { position: absolute; top: 120px; margin-left: 710px; }
+.Ad2 { position: absolute; top: 120px; margin-left: 227px; }
+
+.PlanNameItem a { font-weight: bold; color: Black; font-size: 10pt; }

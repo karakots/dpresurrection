@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher 2003 for FrameMaker 8.0.0.1194" />
+    <meta name="TEMPLATEBASE" content="BrandManager_dhtml" />
+    <meta name="LASTUPDATED" content="05/28/07 13:42:36" />
+    <title>CHAPTER 1	Installation and Setup</title>
+    <link rel="StyleSheet" href="document.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="catalog.css" type="text/css" media="all" />
+<link rel="contents" title="Table of Contents" href="TOC.html" />
+<link rel="index" title="Index" href="IX.html" />
+<link rel="first" title="First" href="TOC.html" />
+<link rel="last" title="Last" href="IX.html" />
+<link rel="previous" title="Previous" href="MarketSim-3-1.html" />
+<link rel="next" title="Next" href="MarketSim-5-1.html" />
+
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/seealso.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2">
+     <!--
+      var  WebWorksSeeAlso = new WebWorksSeeAlso_Object();
+     // -->
+    </script>
+  </head>
+
+  <body>
+
+    <table id="SummaryNotReq1" width="220" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="1" href="TOC.html"><img id="LongDescNotReq1" src="images/toc.gif" border="0" alt="Table of Contents" /></a><a accesskey="4" href="MarketSim-3-1.html"><img id="LongDescNotReq2" src="images/prev.gif" border="0" alt="Previous" /></a><a accesskey="5" href="MarketSim-5-1.html"><img id="LongDescNotReq3" src="images/next.gif" border="0" alt="Next" /></a><a accesskey="2" href="IX.html"><img id="LongDescNotReq4" src="images/index.gif" border="0" alt="Index" /></a>
+        </td>
+      </tr>
+    </table>
+    </p>
+    <hr align="left" />
+
+    <blockquote>
+<a name="wp950751"> </a><h2 class="pHeading1">
+CHAPTER 1	Installation and Setup
+</h2>
+<a name="wp959883"> </a><p class="pBody">
+Use this chapter to review computer and database requirements for installation of MarketSim, and to install the MarketSim platform on your computer as described in the following topics:
+</p>
+<div class="pSmartList1"><ul class="pSmartList1">
+<a name="wp959884"> </a><div class="pSmartList1"><li><a href="MarketSim-4-1.html#wp956246"><u class="cUnderline">Get Ready</u></a></li></div>
+<a name="wp959907"> </a><div class="pSmartList1"><li><a href="MarketSim-4-1.html#wp956938"><u class="cUnderline">Install MarketSim</u></a></li></div>
+<a name="wp959892"> </a><div class="pSmartList1"><li><a href="MarketSim-4-1.html#wp960624"><u class="cUnderline">Configure the Client Database</u></a></li></div>
+<a name="wp959896"> </a><div class="pSmartList1"><li><a href="MarketSim-4-1.html#wp967676"><u class="cUnderline">Set Up the Simulation Engine</u></a></li></div>
+<a name="wp964379"> </a><div class="pSmartList1"><li><a href="MarketSim-4-1.html#wp964393"><u class="cUnderline">Importing a Model</u></a></li></div>
+</ul></div>
+<a name="wp956246"> </a><h2 class="pHeading2">
+Get Ready
+</h2>
+<div class="pSmartList1"><ul class="pSmartList1">
+<a name="wp957032"> </a><div class="pSmartList1"><li><a href="MarketSim-4-1.html#wp956285"><u class="cUnderline">Check System Requirements</u></a></li></div>
+<a name="wp957040"> </a><div class="pSmartList1"><li><a href="MarketSim-4-1.html#wp956344"><u class="cUnderline">Get System Data Management Tools</u></a></li></div>
+<a name="wp957045"> </a><div class="pSmartList1"><li><a href="MarketSim-4-1.html#wp956938"><u class="cUnderline">Install MarketSim</u></a></li></div>
+</ul></div>
+<a name="wp956285"> </a><h3 class="pHeading3">
+Check System Requirements
+</h3>
+<a name="wp956941"> </a><p class="pBody">
+Ensure that the computer that will be running MarketSim is loaded with the proper Windows operating system and has sufficient memory installed:
+</p>
+<div class="pSmartList1"><ul class="pSmartList1">
+<a name="wp956298"> </a><div class="pSmartList1"><li>Windows XP, Service Pack 2</li></div>
+<a name="wp956287"> </a><div class="pSmartList1"><li>Intel Pentium 1.60GHz processor, minimum 512 MB RAM (recommended)</li></div>
+<a name="wp964442"> </a><div class="pSmartList1"><li>.NET 2.0 (available from Microsoft)</li></div>
+</ul></div>
+<a name="wp956344"> </a><h3 class="pHeading3">
+Get System Data Management Tools
+</h3>
+<a name="wp956286"> </a><p class="pBody">
+MarketSim operations require the MS SQL Server database software platform. 
+</p>
+<a name="wp956954"> </a><p class="pBody">
+Note: 	If your computer already contains the MS SQL Server, skip this section, and proceed to the section entitled <a href="MarketSim-4-1.html#wp956938"><u class="cUnderline">&quot;Install MarketSim&quot; on page&#160;3</u></a>.
+</p>
+<a name="wp959928"> </a><p class="pBody">
+Note: 	To load the MS SQL Server on your computer, use the downloads provided at the SQL Server 2005 Express Edition page provided by Microsoft:
+</p>
+<a name="wp959929"> </a><p class="pIndented1">
+http://msdn.microsoft.com/vstudio/express/sql/register/default.aspx
+</p>
+<a name="wp959926"> </a><p class="pBody">
+MS SQL Server installation guidelines are provided in the Microsoft documentation. If you encounter problems, contact Decision Power for additional assistance. Installation of MS SQL Server database software results in loading the MS SQL server tools listed in the following table.
+</p>
+<a name="wp956936"> </a><div style="color: #000000; font-size: 7pt; font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 0pt; margin-left: 0pt; margin-right: 0pt; margin-top: 0pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">
+</div>
+<div align="left">
+<table border="1" id="wp956913table956906">
+  <caption></caption>
+  <tr align="center">    <th><a name="wp956913"> </a><div class="pCellHeading">
+MS SQL Applications
+</div>
+</th>
+    <th><a name="wp956915"> </a><div class="pCellHeading">
+Purpose
+</div>
+</th>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1"><a name="wp956917"> </a><div class="pCellHeading">
+Configuration Tools
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp956921"> </a><div class="pCellBody">
+·	SQL Server Configuration Manager 
+</div>
+</td>
+    <td><a name="wp956923"> </a><div class="pCellBody">
+Configure SQL Server services and network connectivity.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp956933"> </a><div class="pCellBody">
+·	SQL Server Management Studio Express
+</div>
+</td>
+    <td><a name="wp956935"> </a><div class="pCellBody">
+Set network connectivity parameters and/or connect directly to a specified server.
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="color: #000000; font-size: 7pt; font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 0pt; margin-left: 0pt; margin-right: 0pt; margin-top: 0pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">
+
+</div>
+<a name="wp956938"> </a><h2 class="pHeading2">
+Install MarketSim 
+</h2>
+<a name="wp956185"> </a><p class="pBody">
+Completion of the Decision Power software installation results in placement of the MarketSim 2.x application in your Windows <b class="cBold">Start</b> menu. Initial launch of the MarketSim program presents the MarketSim front page . 
+</p>
+<a name="wp957545"> </a><p class="pBody">
+The MarketSim front page enables access to the tools you need for completion of the MarketSim installation.  Completion of the installation requires the you define both the client database and the simulation engine on which to run MarketSim configuration sessions, as described in the following topics:
+</p>
+<div class="pSmartList1"><ul class="pSmartList1">
+<a name="wp961586"> </a><div class="pSmartList1"><li><a href="MarketSim-4-1.html#wp960624"><u class="cUnderline">Configure the Client Database (on page 4)</u></a> </li></div>
+<a name="wp961598"> </a><div class="pSmartList1"><li><a href="MarketSim-4-1.html#wp967676"><u class="cUnderline">Set Up the Simulation Engine (on page 9)</u></a>.</li></div>
+</ul></div>
+<a name="wp960624"> </a><h2 class="pHeading2">
+Configure the Client Database
+</h2>
+<a name="wp957056"> </a><p class="pBody">
+After you have installed MarketSim, the MarketSim interface will walk you through the necessary steps to set up a client database, as described in this section. The MarketSim Client application requires connectivity to a MarketSim database. You can set up multiple databases, but only one database can be used at a time. Use the steps provided in this section to create a new database for connection to the MarketSim client application. 
+</p>
+<a name="wp961654"> </a><p class="pBody">
+Steps to set up this connection must be performed in the following sequence:
+</p>
+<a name="wp957069"> </a><div class="pCellBody">
+<a href="MarketSim-4-1.html#wp957087"><u class="cUnderline">1.For a new database, use the Data Link Properties window to set the database provider name to be used by MarketSim. (on page 4)</u></a>
+</div>
+<a name="wp957073"> </a><div class="pCellBody">
+<a href="MarketSim-4-1.html#wp957109"><u class="cUnderline">2.Set Database name. (on page 5)</u></a>
+</div>
+<a name="wp957077"> </a><div class="pCellBody">
+<a href="MarketSim-4-1.html#wp957174"><u class="cUnderline">3.Apply and verify the new database name. (on page 6)</u></a>
+</div>
+<a name="wp957087"> </a><p class="pBody">
+1.	For a new database, use the Data Link Properties window to set the database provider name to be used by MarketSim. 
+</p>
+<a name="wp961002"> </a><p class="pIndented1">
+Navigation: 
+</p>
+<a name="wp961010"> </a><p class="pIndented1">
+<b class="cBold">Start</b> -&gt; <b class="cBold">All Programs</b>-&gt;<b class="cBold">MarketSim2.x</b> = MarketSim launch window. Click <b class="cBold">Connect to database.</b>..to present the <b class="cBold">MarketSim Connection Manager </b>window.Click <b class="cBold">Create New Connection</b> to present the <b class="cBold">Data Link Properties</b> panel.
+</p>
+<a name="wp957105"> </a><div style="color: #000000; font-size: 7pt; font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 0pt; margin-left: 0pt; margin-right: 0pt; margin-top: 0pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">
+
+</div>
+<a name="wp957109"> </a><p class="pBody">
+2.	Set Database name. 
+</p>
+<a name="wp959348"> </a><p class="pIndented1">
+The <b class="cBold">Connection Manager</b> now displays the name of the server, which you entered in the previous step. If successfully connected to server, you can now bind one more databases to the server.
+</p>
+<a name="wp961018"> </a><p class="pIndented1">
+Navigation: 
+</p>
+<a name="wp961028"> </a><p class="pIndented1">
+Right-click on database provider name to present the <b class="cBold">New ModelDb... </b>popup menu.
+</p>
+<a name="wp961017"> </a><p class="pIndented1">
+Select the menu option to present the <b class="cBold">New ModelDb</b> dialog box. At the New ModelDb dialog box, type the database name, and click <b class="cBold">Create Connection to database...   </b>Wait for MarketSim to create the new database. While you wait, the Connection Manager displays status messages. Wait until the Data Link Properties panel is presented, and proceed to <a href="MarketSim-4-1.html#wp957174"><u class="cUnderline">&quot;Apply and verify the new database name.&quot; on page&#160;6</u></a>.
+</p>
+<a name="wp957142"> </a><div style="color: #000000; font-size: 7pt; font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 0pt; margin-left: 0pt; margin-right: 0pt; margin-top: 0pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">
+
+</div>
+<a name="wp959340"> </a><p class="pBody">
+
+</p>
+<a name="wp957174"> </a><p class="pBody">
+3.	Apply and verify the new database name.
+</p>
+<a name="wp957185"> </a><div style="color: #000000; font-size: 7pt; font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 0pt; margin-left: 0pt; margin-right: 0pt; margin-top: 0pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">
+
+</div>
+<a name="wp964691"> </a><h3 class="pHeading3">
+MarketSim Simulation Administration
+</h3>
+<a name="wp964695"> </a><p class="pBody">
+Use the Configure Simulation Engine icon to access simulation engine settings, stop currently running simulations, or refresh the simulation tables. 
+</p>
+<a name="wp964696"> </a><p class="pIndented1">
+Navigation: 
+</p>
+<a name="wp964697"> </a><p class="pIndented1">
+MarketSim Launch screen--&gt;<b class="cBold">MarketSim Configure Simulation Engine </b>icon 
+</p>
+<a name="wp967318"> </a><p class="pBody">
+Use the Setup window to define the simulation engine, data source, and allowable number of concurrent simulations. You also use this window to enter your software license number. 
+</p>
+<a name="wp967601"> </a><div style="color: #000000; font-size: 7pt; font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 0pt; margin-left: 0pt; margin-right: 0pt; margin-top: 0pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">
+</div>
+<div align="left">
+<table border="1" id="wp967568table967562">
+  <caption><a name="wp967568"> </a><div style="color: #000000; font-size: 9pt; font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 0pt; margin-left: 54pt; margin-right: 0pt; margin-top: 0pt; text-align: left; text-decoration: none; text-indent: -54pt; text-transform: none">
+Procedure: 	Defining the Simulation Setup  &#160;
+</div>
+</caption>
+  <tr align="center">    <th><a name="wp967572"> </a><div class="pCellHeading">
+Task
+</div>
+</th>
+    <th><a name="wp967574"> </a><div class="pCellHeading">
+Description
+</div>
+</th>
+</tr>
+  <tr align="left">    <td><div class="pSmartList1"><ul class="pSmartList1">
+<a name="wp967576"> </a><div class="pSmartList1"><li>Enter License</li></div>
+</ul></div>
+</td>
+    <td><a name="wp967578"> </a><div class="pCellBody">
+Present the License dialog box, into which you can type the license code issued to you by Decision Power. 
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><div class="pSmartList1"><ul class="pSmartList1">
+<a name="wp967581"> </a><div class="pSmartList1"><li>Set Simulation Engine</li></div>
+</ul></div>
+</td>
+    <td><a name="wp967583"> </a><p class="pBody">
+Use this section of the <b class="cBold">Setup</b> window to view the current SimEngine executable and the associated directory path.
+</p>
+<a name="wp967584"> </a><p class="pBody">
+Press the <b class="cBold">Set Simulation Engine...</b> button if you need to set a different simulation engine for this simulation run.
+</p>
+</td>
+</tr>
+  <tr align="left">    <td><div class="pSmartList1"><ul class="pSmartList1">
+<a name="wp967587"> </a><div class="pSmartList1"><li>Reset Engine Data Source</li></div>
+</ul></div>
+</td>
+    <td><a name="wp967589"> </a><p class="pBody">
+Use this section of the <b class="cBold">Setup</b> window to view current status of simulation engine connectivity to the database, and the name of the database to which the engine is currently bound. 
+</p>
+<a name="wp967590"> </a><p class="pBody">
+Press the <b class="cBold">Reset Engine Data Source</b> button if you need to set a different Engine Data Source than that already in use.
+</p>
+</td>
+</tr>
+  <tr align="left">    <td><div class="pSmartList1"><ul class="pSmartList1">
+<a name="wp967593"> </a><div class="pSmartList1"><li>Set number of concurrent simulations</li></div>
+</ul></div>
+</td>
+    <td><a name="wp967595"> </a><p class="pBody">
+Set number of concurrent simulations allowable for the simulation engine. 
+</p>
+<a name="wp967596"> </a><p class="pBody">
+Acceptable Value(s): 1 - 100 
+</p>
+</td>
+</tr>
+  <tr align="left">    <td><div class="pSmartList1"><ul class="pSmartList1">
+<a name="wp967598"> </a><div class="pSmartList1"><li>Done</li></div>
+</ul></div>
+</td>
+    <td><a name="wp967600"> </a><p class="pBody">
+Click Done when you have completed your entries for the MarketSim Setup. 
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="color: #000000; font-size: 7pt; font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 0pt; margin-left: 0pt; margin-right: 0pt; margin-top: 0pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">
+
+</div>
+<a name="wp967609"> </a><h3 class="pHeading3">
+MarketSim Program Settings
+</h3>
+<a name="wp967613"> </a><p class="pBody">
+Use the Settings icon  if you need to enter your custom configuration code and to enable global visibility of calibration controls. 
+</p>
+<a name="wp967614"> </a><p class="pIndented1">
+Navigation: 
+</p>
+<a name="wp967616"> </a><p class="pIndented1">
+MarketSim Launch screen--&gt;<b class="cBold">MarketSim Settings </b>icon 
+</p>
+<a name="wp967628"> </a><div style="color: #000000; font-size: 7pt; font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 0pt; margin-left: 0pt; margin-right: 0pt; margin-top: 0pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">
+
+</div>
+<a name="wp967680"> </a><h3 class="pHeading3">
+MarketSim Database Utilities
+</h3>
+<a name="wp967689"> </a><p class="pBody">
+Use the Database Utilities icon  to view database information associated with your MarketSim applications.  You can also use this tool to delete all data thusfar accumulated from simulation results. 
+</p>
+<a name="wp967690"> </a><p class="pIndented1">
+Navigation: 
+</p>
+<a name="wp967692"> </a><p class="pIndented1">
+MarketSim Launch screen--&gt;<b class="cBold">Database Utilities </b>icon 
+</p>
+<a name="wp967704"> </a><div style="color: #000000; font-size: 7pt; font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 0pt; margin-left: 0pt; margin-right: 0pt; margin-top: 0pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">
+
+</div>
+<a name="wp967676"> </a><h2 class="pHeading2">
+Set Up the Simulation Engine
+</h2>
+<a name="wp967677"> </a><p class="pBody">
+The simulation engine setup requires that you define the data source, as described in the following topics:
+</p>
+<div class="pSmartList1"><ul class="pSmartList1">
+<a name="wp959956"> </a><div class="pSmartList1"><li><a href="MarketSim-4-1.html#wp957221"><u class="cUnderline">Create a Data Source for Your User Name on This PC</u></a></li></div>
+<a name="wp959966"> </a><div class="pSmartList1"><li><a href="MarketSim-4-1.html#wp957254"><u class="cUnderline">Bind the Data Source to the SQL Server</u></a></li></div>
+</ul></div>
+<a name="wp957221"> </a><h3 class="pHeading3">
+Create a Data Source for Your User Name on This PC
+</h3>
+<a name="wp957222"> </a><p class="pBody">
+1.	Access the Create Data Source setup tools
+</p>
+<div class="pSmartList1"><ol type="a" class="pSmartList1">
+<a name="wp957223"> </a><div class="pSmartList1"><li>Launch the Simulation Engine to present the <b class="cBold">Select Data Source</b> window. </li></div>
+<a name="wp957224"> </a><div class="pSmartList1"><li>Make sure the <b class="cBold">Machine Data Source</b> tab is selected, and click <b class="cBold">New...</b> to present the <b class="cBold">Create Data Source </b>wizard . </li></div>
+</ol></div>
+<a name="wp957233"> </a><div style="color: #000000; font-size: 7pt; font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 0pt; margin-left: 0pt; margin-right: 0pt; margin-top: 0pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">
+
+</div>
+<a name="wp957234"> </a><p class="pBody">
+2.	Select Data Source type as <b class="cBold">User Data Source (Applies to this machine only)</b>.
+</p>
+<a name="wp957235"> </a><p class="pIndented1">
+This is the default setting for the data source. Click <b class="cBold">Next&gt;</b> to present the driver selection window.
+</p>
+<a name="wp957236"> </a><p class="pBody">
+3.	At the driver selection window , highlight <b class="cBold">SQL Server</b>, then click <b class="cBold">Next&gt;</b> to view the summary of your settings. 
+</p>
+<a name="wp957244"> </a><div style="color: #000000; font-size: 7pt; font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 0pt; margin-left: 0pt; margin-right: 0pt; margin-top: 0pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">
+
+</div>
+<a name="wp962158"> </a><p class="pBody">
+4.	At the summary window, make sure that the correct data source and driver are displayed, then click <b class="cBold">Finish</b> to complete the create data source operation.
+</p>
+<a name="wp957253"> </a><div style="color: #000000; font-size: 7pt; font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 0pt; margin-left: 0pt; margin-right: 0pt; margin-top: 0pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">
+
+</div>
+<a name="wp957254"> </a><h3 class="pHeading3">
+Bind the Data Source to the SQL Server
+</h3>
+<a name="wp957255"> </a><p class="pBody">
+Your confirmation of the data source configuration enables access to the SQL Server connectivity screens described in this section.
+</p>
+<a name="wp957256"> </a><p class="pBody">
+1.	Set data source and computer associations for the SQL server.
+</p>
+<a name="wp957260"> </a><p class="pIndented1">
+At the first of the SQL server configuration screens , identify the connection name, and name of your computer. Optionally, you can type a description of this connection. 
+</p>
+<a name="wp957285"> </a><div style="color: #000000; font-size: 7pt; font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 0pt; margin-left: 0pt; margin-right: 0pt; margin-top: 0pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">
+
+</div>
+<a name="wp963512"> </a><p class="pBody">
+2.	Apply Windows NT authentication and source settings for configurations from the SQL server. 
+</p>
+<a name="wp963513"> </a><p class="pIndented1">
+A dialog box now queries for method of SQL server verification with the login ID.
+</p>
+<a name="wp957312"> </a><p class="pBody">
+3.	Identify the default database.
+</p>
+<a name="wp957313"> </a><p class="pIndented1">
+Apply default database settings to identify the database name and the ANSI requirements. 
+</p>
+<a name="wp957339"> </a><div style="color: #000000; font-size: 7pt; font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 0pt; margin-left: 0pt; margin-right: 0pt; margin-top: 0pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">
+
+</div>
+<a name="wp957345"> </a><p class="pBody">
+4.	Set character data translation. 
+</p>
+<a name="wp963539"> </a><p class="pIndented1">
+Click to select Perform translation for character data .
+</p>
+<a name="wp957359"> </a><div style="color: #000000; font-size: 7pt; font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 0pt; margin-left: 0pt; margin-right: 0pt; margin-top: 0pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">
+
+</div>
+<a name="wp957365"> </a><p class="pBody">
+5.	Check your entries and run a connectivity test that uses your approved entries. 
+</p>
+<a name="wp963552"> </a><p class="pIndented1">
+Use the ODBC database summary report dialog boxes  to test the data source and confirm your entries. 
+</p>
+<a name="wp957382"> </a><div style="color: #000000; font-size: 7pt; font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 0pt; margin-left: 0pt; margin-right: 0pt; margin-top: 0pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">
+
+</div>
+<a name="wp957385"> </a><p class="pBody">
+6.	Apply the machine data source. At the <b class="cBold">Select Source</b> dialog box , click to highlight <em class="cEmphasis">mrktsimdb</em>, then click <b class="cBold">OK</b>. The simulation should now run. 
+</p>
+<a name="wp957389"> </a><div style="color: #000000; font-size: 7pt; font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 0pt; margin-left: 0pt; margin-right: 0pt; margin-top: 0pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">
+
+</div>
+<a name="wp964393"> </a><h2 class="pHeading2">
+Importing a Model
+</h2>
+<a name="wp964394"> </a><p class="pBody">
+Before you can use the MarketSim model it needs to imported into your database.  The process for importing a model into MarketSim requires that you uncompress the model and validate the import, as described in this section. You can use the model to create various projects, including a checkpoint (see also <a href="MarketSim-7-1.html#wp958191"><u class="cUnderline">&quot;Creating a Checkpoint Scenario&quot; on page&#160;40</u></a>).
+</p>
+<a name="wp964395"> </a><h4 style="font-family: Verdana; line-height: 11pt; margin-bottom: 3pt; margin-left: 0pt; margin-right: 0pt; margin-top: 14pt; text-indent: 0pt" class="pHeading4">
+Uncompress the Model
+</h4>
+<a name="wp964396"> </a><p class="pBody">
+The MarketSim model provided by DecisionPower is initially compressed. You use the MarketSim import function to uncompress the file-turning it into a.msdb (MarketSim data base) file- so that MarketSim can read it.
+</p>
+<a name="wp964397"> </a><p class="pBody">
+1.	Launch MarketSim and open the project you wish to import the model into. 
+</p>
+<a name="wp964401"> </a><p class="pIndented1">
+From the <b class="cBold">Model</b> menu, choose Import... to present the <b class="cBold">Open</b> window . 
+</p>
+<a name="wp964406"> </a><div style="color: #000000; font-size: 7pt; font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 0pt; margin-left: 0pt; margin-right: 0pt; margin-top: 0pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">
+
+</div>
+<a name="wp964409"> </a><p class="pBody">
+2.	At the Open window, choose the.msdb file of the uncompressed msdb file and click <b class="cBold">Open</b>. Status of the import is now reported at the bottom of the project window. Wait for completion of the import activity. 
+</p>
+<a name="wp964410"> </a><h4 style="font-family: Verdana; line-height: 11pt; margin-bottom: 3pt; margin-left: 0pt; margin-right: 0pt; margin-top: 14pt; text-indent: 0pt" class="pHeading4">
+Validating the import
+</h4>
+<a name="wp964411"> </a><p class="pBody">
+All models loaded into MarketSim are listed in the <b class="cBold">Project</b> Models pane of the MarketSim window. To validate an import model:
+</p>
+<a name="wp964412"> </a><p class="pBody">
+1.	Click to highlight the name of a model, to view the list of associated scenarios. 
+</p>
+<a name="wp964413"> </a><p class="pBody">
+2.	Double-click a scenario name to present the <b class="cBold">Scenario/Simulations/Results</b> window from which to put a scenario to work. 
+</p>
+    </blockquote>
+
+    <hr />
+
+    <table id="SummaryNotReq2" align="right" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td align="right">
+          <span style="font-size: 16px ; font-weight: bold">
+            DecisionPower, Inc<br />
+          </span>
+          <span style="font-size: 10px">
+            <a href="Your Company's URL">http://www.decisionpower.com/</a><br />
+            Voice: (408) 379-9200<br />
+            Fax: (866) 257-1701<br />
+            <a href="mailto:Support at DecisionPower">support@decisionpower.com</a><br />
+          </span>
+        </td>
+      </tr>
+    </table>
+
+    <table id="SummaryNotReq3" width="220" border="0" align="left" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="1" href="TOC.html"><img id="LongDescNotReq5" src="images/toc.gif" border="0" alt="Table of Contents" /></a><a accesskey="4" href="MarketSim-3-1.html"><img id="LongDescNotReq6" src="images/prev.gif" border="0" alt="Previous" /></a><a accesskey="5" href="MarketSim-5-1.html"><img id="LongDescNotReq7" src="images/next.gif" border="0" alt="Next" /></a><a accesskey="2" href="IX.html"><img id="LongDescNotReq8" src="images/index.gif" border="0" alt="Index" /></a>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

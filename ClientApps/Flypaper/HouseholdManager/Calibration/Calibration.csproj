@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CE0840DF-478E-4FE6-845F-F62A41DC60F7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Calibration</RootNamespace>
+    <AssemblyName>Calibration</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CalibrateVehicles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalibrateVehicles.Designer.cs">
+      <DependentUpon>CalibrateVehicles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogs\GetDouble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogs\GetDouble.Designer.cs">
+      <DependentUpon>GetDouble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogs\GetString.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogs\GetString.Designer.cs">
+      <DependentUpon>GetString.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogs\SelectAdOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogs\SelectAdOption.Designer.cs">
+      <DependentUpon>SelectAdOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogs\SelectRegion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogs\SelectRegion.Designer.cs">
+      <DependentUpon>SelectRegion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modifier.cs" />
+    <Compile Include="OptionModifier.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CalibrateOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalibrateOptions.Designer.cs">
+      <DependentUpon>CalibrateOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleModifer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\common\GeoLibrary\GeoLibrary.csproj">
+      <Project>{008A0919-4554-4AB2-A6F5-C67F8996257F}</Project>
+      <Name>GeoLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\common\MediaLibrary\MediaLibrary.csproj">
+      <Project>{B26B3E59-D5C1-4021-B6CC-466B154F4939}</Project>
+      <Name>MediaLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CalibrateOptions.resx">
+      <DependentUpon>CalibrateOptions.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalibrateVehicles.resx">
+      <DependentUpon>CalibrateVehicles.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogs\GetDouble.resx">
+      <DependentUpon>GetDouble.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogs\GetString.resx">
+      <DependentUpon>GetString.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogs\SelectAdOption.resx">
+      <DependentUpon>SelectAdOption.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogs\SelectRegion.resx">
+      <DependentUpon>SelectRegion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

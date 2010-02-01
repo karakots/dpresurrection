@@ -1,0 +1,55 @@
+﻿/* ---------------  MainStyles Section ------------------ */
+/* Styles common to All Pages */
+
+/* Overall Fonts and Colors */
+body  { font-family: Verdana, Arial, sans-serif; background-color: #FFF; color: #000;  margin: 0px; }
+
+/* Navigation Tabs */
+#MainDIv ul.nav { list-style-type: none; margin: 0; float: right; clear: right; padding: 14px 0 0 0; width: 600px; }
+#MainDIv ul.nav li { float: right; }
+#MainDIv ul.nav a { margin-left: 5px; display: block; height: 26px; width: 86px; background-repeat: no-repeat; background-position: top; } 
+/* #MainDIv ul.nav a.nav_savedplans { background-image: url("../Images/nav/tab_savedplans.gif"); }
+#MainDIv ul.nav a.nav_newplan { background-image: url("../Images/nav/tab_newplan.gif"); }
+#MainDIv ul.nav a.nav_home { background-image: url("../Images/nav/tab_home.gif"); }
+#MainDIv ul.nav a.nav_support { background-image: url("../Images/nav/tab_support.gif"); }
+#MainDIv ul.nav a.nav_about { background-image: url("../Images/nav/tab_about.gif"); } */
+#MainDIv ul.nav a:hover { background-position: center; } 
+#MainDIv ul.nav a.active { background-position: bottom; }
+#MainDIv ul.nav a.active:hover { background-position: bottom; }
+
+.Logo { position: absolute;top: 2px; margin-left: -8px; }
+
+/* Navigation Bar */
+.NavBar { position: absolute; top: 72px; width: 100%; height: 23px; border-style:solid; border-width:0px; border-color:#88CBDa; 
+	background-color: #88C0Da; z-index:0; margin : 0px auto 0px 0px; }
+	
+/* Page Footer (Copyright) */
+#Footer, #FooterDiv { font-family: Verdana, Arial, sans-serif; font-size: 9px; margin: 10px 0 0 2px; width: 500px;  color: #668; line-height: 1.5em; padding: 0; font-weight:700; }
+#Footer a, #FooterDiv a  { text-decoration: underline; color: #668; }
+
+/* User Login */
+#LoginView_SignInDiv, #LoginView_UserNameDiv { float: right; font-size: 10px; color: #999; text-align: right; margin-top: 5px; }
+#LoginView_SignInDiv a, #LoginView_UserNameDiv a { color: #00588f; }
+/* #LoginView_UserNameDiv { margin-bottom: 12px; font-weight: bold; }*/
+#LoginView_UserNameDiv { font-weight: bold; }
+#LoginView_SignInDiv a:hover, #LoginView_UserNameDiv a:hover, #NewUserLink a:hover { text-decoration: underline; }
+
+#PhoneLabel { margin-left: 10px; top: 4px; color:#FFFFFF; font-weight:500; font-style:normal; font-family: Arial; font-weight:bold;  font-size: 14px;}
+
+/* Overall Content Area */
+#MainDIv { position:absolute; width: 95%; min-width: 800px;  height: 365px; left: 20px; min-height: 365px;  color: #0069aa; background-color: #FFF; }
+
+/* --------------- Items for Specific Pages ---------------- */
+#Footer {  padding-left: 250px; }
+
+#ContentDiv { position:absolute; top: 101px; left: 0px; width: 100%;  }
+
+#YourMedia { background-color: Green; width: 100%; }
+#Controls { background-color: Green; }
+#AvailMedia { background-color: Red; width: 100%;  }
+/*
+#YourMediaDiv { position:absolute; top: 150px; left: 0px; width: 100%;  background-color: Green; }
+#ControlsDiv { position:absolute; top: 150px; left: 0px; width: 100%; min-height: 30px; background-color: Purple; }
+#AvailMediaDiv { position:absolute; top: 150px; left: 0px; width: 100%; background-color: Red; }
+
+*/

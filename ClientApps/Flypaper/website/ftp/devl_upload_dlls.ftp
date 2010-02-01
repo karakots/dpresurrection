@@ -1,0 +1,21 @@
+open ftp.adplanit.com
+21266
+adplan1t
+cd subdomains
+cd devl
+cd httpdocs
+lcd ..
+lcd pub
+cd bin
+lcd bin
+binary
+put HouseholdLibrary.dll
+put SimInterface.dll
+put GeoLibrary.dll
+put DemographicLibrary.dll
+put MediaLibrary.dll
+put BusinessLogic.dll
+put WebLibrary.dll
+put Utilities.dll
+put AjaxControlToolkit.dll
+bye

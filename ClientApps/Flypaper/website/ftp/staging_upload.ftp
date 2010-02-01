@@ -1,0 +1,58 @@
+open ftp.adplanit.com
+21266
+2ql181vB
+cd subdomains
+cd staging
+cd httpdocs
+lcd staging_adplanit
+ascii
+mput *.aspx
+put PrecompiledApp.config
+mput *.js
+mput web.config
+cd css
+lcd css
+mput *.css
+cd ..
+lcd ..
+cd Simulation
+lcd Simulation
+mput *.aspx
+lcd ..
+cd ..
+cd AgentView
+lcd AgentView
+mput *.aspx
+mput *.js
+lcd ..
+cd ..
+cd admin
+lcd admin
+mput *.aspx
+lcd ..
+cd ..
+cd Help
+lcd Help
+mput *.csv
+cd ..
+lcd ..
+cd signup
+lcd signup
+mput *.aspx
+mput *.js
+mput *.htm
+cd styles
+lcd styles
+mput *.css
+cd ..
+lcd ..
+cd ..
+lcd ..
+binary
+cd bin
+lcd bin
+mdelete *
+mput *
+cd ..
+lcd ..
+bye

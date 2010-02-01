@@ -1,0 +1,128 @@
+﻿/* ---------------  MainStyles Section ------------------ */
+/* Styles common to All Pages */
+
+/* Overall Fonts and Colors */
+body  { font-family: Verdana, Arial, sans-serif; background-color: #FFF; color: #000;  margin: 0px; }
+
+button.adplanit { background-color:Orange;  font-size:xx-large;}
+/* Navigation Tabs */
+#MainDIv ul.nav { list-style-type: none; margin: 0; float: right; clear: right; padding: 14px 0 0 0; width: 600px; }
+#MainDIv ul.nav li { float: right; } 
+#MainDIv ul.nav a { margin-left: 5px; margin-top: 8px; display: block; height: 21px; width: 115px; background-repeat: no-repeat; background-position: top; } 
+#MainDIv ul.nav a.nav_home { background-image: url("../Images/Tab-Home.gif"); }
+#MainDIv ul.nav a.nav_mycampaigns { background-image: url("../Images/Tab-MyCampaign.gif"); }
+#MainDIv ul.nav a.nav_help { background-image: url("../Images/Tab-Help.gif"); } 
+#MainDIv ul.nav a:hover { background-position: center; } 
+#MainDIv ul.nav a.active { background-position: bottom; }
+#MainDIv ul.nav a.active:hover { background-position: bottom; }
+
+/* Sub-Navigation Tabs */
+#ContentDiv ul.nav { list-style-type: none; margin: 0; float: left; clear: left; padding: 0 0 0 0; width: 600px; }
+#ContentDiv ul.nav li { float: left; }
+#ContentDiv ul.nav a { margin-left: 0px; margin-right: 5px; margin-top: 8px; display: block; height: 21px; width: 110px; background-repeat: no-repeat; background-position: top; } 
+#ContentDiv ul.nav a.nav_advertising { background-image: url("../Images/Tab-Advertising.gif"); } 
+#ContentDiv ul.nav a.nav_faq { background-image: url("../Images/Tab-FAQ.gif"); } 
+#ContentDiv ul.nav a.nav_support { background-image: url("../Images/Tab-Support.gif"); } 
+#ContentDiv ul.nav a.nav_shop { background-image: url("../Images/Tab-Shop.gif"); } 
+#ContentDiv ul.nav a.nav_order { background-image: url("../Images/Tab-Order.gif"); } 
+#ContentDiv ul.nav a.nav_analyze { background-image: url("../Images/Tab-Analyze.gif"); } 
+#ContentDiv ul.nav a:hover { background-position: center; } 
+#ContentDiv ul.nav a.active { background-position: bottom; }
+#ContentDiv ul.nav a.active:hover { background-position: bottom; }
+
+.Logo { position: absolute;top: 2px; margin-left: -4px; }
+
+/* Navigation Bar */ 
+.NavBar { position: absolute; top: 72px; width: 900px; height: 19px; border-style:solid; border-width:0px; border-color:#8fC2F4; 
+	background-color: #8fC2F4; z-index:0; margin: 0px auto 0px 0px; }
+/* #PhoneLabel { margin-left: 10px; top: 4px; color:#FFFFFF; font-weight:500; font-style:normal; font-family: Arial; font-weight:bold;  font-size: 14px;}
+#HelpEmailLink { position: absolute; left: 280px; top: 0px; font-family: Arial; font-size: 9pt; padding-top: 4px; color:White; } */
+	
+/* Page Footer */
+#Footer, #FooterDiv { text-align: left; font-family: Verdana, Arial, sans-serif; font-size: 9px; margin: 10px 0 0 2px; width: 500px;  color: #668; line-height: 1.5em; padding: 0; font-weight:700; }
+#Footer a, #FooterDiv a  { text-decoration: underline; color: #668; }
+#FooterCell { text-align: center; vertical-align: bottom; }
+#FooterTable {width: 200px; }
+
+/* User Login */
+#LoginView_SignInDiv, #LoginView_UserNameDiv { float: right; font-size: 10px; color: #999; text-align: right; margin-top: 5px; }
+#LoginView_SignInDiv a, #LoginView_UserNameDiv a { color: #00588f; }
+#LoginView_UserNameDiv { font-weight: bold; }
+#LoginView_SignInDiv a:hover, #LoginView_UserNameDiv a:hover, #NewUserLink a:hover { text-decoration: underline; }
+
+/* Overall Content Area */
+#MainDIv { position:absolute; width: 900px; min-width: 800px;  height: 365px; left: 20px; min-height: 365px;  color: #0069aa; background-color: #FFF; }
+#ContentDiv { position:absolute; top: 91px; left: 0px; width: 900px; font-size:10pt; color:Black;  }
+#ContentTable { width: 100%; }
+#ContentDiv h1  { font-size: 14pt; font-weight: normal; margin-top: 5px; margin-bottom: 5px; padding-bottom: 3px; }
+
+/* Main Info */
+#InfoDiv { padding-top: 40px;  vertical-align:top; padding-right:10px; font-size: 10pt; }
+#InfoDiv h1 { font-size: 14pt; font-weight: normal; color:#4477CC; }
+#InfoDiv h2 { font-size: 11pt; font-weight: 700; font-family:Arial;  color:#000; margin-left: 40px; margin-top: 30px; }
+#InfoDiv p { font-size: 9pt; font-weight: normal; color:#000; margin-left: 40px; }
+
+/* Right=hand column */
+#RHCol {  background-color: #8fC2F4; width: 180px; height: 500px; vertical-align:top; padding-top: 10px; padding-left: 10px;  }
+#RHCol img { border: 0; margin-bottom: 5px; }
+
+/* Background panels in right-hand column */
+#RHDiv1, #RHDiv1a { width: 150px; height: 150px;  padding: 10px; font-size:9pt; background-image: url("../Images/RHFade1.gif"); border: solid 1px #007; } 
+#RHDiv2 { display: none; width: 150px; height: 280px; margin-top: 5px;  padding: 10px;font-size:9pt; background-image: url("../Images/RHFade2.gif"); border: solid 1px #007; } 
+#RHDiv1a { height: 70px; width: 140px; }
+
+/*  Bar below sunbnavigation tabs */
+#SubTabDiv { position:absolute; top: 0px; }
+#SubNavBar { position: absolute; top: 28px; width: 615px; text-align: right; height: 3px; border-style:solid; border-width:0px; border-color:#8fC2F4; 
+	background-color: #8fC2F4; margin: 0px auto 0px 0px; }
+
+/* Beta "stamp" image */
+#BetaMarker { position: absolute; top: 12px; left: 400px; }
+
+/*Modal Popup*/
+.modalBackground {
+	background-color:Gray;
+	filter:alpha(opacity=50);
+	opacity:0.5;
+}
+
+.modalPopup {
+	background-color:#ffffff;
+	border-width:3px;
+	border-style:solid;
+	border-color:Gray;
+	padding:3px;
+	width:250px;
+}
+
+#PopupTitleText { font-size: 9pt; }
+.PopupCaptionText { font-size: 8pt; color: Black; margin-left: 15px; margin-top: 25px; margin-right: 15px;  margin-bottom: 25px; }
+.PopupCaptionTextOnly { font-size: 8pt; color: Black; margin-left: 15px; margin-top: 45px; margin-right: 15px;  margin-bottom: 0px; }
+.NewNameBoxShown { font-size: 8pt; width: 300px; margin-left: 15px;  margin-right: 15px; cursor:text;  }
+.NewNameBoxHidden { visibility:hidden;  font-size: 18pt; width: 300px; margin-left: 15px;  margin-right: 15px;  }
+.PopupButtonsTable  { margin-top: 14px; margin-bottom: 5px;  padding-bottom: 0px;  margin-left: 115px; }
+.PopupButtonsTableOKOnly  { margin-top: 14px; margin-bottom: 7px;  padding-bottom: 0px;  margin-left: 160px; }
+.AutogenCheckbox { visibility: visible;  font-size: 8pt; font-weight: normal; }
+.AutogenCheckboxHidden { visibility: hidden;  font-size: 8pt; font-weight: normal; }
+.CancelButtonHidden { visibility:hidden; }
+.CancelButtonShown { visibility: visible; } 
+
+/*Modal media-info popup*/
+.modalPopup2 {
+	background-color:#ffffff;
+	border-width:3px;
+	border-style:solid;
+	border-color:Gray;
+	padding:3px;
+	width:350px;
+}
+
+#InfoPopTitle { font-size: 9pt; }
+.PopupInfoTable { margin-top: 14px; margin-bottom: 5px;  padding-bottom: 0px;  margin-left: 115px; font-size: 8pt; }
+.PopupInfoTable td { font-size: 8pt; }
+#InfoPopName, #InfoPopType, #InfoPopURL, #InfoPopGeo { font-size: 8pt; }
+.InfoPopLbl { font-size: 8pt; }
+#CancelButton2 { margin-left: 190px; }
+
+.MediaItemLink, .MediaItemLink:visited { text-decoration: none; color: #0000DD; }
+.MediaItemLink:hover { color: Red; }

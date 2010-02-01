@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MediaRules name="Media Rules" xmlns="http://www.decisionpower.com/MediaRules2.xsd">
+
+  <!-- Flighting Duty Cycle Rules -->
+  <MediaRule type="Narrow" name="Narrow Pulse Flighting Duty Cycle" weight="1.0" rule="SUM-MAX">
+    <Group name="MonthlySpendRate" weight="1.0">
+      <ExpectedValue max="1000" weight="1" reason="Lower budget per time is most effectuvely utilized with narrow pulse flighting."/>
+    </Group>
+  </MediaRule>
+
+  <MediaRule type="Wide" name="Wide Pulse Flighting Duty Cycle" weight="1.0" rule="SUM-MAX">
+    <Group name="MonthlySpendRate" weight="1.0">
+      <ExpectedValue min="1000" max="5000" weight="1" reason="Moderate budget per time is most effectuvely utilized  with wide pulse flighting."/>
+    </Group>
+  </MediaRule>
+  
+  <MediaRule type="Continuous" name="Continuous Flighting Duty Cycle" weight="1.0" rule="SUM-MAX">
+    <Group name="PurchaseType" weight="1.0">
+      <ExpectedValue min="0" max="3" weight="1" reason="Impulse purchases sell well with continuous flighting."/>
+    </Group>
+    <Group name="MonthlySpendRate" weight="1.0">
+      <ExpectedValue min="5000" weight="1" reason="High budget per time is most effectuvely utilized with continuous flighting."/>
+    </Group>
+  </MediaRule>
+
+</MediaRules>

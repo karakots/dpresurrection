@@ -1,0 +1,199 @@
+﻿/* Overall Fonts and Colors */
+body  { font-family: Verdana, Arial, sans-serif; background-color: #FFF; color: #000;  margin: 0px; }
+  
+/* General Hyperlinks */
+a, a:visited { color: #00588f; text-decoration: none; }
+a:hover { text-decoration: underline; }
+p a:hover, li a:hover { text-decoration: underline; } 
+a img { border: 0; text-decoration: none; }
+ 
+/* User Login */
+#LoginView_SignInDiv, #LoginView_UserNameDiv { float: right; font-size: 10px; color: #999; text-align: right; margin-top: 5px; }
+#LoginView_SignInDiv a, #LoginView_UserNameDiv a { color: #00588f; }
+#LoginView_UserNameDiv { margin-bottom: 12px; font-weight: bold; }
+#LoginView_SignInDiv a:hover, #LoginView_UserNameDiv a:hover, #NewUserLink a:hover { text-decoration: underline; }
+
+/* Navigation Tabs */
+#MainDIv ul.nav { list-style-type: none; margin: 0; float: right; clear: right; padding: 14px 0 0 0; width: 600px; }
+#MainDIv ul.nav li { float: right; }
+#MainDIv ul.nav a { margin-left: 5px; display: block; height: 26px; width: 116px; background-repeat: no-repeat; background-position: top; } 
+#MainDIv ul.nav a.nav_savedplans { background-image: url("../Images/nav/tab_savedplans.gif"); }
+#MainDIv ul.nav a.nav_newplan { background-image: url("../Images/nav/tab_newplan.gif"); }
+#MainDIv ul.nav a.nav_home { background-image: url("../Images/nav/tab_home_w.gif"); }
+#MainDIv ul.nav a.nav_support { background-image: url("../Images/nav/tab_aboutus_w.gif"); }
+#MainDIv ul.nav a.nav_about { background-image: url("../Images/nav/tab_about_w.gif"); }
+
+#MainDIv ul.nav a:hover { background-position: center; } 
+#MainDIv ul.nav a.active { background-position: bottom; }
+#MainDIv ul.nav a.active:hover { background-position: bottom; }
+
+
+/* Overall Content Area */
+#MainDIv
+{ width: 880px; height: 365px; min-height: 365px; margin: 10px auto; color: #0069aa; }
+
+#MainTitle 
+{
+	font-family:Arial Black;
+	font-size:18pt;
+	font-weight: 800;
+	position: absolute;
+	top: 8px;
+	width: 500px;
+	color: #0069aa;
+	z-index:10;
+	font-variant:small-caps;
+	letter-spacing: -1px;
+	float: left;
+}
+
+#SubTitle 
+{
+	font-size:14pt;
+	font-weight: 600;
+	position: absolute;
+	top: 123px;
+	color: #04A;
+	margin-left: 50px;
+}
+
+.Logo { position: absolute;top: 2px; margin-left: 4px;}
+
+/* Navigation Bar */
+.NavBar
+{ position: absolute; top: 78px; width: 880px; height: 23px; border-style:solid; border-width:0px; border-color:#88CBDa; 
+	background-color: #88C0Da; z-index:0; margin : 0px auto 0px 0px; }
+
+#NavBarLinks
+{ margin-top:4px; font-size:11px; float:right; display:inline; }
+
+#NavBarLinks a
+{ margin-left:5px;  font-size:11px;  margin-right:15px; color: #000;}
+
+#PhoneLabel
+{ font-family:Arial Black, Arial; font-size:13px; font-weight: 200; color:#0060aa; margin-left:10px; position:relative; top: 2px; }
+
+/* Page Footer (Copyright) */
+#Footer 
+{font-family: Verdana, Arial, sans-serif; font-size: 9px; margin: 10px 0 0 2px; width: 500px;  color: #668; line-height: 1.5em; padding: 0; font-weight:700 }
+#Footer a 
+{ text-decoration: underline; color: #668; }
+
+.BackgroundPanel
+{
+	position: absolute;
+/*	left: 25px; */
+	top: 34px;
+/*	width:860px;
+	height:475px; */
+	border-style:solid;
+	border-width:2px;
+	border-color:#CCE;
+	background-color: #CCE;
+	z-index:0;
+	margin : 0px auto 0px 0px;
+
+/*	visibility:hidden; */
+}
+
+/* version 2 */
+.BackgroundPanel
+{
+	width: 900px;
+	height: 27px;
+}
+
+#LoginNameDiv
+{
+	position: absolute;
+/*	left: 685px;*/
+	left: 85%;
+	top: 18px;
+	font-size: 8pt;
+}
+
+
+#PopupTitle 
+{
+	background: #AAA;
+	font-size:10pt;
+}
+
+.modalBackground {
+	background-color:Gray;
+	filter:alpha(opacity=50);
+	opacity:0.5;
+}
+
+.modalPopup {
+	background-color:#ffffdd;
+	border-width:3px;
+	border-style:solid;
+	border-color:Gray;
+	padding:3px;
+	width:250px;
+}
+
+.modalPopupDiv
+{
+	background-color:#ffffdd;
+	border-width:3px;
+	border-style:solid;
+	border-color:Gray;
+	padding:3px;
+	width:250px;
+}
+
+/* Campaign Summary Information */
+#CampaignSummaryDiv
+{ position: absolute; top: 100px; margin-left: 660px; width: 220px; height: 300px; color: #000; font-size: 8pt; background-color: #88C0Da; padding-left: 0px; padding-right: 0px; }
+
+/* ---------  Help popup ---------- */
+/* style for the item that has triggered the popup */
+.popupHover 
+{
+/*	background-image: url( ../images/HelpButton-Active.gif ); */
+/*	background-color:Yellow; */
+	visibility:hidden;
+}
+
+/* style for the popup help summary */
+.popupHelp 
+{
+	background-color: #EEEEEE;
+	border-style:outset;
+	border-width: 6px;
+	border-color: #0CA;
+	min-width: 250px;
+	max-width: 450px;
+	min-height: 50px;
+	margin-top: 15px;
+/*	margin-left: 15px; */
+	padding: 5px;
+	font-family: Arial, Verdana;
+	font-size: 10pt;
+	z-index: 100;
+}
+
+/* popup help title */
+.popupHelp h1
+{
+	font-size: 11pt;
+	font-weight: bold;
+	color: #A00;
+	display:inline;
+}
+
+/* popup help full-help link */
+.popupFullHelpLink
+{
+	font-family: Arial, Verdana;
+	font-size: 10pt;
+	display:block;
+	color: Green;
+	margin-top: 10px;
+}
+
+.popupFullHelpLink a
+{
+}

@@ -1,0 +1,11 @@
+﻿@import url(MainStyles.css);
+
+#ErrorTitle { position: absolute; top: 170px; font-size: 13pt; color: Red; }
+#ErrorDetailsDiv { position: absolute; top: 200px; font-size: 10pt; color: Black; }
+#ErrorDetails{ min-height: 400px; }
+#OkButton{ width: 80px; margin-left: 200px; margin-top: 100px; }
+
+#Footer
+{
+
+}

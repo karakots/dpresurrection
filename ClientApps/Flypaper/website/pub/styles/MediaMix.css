@@ -1,0 +1,13 @@
+﻿@import url(MainStyles.css);
+
+#CampaignSummaryDiv { height:23px; margin-left: 510px; width: 370px; background-color:#FFF;  }
+
+#MediaMixListDiv {  position: absolute; top: 250px; margin-left: 40px; }
+
+#InfoTextPanel { position: absolute; top: 145px; font-size: 10pt; color: Black; width: 750px; margin-left: 55px; }
+#InfoTextPanel2 { position: absolute; top: 227px; font-size: 10pt; color: Black; width: 750px; margin-left: 43px; }
+
+#InternetBudget { position: relative; top: 2px; width: 50px; width-max: 50px; font-size: 9pt; margin-right:7px; }
+#ChangeInternetButton { position: relative; top: 2px; font-size: 8pt; }
+
+#nolink, #nolink2 { color: Gray; }

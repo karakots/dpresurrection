@@ -1,0 +1,22 @@
+open  72.249.5.64
+21266
+adplan1t
+lcd ..
+lcd ..
+lcd pub
+lcd bin
+cd httpdocs
+cd beta
+cd bin
+binary
+put AjaxControlToolkit.dll
+put HouseholdLibrary.dll
+put DpSimQueue.dll
+put SimInterface.dll
+put GeoLibrary.dll
+put DemographicLibrary.dll
+put MediaLibrary.dll
+put BusinessLogic.dll
+put WebLibrary.dll
+put Utilities.dll
+bye

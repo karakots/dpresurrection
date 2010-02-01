@@ -1,0 +1,28 @@
+﻿body { font-family: Verdana; font-size: 8pt; }
+h3  { display: inline;  color: #036; }
+h4 { display: inline; font-family: Times; font-size: 11pt; padding-right: 5pt; padding-left: 5pt;  }
+.monthList,.yearList,.userList { font-family: Verdana; font-size: 10pt; }
+
+.summaryTable 
+{
+	border-style: double;
+	border-color: #ABC;
+	border-width: 3px;
+}
+
+.summaryTable td {	padding: 5px; 	padding-right: 15px; }
+
+.summaryHeaderCell { background-color: #EEE; }
+
+.summaryDataCellX, .summaryDataCell,.summaryDataCellXAlt, .summaryDataCellAlt { border: solid 1px #DDD; }
+.summaryDataCellX{ background-color: #EEE; } 
+.summaryDataCell {  }
+.summaryDataCellXAlt{ background-color: #DDD; } 
+.summaryDataCellAlt { background-color: #EEE; } 
+
+.detailsTable 
+{
+	border-style: double;
+	border-color: #ABC;
+	border-width: 3px;
+}

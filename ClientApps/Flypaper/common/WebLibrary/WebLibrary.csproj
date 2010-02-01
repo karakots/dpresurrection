@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BEF9FBA8-5AD4-476F-B99F-52A8E6D60CA2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebLibrary</RootNamespace>
+    <AssemblyName>WebLibrary</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=1.0.10920.21545, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\website\pub\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\website\pub\bin\System.Web.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataLogger.cs" />
+    <Compile Include="DemographicGroupValues.cs" />
+    <Compile Include="EmailSender.cs" />
+    <Compile Include="FlightingInfo.cs" />
+    <Compile Include="Help.cs" />
+    <Compile Include="MediaCampaignSpecs.cs" />
+    <Compile Include="MediaItem.cs" />
+    <Compile Include="MediaPlan.cs" />
+    <Compile Include="MediaRule.cs" />
+    <Compile Include="PlanStorage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReachAndEfficiency.cs" />
+    <Compile Include="SimClient.cs" />
+    <Compile Include="SimUtils.cs" />
+    <Compile Include="Timing\SundayNewspaperTimingDisplayItem.cs" />
+    <Compile Include="Timing\RadioTimingDisplayItem.cs" />
+    <Compile Include="Timing\NewspaperTimingDisplayItem.cs" />
+    <Compile Include="Timing\InternetTimingDisplayItem.cs" />
+    <Compile Include="Timing\YellowpagesTimingDisplayItem.cs" />
+    <Compile Include="Timing\MagazineTimingDisplayItem.cs" />
+    <Compile Include="Timing\TimingDisplayItem.cs" />
+    <Compile Include="Timing\TimingInfo.cs" />
+    <Compile Include="Timing\TimingItemConverter.cs" />
+    <Compile Include="UserMedia.cs" />
+    <Compile Include="UserSignup.cs" />
+    <Compile Include="Utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DemographicLibrary\DemographicLibrary.csproj">
+      <Project>{042635F8-77B9-4A08-B14C-FACDCEC02395}</Project>
+      <Name>DemographicLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoLibrary\GeoLibrary.csproj">
+      <Project>{008A0919-4554-4AB2-A6F5-C67F8996257F}</Project>
+      <Name>GeoLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HouseholdLibrary\HouseholdLibrary.csproj">
+      <Project>{13FDDD02-D803-4F17-BFA9-2905D3C0521C}</Project>
+      <Name>HouseholdLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MediaLibrary\MediaLibrary.csproj">
+      <Project>{B26B3E59-D5C1-4021-B6CC-466B154F4939}</Project>
+      <Name>MediaLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SimInterface\SimInterface.csproj">
+      <Project>{37D02378-0522-4980-AA94-0BBB88FB5FEF}</Project>
+      <Name>SimInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{10C54ED2-05D3-4A92-90F2-5910545D38A3}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

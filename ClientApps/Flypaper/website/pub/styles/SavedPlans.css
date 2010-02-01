@@ -1,0 +1,79 @@
+﻿@import url(MainStyles.css);
+
+#NextButton
+{
+	width:220px;
+	height:26px;
+	font-size:12px;
+	font-weight: 600;
+}
+#NextButtonDiv
+{
+	position: absolute;
+	left: 630px;
+	top: 445px;
+	background: Blue;
+	border-style:groove;
+	border-width:5;
+	border-color:#00A;
+	z-index:1;
+
+/*	width:84px;
+	height:19px;
+	z-index:60;*/
+}
+
+#SavedItemsList
+{
+	position: absolute;
+	left: 130px;
+	top: 75px;
+
+}
+
+.RegRow, .AltRow
+{
+	font-size: 10pt;
+}
+
+.RegRow 
+{
+	background-color:#DFD;
+	height: 25px;
+	width: 500px;
+	margin: 4px;
+	border-bottom: solid 1px #00A;
+}
+
+.AltRow 
+{
+	background-color:#DDF;
+	height: 25px;
+	width: 500px;
+	margin: 4px;
+	border-bottom: solid 1px #00A;
+}
+
+.RegRowButton 
+{
+	background-color:#DFD;
+	margin: 4px;
+	border-bottom: solid 1px #00A;
+}
+
+.AltRowButton 
+{
+	background-color:#DDF;
+	margin: 4px;
+	border-bottom: solid 1px #00A;
+}
+
+.RegRowButtonItem
+{
+	font-size:8pt;
+}
+
+.AltRowButtonItem
+{
+	font-size:8pt;
+}

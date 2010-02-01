@@ -1,0 +1,713 @@
+﻿@import url(MainStyles.css);
+
+#PlanNameDiv, #PlanNameDiv1, #PlanCostDiv, #PlanTimeDiv, #PlanTimeDiv2, #CommentsDiv, #CampaignNameDiv
+{
+	position:absolute;
+	width: 760px;
+	z-index:1;
+	color: #000;
+	font-size: 10pt;
+	margin-left: 40px;
+}
+
+#CampaignNameDiv, #PlanCostDiv,  #PlanTimeDiv, #PlanTimeDiv2
+{
+	width: 735px;
+}
+
+/* 1st section of copy text */
+#InfoTextPanel
+{
+	position:absolute;
+	top: 150px;
+	width: 760px;
+	height: 360px;
+	font-size: 10pt;
+	color: #000;
+	padding: 5px;
+	margin-left: 40px;
+}
+
+/* 2nd, 3rd, 4th sections of copy text */
+#InfoTextPanel2, #InfoTextPanel3,  #InfoTextPanel4, #PriorityDiv, #Priority1, #Priority2, #Priority3, #Priority4, #Priority5
+{
+	font-size: 10pt;
+	color: #000;
+    width : 760px;
+	/* background-color: #EEE; */
+	padding: 5px;
+}
+
+#Priority1, #Priority2, #Priority3, #Priority4, #Priority5
+{
+}
+
+/* 3rd section of copy text */
+#InfoTextPanel3
+{
+	height: 72px;
+	margin-left: 40px;
+}
+
+/* 4th section of copy text */
+#InfoTextPanel4
+{
+	margin-top: 20px;
+	height: 16px;
+}
+
+/* Area for entry of plan time information */
+#InputBkgDiv
+{
+	position: absolute;
+	top: 255px;
+	width: 770px;
+	height: 73px;
+	border-width: 3px;
+	/* background-color: #EEE; */
+	margin-left: 40px;
+}
+
+/* Area for product information (sliders) */
+#ProductInfoDiv 
+{
+	position: absolute;
+	top: 353px;	
+	height: 178px;
+}
+
+/* Name for the study (group of plans) */
+#PlanNameDiv 
+{
+	top: 750px;
+	width: 400px;
+	font-weight:600;
+	margin-left: 40px;
+}
+
+/* Campaign name entry */
+#CampaignNameDiv 
+{
+	width: 760px;
+	margin-left: 45px;
+	top: 210px;
+	background-color: #EEE;
+}
+
+/* Cost entry */
+#PlanCostDiv 
+{
+	margin-left: 45px;
+	width: 760px;
+	top: 304px;
+	background-color: #EEE;
+}
+
+/* Start Date */
+#PlanTimeDiv 
+{
+	top: 258px;
+	z-index:100;
+	margin-left: 112px;
+}
+
+#PlanTimeDiv input
+{
+	position:  relative; top: 2px; 
+}
+
+/* Duration */
+#PlanTimeDiv2
+{
+	top: 254px;
+	margin-left: 280px;
+	z-index:100;
+}
+
+/* Entry field textboxes */
+#DurationTextBox, #PlanCost, #PlanName
+{
+	text-align: right;
+	font-family:Arial Narrow;
+	font-size:11pt;
+	position:relative;
+	top: 3px;
+}
+
+#PlanName 
+{
+	text-align: left;
+}
+
+.smeditname
+{
+	height: 18px;
+	font-size:10pt;
+	margin-bottom: 4px;
+	text-align: left;
+}
+
+/* Region (state) entry dropdown list */
+#RegionsList
+{
+	font-family:Arial Narrow;
+	font-size:10pt;
+	position:relative;
+	top: 3px;
+}
+
+/* sub-regcion (DMA, city, county -- definition set by framework) */
+#SubregionsList, #SubregionLabel
+{
+}
+
+/* sub-regcion (DMA, city, county -- definition set by framework) */
+#SubSubregionsList, #SubSubregionLabel
+{
+	visibility:hidden;
+}
+
+#SubregionsList
+{
+	font-size:10pt;
+	position:relative;
+	top: 3px;
+	width: 220px;
+	height: 22px;
+}
+
+#SubSubregionsList
+{
+	font-size:10pt;
+	position:relative;
+	top: 3px;
+	width: 40px;
+	height: 22px;
+	visibility:hidden;
+}
+
+/* General description */
+#CommentsDiv
+{
+	top: 152px;
+	font-size:10px;
+	margin-left: 4px;
+	visibility:hidden;
+}
+
+/* next-page buton */
+#NextButton
+{
+	display:inline;
+	width:270px;
+	height:23px;
+	font-size:10pt;
+	font-weight:bold;
+	margin-top:15px;
+	margin-left:20px;
+/*	margin: 0px 0px 0px 440px; */
+}
+
+/* next-page buton */
+#NextButton2
+{
+	display:inline;
+	width:270px;
+	height:23px;
+	font-size:10pt;
+	font-weight:bold;
+	margin-top:15px;
+	margin-left:40px;
+/*	margin: 0px 0px 0px 440px; */
+}
+
+#NextButtonDiv
+{
+	position: absolute;
+/*	float: right; */
+	top: 605px;
+	z-index:1;
+}
+
+/* Demographic infomation */
+#DemoBkgDiv
+{
+	position: absolute;
+	top: 720px;
+	width: 760px;
+	padding-left: 0px;
+	border-width: 3px;
+	overflow:visible;
+	margin-left: 40px;
+	background-color: #EEE;
+}
+
+/* Demographic infomation Table */
+.DemoInfoTable
+{
+	width: 760px;
+	color:#000;
+	font-size: 10pt;
+	margin-left: 0px;
+}
+
+#DemoList
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	font-size: 11pt;
+}
+
+.demoName, #DemoAll
+{
+/*	font-family:Vrinda; */
+	font-size: 10pt;
+	padding-left: 24px;
+	background-color: #EEE;
+}
+
+/* ===============================   Plan Entry Area ========================== */
+.itemtable
+{
+	font-family:Calibri;
+	font-size:10pt;
+	border: solid 1px #00A;	
+	background: White;
+	width: 670px;
+	margin-left: 10px;
+	padding-left: 0px;
+}
+
+.itemtable td
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	vertical-align:top;
+}
+
+.ItemTitleBar 
+{
+	font-family:Calibri;
+	font-size:10pt;
+	border: solid 1px #00A;	
+	background: White;
+	width: 670px;
+	margin-left: 10px;
+}
+
+.ItemTitleBar tr
+{
+	padding-top: 4px;
+}
+
+.itemProgress, .itemProgress tr, .itemProgress td
+{
+	height:3px;
+	background-color:#FFF;
+	max-height:3px;
+	font-size: 5px;
+}
+
+.ItemTitleBarName
+{
+	padding-left: 3px;
+	padding-top: 0px;
+	font-size: 11pt;
+	font-weight:bold;
+	padding-bottom: 3px;
+}
+
+.headings, .headings td
+{
+	font-family:Arial;
+	font-size:8pt;
+	background-color: #CDE;
+	border-bottom: solid 2px #00A;	
+}
+
+.itemrow
+{
+}
+
+.itemname
+{
+	font-size:12pt;
+	font-weight:bold;
+}
+
+.itemscore
+{
+	font-size:10pt;
+}
+
+.itembudget
+{
+	font-size:12pt;
+	font-weight:bold;
+}
+
+.smeditbudgpct
+{
+	text-align: right;
+}
+
+.itemdetails
+{
+}
+
+.itemdetailsadj
+{
+	font-size:10pt;
+}
+
+.itemreasons
+{
+	font-family:Arial Narrow;
+	font-size:8pt;
+}
+/* ========================   END PLAN ENTRY AREA ======================== */
+
+/* Business Category area */
+#CategoryDiv
+{
+	position: absolute;
+	top: 390px;
+	width: 350px;
+	color: #000;
+	font-size: 10pt;
+	margin-left: 70px; 
+}
+
+/* Business Category/subcategory lists */
+#CategoryList, #SubcategoryList, #SubcategoryTextbox
+{
+	position: relative;
+	top: 2px;
+}
+
+/* Business Subcategory area */
+#SubCategoryDiv
+{
+	position: absolute;
+	top: 390px;
+	width: 450px;
+	color: #000;
+	font-size: 10pt;
+	margin-left: 420px; 
+}
+
+#SubcategoryTextbox
+{
+	width: 250px;
+}
+
+.SubcategoryList_Hidden 
+{
+	display: inline;
+	visibility: hidden;
+}
+
+.SubcategoryList_Shown 
+{
+	display: inline;
+	visibility: visible;
+}
+
+.SubcategoryTextbox_Hidden 
+{
+	display: none;
+}
+
+.SubcategoryTextbox_Shown 
+{
+	display: inline;
+}
+
+/* Area for product goal prioritization */
+#PriorityDiv 
+{
+	position: absolute;
+	top: 430px;	
+	height: 178px;
+	background-color:#EEE;
+	margin-left: 40px;
+}
+
+/* Area for product goal prioritization */
+#Priority1, #Priority2, #Priority3, #Priority4, #Priority5
+{
+	position: absolute;
+	top: 460px;	
+	height: 178px;
+	margin-left: 70px;
+}
+
+#Priority1 select, #Priority2 select, #Priority3 select, #Priority4 select, #Priority5 select
+{
+	position: relative; top: 2px; 
+}
+
+#Priority2 
+{
+	top: 490px;	
+}
+
+#Priority3 
+{
+	top: 520px;	
+}
+
+#Priority4 
+{
+	top: 550px;	
+}
+
+#Priority5 
+{
+	top: 580px;	
+}
+
+/* Areas for sliders for product description */
+#SliderBkgDiv1
+{
+	height: 88px;
+	background-color: #daecf5;
+}
+
+/* HORIZONTAL FORMAT */
+/* Background area for purchase cycle slider */
+#SliderBkgDiv1
+{
+	position: absolute;
+	top: 620px;
+    width : 760px;
+	color: #000;
+	font-size: 10pt;
+	margin-left: 40px; 
+	background-color: White;
+}
+
+/* Sliders  */
+#SliderDiv1 
+{
+	position: absolute;
+	top: 35px;
+	left: 0px;
+	width: 220px;
+	margin-left: 120px; 
+}
+
+/* Labels for slider positions */
+#SliderLabel1, #SliderLabel2, #SliderLabel3, #SliderLabel4, #SliderLabel5, #SliderLabel6, #SliderLabel7, #SliderLabel8,  #SliderLabel9,  #SliderLabel10,  #SliderLabel11, 
+#SliderTiitle1, #SliderTiitle2, #SliderTiitle3 
+{
+	position: absolute;
+	font-size:8pt;
+}
+
+/* Slider main titles */
+#SliderTiitle1, #SliderTiitle2, #SliderTiitle3
+{
+	font-size:10pt;
+	top: 13px;
+	left: 10px;
+	width: 780px;
+}
+
+/* Slider value labels */
+/* VERTICAL format */
+/*#SliderLabel1, #SliderLabel2, #SliderLabel3, #SliderLabel4, #SliderLabel5 { top: 30px; left: 86px; }
+#SliderLabel6, #SliderLabel7, #SliderLabel8 { 	top: 30px;	left: 86px; }
+#SliderLabel2 { top: 51px; }
+#SliderLabel3 {  top: 72px; }
+#SliderLabel4 {  top: 94px; }
+#SliderLabel5 {  top: 116px; }
+#SliderLabel7 {  top: 71px; }
+#SliderLabel8 {  top: 116px; } */
+
+/* HORIZONTAL format */
+#SliderLabel1, #SliderLabel2, #SliderLabel3, #SliderLabel4, #SliderLabel5 { top: 60px; left: 116px; }
+/* #SliderLabel6, #SliderLabel7, #SliderLabel8, #SliderLabel9, #SliderLabel10, #SliderLabel11 { top: 30px; left: 196px; } */
+#SliderLabel2 { left: 206px; }
+#SliderLabel3 { left: 296px; }
+#SliderLabel4 { left: 396px; }
+#SliderLabel5 { left: 456px; }
+
+/*
+#SliderLabel7 { left: 366px; }
+#SliderLabel8 { left: 496px; }
+#SliderLabel10 { left: 346px; }
+#SliderLabel11 { left: 516px; }
+*/
+/* ------------------------------- POPUP DEMOGRAPHICS DIALOG ------------------------------ */
+/* Background */
+.ShowPopupBackground, .PopupBackground
+{
+	background-color	:Gray;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	opacity:.5;
+	filter: alpha(opacity=50); 
+	visibility:visible;	
+}
+
+.PopupBackground
+{
+	visibility:hidden;	
+}
+
+/* Main dialog panel */
+.ShowDemoPopupPanel, .DemoPopupPanel
+{
+	position: absolute;
+	left: 155px;
+	top: 175px;
+	width: 600px;
+	height: 293px;
+	z-index: 1001;
+	visibility:visible;	
+	background-color	:White;
+	border:inset 3px black;
+	font-family:Arial Narrow;
+	font-size: 10pt;
+}
+
+.DemoPopupPanel
+{
+	visibility:hidden;	
+	font-family:Arial Narrow;
+}
+
+/* popup dialog shadow */
+ .ShowDemoPopupShadow, .DemoPopupShadow
+ {
+ 	position: absolute;
+	left: 165px;
+	top: 185px;
+	z-index: 1001;
+	visibility:visible;	
+	background-color	:#555;
+	width: 602px;
+	height: 295px;
+}
+
+.DemoPopupShadow, .HideList
+{
+	visibility:hidden;	
+}
+
+/* Popup dialog content panel */
+.DemoPopupInsetPanel
+{
+	margin: 1px;
+	border-color: black;
+	border-style: double;
+	border-width: 3px;
+	border-top-style:none;
+	height: 98%;
+}
+
+/* Popup dialog title panel */
+.DemoPopupTitlePanel
+{
+	width: 100%;
+	height: 20px;
+	background-color: Gray;
+	padding-top: 3px;
+	border-bottom: solid 1px black;
+}
+
+/* Popup dialog title */
+#DemoPopupTitle
+{
+	font-family:Arial;
+	font-weight: bold;
+	color: #FFF;
+	margin-left: 10px;
+}
+
+/* name for the segmenet */
+#SegmentName 
+{
+	font-size: 10pt;
+/* 	font-family:Arial Narrow; */
+}
+
+/* OK button */
+#DefineSegButton
+{
+	font-size: 9pt;
+	font-family:Arial;
+	position: relative;
+	left: 180px;
+	top: 15px;
+}
+
+/* Cancel button */
+#CancelSegButton
+{
+	font-size: 9pt;
+	font-family:Arial;
+	position: relative;
+	left: 190px;
+	top: 15px;
+}
+
+.PopSubTitle
+{
+	padding-left:5px;
+	font-weight:bold;
+	color: Black;
+}
+
+.PopAnyTitle
+{
+	color: Black;
+}
+
+#GenderMale, #GenderFemale, #Age1, #Age2, #Age3, #Age4, #Age5, #Age6, #Age7,
+#Income1, #Income2, #Income3, #Income4, #Income5, #Kids0, #Kids1, #Race1, #Race2, #Race3, #Race4
+{
+	display: none;
+}
+
+.HideRow
+{
+	color: #DDD;
+}
+.HideRow2
+{
+	color: #FFF;
+}
+
+.ShowDemoRow
+{
+	color: Black;
+}
+/* -------------------------- END POPUP DEMOGRAPHICS DIALOG ----------------------- */
+
+#DebugData
+{
+	position: absolute;
+	top:450px;
+	font-size: 9pt;
+	visibility:hidden;
+}
+
+/* Advertisements */
+.Ad1
+{
+	position: absolute; top: 140px; margin-left: 730px;
+}
+
+#PhoneLabel { position: relative; top: 3px; }
+#HelpEmailLink { position: absolute; left: 280px; top: 0px; font-family: Arial; font-size: 9pt; padding-top: 4px; color:White; }
+#HelpEmailLink a { color:White; }
+#BreadcrumbLabel { position: absolute; left: 180px;top: 0px; }
+
+#Footer { margin-left: 160px; }

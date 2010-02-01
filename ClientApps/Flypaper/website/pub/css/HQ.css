@@ -1,0 +1,32 @@
+﻿@import url(Common.css);
+
+#NewPlanDiv { position:absolute; top: 121px; left: 0px; width: 100%; font-size: 10pt; color: #000;  }
+
+#SubTabDiv{ top: 5px; border-bottom: solid 2px #7799FF; width: 75%; z-index: 2; } 
+#SubNavBar { top: 57px; }
+#PlanSummaryCell { vertical-align: top; position: relative; top: 62px; height:auto; }
+#LowerDiv{ vertical-align: top; height:auto; }
+#NameDiv { position: absolute; top: 95px; margin-left: 330px; font-size: 10pt; z-index: 2;  }
+
+#XContentDiv { padding-top: 61px; margin-top: 10px; }
+#XContentTable { height: 100px;  padding-top: 0px;margin-top: 0px; z-index: 1; }
+#XPlanSummaryCell {  padding-top: 60px; margin-top: 0px; }
+#HqRHCol {  background-color: #8fC2F4; width: 180px; height: 400px; vertical-align:top; padding-top: 10px; padding-left: 10px; }
+#InnerTable {  position: relative; top: 0px; } 
+/* #InnerTable {  position: relative; top: -100px; } */
+#XFooterCell { position: absolute; top: 500px; padding-left: 230px; width: 400px; }
+
+#CreatePlanButton { margin-top: 0px; }
+#TestPlanButton { margin-top: 10px; }
+#CreatePlanButton { margin-top: 0px;
+	margin-left: 0px;
+}
+#CreateRFPButton { margin-top: 10px; }
+#PieChartDiv { position: absolute; top: 150px; left: 440px; width: 170px; height: 100px; }
+#OrderRHInfoDiv { background-color: White; width: 160px; height: 390px; font-size: 7pt; padding: 5px; display: none; }
+#OrderRHInfoDiv b { font-size: 8pt; }
+
+#StarsDiv { position: absolute; top: 98px; }
+#AddButton { margin-right: 7px; margin-top: 5px; }
+AddTypeList{ margin-top: 5px; }
+

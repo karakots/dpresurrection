@@ -1,0 +1,182 @@
+﻿
+/* ------------------------------- POPUP DEMOGRAPHICS DIALOG ------------------------------ */
+/* Background */
+.ShowPopupBackground, .PopupBackground
+{
+	background-color	:Gray;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	opacity:.5;
+	filter: alpha(opacity=50); 
+	visibility:visible;	
+}
+
+.PopupBackground
+{
+	visibility:hidden;	
+}
+
+/* Main dialog panel */
+.ShowDemoPopupPanel, .DemoPopupPanel
+{
+	position: absolute;
+	left: 215px;
+	top: 225px;
+	width: 600px;
+	height: 253px;
+	z-index: 1001;
+	visibility:visible;	
+	background-color	:White;
+	border:inset 3px black;
+	font-family:Arial Narrow;
+	font-size: 10pt;
+}
+
+.DemoPopupPanel
+{
+	visibility:hidden;	
+	font-family:Arial Narrow;
+}
+
+/* popup dialog shadow */
+ .ShowDemoPopupShadow, .DemoPopupShadow
+ {
+ 	position: absolute;
+	left: 225px;
+	top: 235px;
+	z-index: 1001;
+	visibility:visible;	
+	background-color	:#555;
+	width: 602px;
+	height: 255px;
+}
+
+.DemoPopupShadow, .HideList
+{
+	visibility:hidden;	
+}
+
+/* Popup dialog content panel */
+.DemoPopupInsetPanel
+{
+	margin: 1px;
+	border-color: black;
+	border-style: double;
+	border-width: 3px;
+	border-top-style:none;
+	height: 98%;
+}
+
+/* Popup dialog title panel */
+.DemoPopupTitlePanel
+{
+	width: 100%;
+	height: 20px;
+	background-color: Gray;
+	padding-top: 3px;
+	border-bottom: solid 1px black;
+}
+
+/* Popup dialog title */
+#DemoPopupTitle
+{
+	font-family:Arial;
+	font-weight: bold;
+	color: #FFF;
+	margin-left: 10px;
+}
+
+/* name for the segmenet */
+#SegmentName 
+{
+	font-size: 10pt;
+/* 	font-family:Arial Narrow; */
+}
+
+/* OK button */
+#DefineSegButton
+{
+	font-size: 9pt;
+	font-family:Arial;
+	position: relative;
+	left: 180px;
+	top: 15px;
+}
+
+/* Cancel button */
+#CancelSegButton
+{
+	font-size: 9pt;
+	font-family:Arial;
+	position: relative;
+	left: 190px;
+	top: 15px;
+}
+
+.PopSubTitle
+{
+	padding-left:5px;
+	font-weight:bold;
+	color: Black;
+}
+
+.PopAnyTitle
+{
+	color: Black;
+}
+
+#GenderMale, #GenderFemale, #Age1, #Age2, #Age3, #Age4, #Age5, #Age6, #Age7,
+#Income1, #Income2, #Income3, #Income4, #Income5, #Kids0, #Kids1, #Race1, #Race2, #Race3, #Race4
+{
+	display: none;
+}
+
+.HideRow
+{
+	color: #DDD;
+}
+.HideRow2
+{
+	color: #FFF;
+}
+
+.ShowDemoRow
+{
+	color: Black;
+}
+
+#InternetTargetingTable
+{
+ margin-top: 7px;
+}
+
+/* sub-regcion (DMA, city, county -- definition set by framework) */
+#SubregionsList, #SubregionLabel, #SubSubregionsList, #SubSubregionLabel
+{
+	visibility:hidden;
+}
+
+#SubregionsList
+{
+	font-size:10pt;
+	position:relative;
+	top: 3px;
+	width: 220px;
+	height: 22px;
+}
+
+#SubSubregionsList
+{
+	font-size:10pt;
+	position:relative;
+	top: 3px;
+	width: 40px;
+	height: 22px;
+	visibility:hidden;
+}
+
+/* -------------------------- END POPUP DEMOGRAPHICS DIALOG ----------------------- */

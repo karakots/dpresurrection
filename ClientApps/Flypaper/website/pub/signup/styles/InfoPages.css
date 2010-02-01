@@ -1,0 +1,22 @@
+﻿@import url(MainStyles.css);
+
+#Footer { position:relative; }
+/* #Footer { position: absolute; top: 220px; margin-left: 50px; } */
+
+#BodyInfo { position: absolute; top: 200px; margin-left: 70px; width: 740px;font-family: Arial, Verdana, Sans-Serif; font-size: 10pt; color: Black; }
+
+#SetEngDiv { position: absolute; top: 170px; margin-left: 70px; font-size: 9pt; color: Black; }
+
+#ReturnButton { position: absolute; top: 400px; width: 220px; }
+#ReturnButton { left: 230px; }
+
+#TextDiv { position: absolute; top: 140px; margin-left: 70px; width: 740px;font-family: Arial, Verdana, Sans-Serif; font-size: 10pt; color: Black; }
+#TextDiv h3 { font-size: 14px; }
+
+#PrivacyTextDiv { position: absolute; top: 160px; margin-left: 70px; width: 740px;font-family: Arial, Verdana, Sans-Serif; font-size: 10pt; color: Black; }
+#PrivacyTextDiv h3 { font-size: 14px; color: #0069AA; }
+#PrivacyTextDiv li { margin-bottom: 5px; }
+
+#PhoneLabel { margin-left: 740px; top: 4px; color:#FFFFFF; font-weight:bold; font-style:normal; font-family: Arial; font-size: 14px;}
+
+.Footer { position:relative; top: 0px; left:50px; }

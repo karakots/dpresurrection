@@ -1,0 +1,37 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelView", "ModelView.csproj", "{54D29646-AEC3-4D14-BED6-2B76F2F62875}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductGrid", "..\ProductGrid\ProductGrid.csproj", "{5921351B-ECE1-4FFD-A72D-79A461C26F2D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MrktSimDb", "..\..\Dabatase\MrktSimDb\MrktSimDb.csproj", "{9DA9597C-A718-4779-B76C-CD68BFF97482}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{54D29646-AEC3-4D14-BED6-2B76F2F62875}.Debug.ActiveCfg = Debug|.NET
+		{54D29646-AEC3-4D14-BED6-2B76F2F62875}.Debug.Build.0 = Debug|.NET
+		{54D29646-AEC3-4D14-BED6-2B76F2F62875}.Release.ActiveCfg = Release|.NET
+		{54D29646-AEC3-4D14-BED6-2B76F2F62875}.Release.Build.0 = Release|.NET
+		{5921351B-ECE1-4FFD-A72D-79A461C26F2D}.Debug.ActiveCfg = Debug|.NET
+		{5921351B-ECE1-4FFD-A72D-79A461C26F2D}.Debug.Build.0 = Debug|.NET
+		{5921351B-ECE1-4FFD-A72D-79A461C26F2D}.Release.ActiveCfg = Release|.NET
+		{5921351B-ECE1-4FFD-A72D-79A461C26F2D}.Release.Build.0 = Release|.NET
+		{9DA9597C-A718-4779-B76C-CD68BFF97482}.Debug.ActiveCfg = Debug|.NET
+		{9DA9597C-A718-4779-B76C-CD68BFF97482}.Debug.Build.0 = Debug|.NET
+		{9DA9597C-A718-4779-B76C-CD68BFF97482}.Release.ActiveCfg = Release|.NET
+		{9DA9597C-A718-4779-B76C-CD68BFF97482}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

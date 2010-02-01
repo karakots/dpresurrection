@@ -1,0 +1,22 @@
+﻿@import url(Common.css);
+
+/* --------------- Items for Specific Pages ---------------- */
+#Footer {  padding-left: 250px; }
+
+#ContentDiv { position:absolute; top: 106px; left: 0px; width: 100%;  }
+
+#YourMedia { background-color: White; width: 100%; }
+#SpacerDiv { background-color: White; }
+#AvailMedia { background-color: White; width: 100%;  }
+
+.PageLink, .PageLink:visited { text-decoration: none; }
+.PageLink:hover { text-decoration: underline; }
+.PageNum { color: Blue; border: solid 1px #CCC; }
+#PageNums { font-size: 8pt; }
+
+/*
+#YourMediaDiv { position:absolute; top: 150px; left: 0px; width: 100%;  background-color: Green; }
+#ControlsDiv { position:absolute; top: 150px; left: 0px; width: 100%; min-height: 30px; background-color: Purple; }
+#AvailMediaDiv { position:absolute; top: 150px; left: 0px; width: 100%; background-color: Red; }
+
+*/

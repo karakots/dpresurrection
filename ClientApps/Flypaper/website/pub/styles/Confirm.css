@@ -1,0 +1,42 @@
+﻿@import url(MainStyles.css);
+
+.Footer { position:relative; top: 170px; left:20px; }
+
+.Footer table tr td
+{font-family: Verdana, Arial, sans-serif; font-size: 9px; margin: 10px 0 0 2px; width: 500px;  color: #668; line-height: 1.5em; padding: 0; font-weight:700; }
+.Footer div table td tr a 
+{ text-decoration: underline; color: #668; }
+
+.signupForm { width: 320px; margin-left: auto; margin-right: auto; }
+.formElement { margin-top: 0px; margin-bottom: 0px; padding: 0px; color: #333333; }
+.label {margin: 0px; padding: 0px; font-weight: 600;}
+form { margin: 0px; padding: 0px; }
+input { font-size: 12px; width: 156px; margin-top: 3px; margin-bottom: 0px; margin-bottom: 0px; }
+input.submit { width: 120px; float: right; }
+
+.rightColumn { position: absolute; top: 101px; width: 157px; height: 476px; border-style:solid; border-width:0px; border-color:#88CBDa; color:#404040;
+	background-color: #FFFFFF; z-index:0; margin : 0px auto 0px 724px; z-index: 1;}
+
+h2 { line-height: 1.3em; font-size: 19px; color: #015b93; font-weight: bold; margin-bottom: 10px; padding-bottom: 0px; color:#404040;  }
+
+.leftColumn { z-index: 1000;  position: absolute; top: 108px; width: 714px; height: 469px; border-style:solid; border-width:0px; border-color:#88CBDa; 
+	background-color: #88C0Da; z-index:0; margin : 0px auto 0px px; background-color: #FFFFFF; background-position: bottom left; background-repeat: no-repeat; }
+
+.copy { margin-left: 20px; margin-top: 0px; width: 470px; color:#404040; }
+.leftColumn li { margin-bottom: 10px; }
+
+#PhoneLabel { margin-left: 740px; top: 4px; color:#FFFFFF; font-weight:500; font-style:normal; font-family: Arial; font-weight:bold;  font-size: 14px;}
+
+#TopLabel { position: absolute; top: 28px; margin-left: 175px; font-size:22px; font-style:italic; color:#404040;  }
+
+#DoSignup{ width: 110px; left: 120px; top: 220px;  position: absolute; }
+#EditData{ width: 110px; left: 330px;  top: 220px; position: absolute; }
+
+#InfoPanel{ position: absolute; top: 0px; margin-left: 20px; width: 680px; font-size: 12pt; font-family: Arial; color: Black; }
+/* #InfoDiv{ position: absolute; top: 50px; margin-left: 20px; width: 680px; font-size: 12pt; font-family: Arial; color: Black; } */
+#InfoDiv table { position: absolute; top: 0px; }
+#InfoDiv table b { font-size: 11pt; }
+#InfoDiv table tr { font-size: 10pt; }
+
+#InfoLabel {  top: 220px;  position: absolute; }
+#SignupProgressImage {  top: 220px;  position: absolute; }

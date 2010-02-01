@@ -1,0 +1,62 @@
+﻿@import url(MainStyles.css);
+
+#TopDiv, #MiddleDiv, #BottomDiv, #DisplayPanel, #BudgetDiv, #ButtonDiv
+{ position: absolute; margin-left: 2px; top: 25px;font-family: Arial, Verdana; font-size: 10pt; }
+
+ #MiddleDiv
+ { top: 190px; }
+
+ #BottomDiv
+ { top: 250px; }
+
+ #BudgetDiv
+ { margin-left: 302px; top: 250px; font-size: 8pt; border: solid 1px black; display: none; }
+ 
+ #MainTitle2
+ { font-size: 12pt; font-weight: 600; }
+/*
+#DisplayPanel, #BottomTitle, #ContinuousButton, #PulsedButton, #DurationLabel,
+#DurationTextBox, #DelayLabel, #DelayTextBox, #CyclesLabel, #CyclesTextBox, #OKButton, #CancelButton
+{ position: absolute; font-family: Arial, Verdana; font-size: 10pt; }
+*/
+#MainForm 
+{ margin : 0px auto 0px auto; width: 500px; height: 400px; border: solid 1px green; padding-left: 10px; background-color: #e6eea1; }
+
+#BottomTitle 
+{ position:absolute; left: 5px; }
+
+#ContinuousButton, #PulsedButton 
+{ margin-left: 205px; }
+
+#TypeLabel
+{ position:relative; top: 10px;  }
+
+.WaveDisplayPanel, .WaveDisplayPanelVisible
+{ position: absolute; top: 80px; height: 100px; width: 450px; margin-left: 25px; background-color: #e4eff6; visibility:visible; }
+
+.ContDisplayPanel, .ContDisplayPanelVisible
+{ position: absolute; top: 80px; height: 100px; width: 450px; margin-left: 25px; background-color:Transparent; visibility:visible;  }
+
+.ErrDisplayPanel, .ErrDisplayPanelVisible
+{ position: absolute; top: 80px; height: 100px; width: 450px; margin-left: 25px; background-color: #FDD; visibility:visible; text-align:center; vertical-align:middle;  }
+
+.WaveDisplayPanel, .ContDisplayPanel, .ErrDisplayPanel { visibility:hidden; }
+
+.PulsedHidden,  .PulsedHidden input{ color: #AAA; }
+.PulsedShown { color: #000; }
+
+ #DurationTextBox, #DelayTextBox, #WaitAfterTextBox, #NPulsesTextBox, #CycleLengthTextBox, #MultipleTextBox
+ { width: 40px; margin-top: 5px; margin-left: 5px; }
+ 
+ #OkFlightButton, #CancelFlightButton
+ { margin-left: 150px; margin-top: 10px; width: 100px; }
+  
+ #CancelFlightButton
+ { margin-left: 10px; }
+
+.RecalcButton
+{ font-family: Arial; font-size: 8pt; height: 20px; width: 60px; }
+  	
+#FlightingOKDiv
+{ position: absolute; top: 350px; }
+

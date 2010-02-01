@@ -1,0 +1,70 @@
+﻿@import url(MainStyles.css);
+
+#Footer { position: absolute; top: 500px; margin-left: 50px; }
+
+#BodyInfo { position: absolute; top: 190px; margin-left: 70px; width: 740px;font-family: Arial, Verdana, Sans-Serif; font-size: 10pt; color: Black; }
+
+.Details { font-size: 8pt; }
+
+#OkButton, #CancelButton { width: 80px }
+
+#NewProminince{ width: 180px; }
+
+#NewProminenceCost{ width: 60px; }
+
+#NewMediaName { width: 260px; }
+
+#NewMediaURL{ width: 210px; }
+
+#GeoDemoButton{ width: 80px; margin-top: 10px; }
+
+#PackageName { width: 260px; }
+#PackagePrice{ width: 60px; }
+#StartDate, #EndDate{ width: 100px; }
+#AddPromButton{ width: 80px; margin-left: 60px; }
+#PackageOKButton{ width: 210px; }
+
+
+/* ------------------------------- POPUP DIALOG - Set Media Item Prominence ------------------------------ */
+/* Background */
+.ShowPromPopupBackground, .PromPopupBackground
+{ background-color: Gray; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 1000; opacity: .5; filter: alpha(opacity=50); visibility: visible; }
+
+/* Main dialog panel */
+.ShowPromPopupPanel, .PromPopupPanel
+{ width: 550px; height: 223px; position: absolute; left: 300px; top: 210px; z-index: 1001; visibility: visible;	
+	background-color	:White; border: inset 3px black; font-family: Arial Narrow; font-size: 10pt; }
+	
+/* popup dialog shadow */
+ .ShowPromPopupShadow, .PromPopupShadow
+ { width: 552px; height: 225px; 	position: absolute; left: 310px; top: 220px; z-index: 1001; visibility:visible; background-color:#555; }
+
+.PromPopupPanel
+{ visibility:hidden; font-family:Arial Narrow; }
+
+.PromPopupBackground, .PromPopupShadow, .HideList
+{ visibility:hidden; }
+
+/* Popup dialog content panel */
+.PromPopupInsetPanel
+{ margin: 1px; border-color: black; border-style: double; border-width: 3px; border-top-style:none; height: 98%; }
+
+/* Popup dialog title panel */
+.PromPopupTitlePanel
+{ width: 100%; height: 20px; 	background-color: Gray; padding-top: 3px; border-bottom: solid 1px black; }
+
+/* Popup dialog title */
+#PromPopupTitle
+{ font-family:Arial; font-weight: bold; color: #FFF; margin-left: 10px; }
+
+/* Main body of popup */
+#PromPopupBody
+{ padding: 30px 50px 30px 50px; font-size: 11pt; background-image: url("../images/DialogBackground.jpg"); height: 130px; }
+
+#PromPopupBody h3
+{ display: inline; }
+
+#OkPromButton, #CancePromButton
+{ width: 100px;  margin-left: 110px; width:100px; height: 23px; }
+
+#CancePromButton { margin-left: 20px; }

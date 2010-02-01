@@ -1,0 +1,59 @@
+Ad Buyer,One who purchases advertisements in a vehicle.  Typically a business.
+Ad Network,"Ad advertising connects multiple ad buyers with multiple ad sellers.  Typically an ad network focuses on a specific medium, such as internet (advertising.com)  or newspapers (Newspaper Services of America).  Sometimes ad networks focus on a specific demographic (Hispanic) or interest area (sports).   Ad inventory in the same vehicle is often available from both the publisher of the vehicle and one or more ad networks.  Ad networks usually make it easier to buy across many vehicles, though the ad buyer often gives up some control over the specific placement of ads."
+Ad Prominence,"A measure of how noticeable an ad is.  This can include time (the length of a radio or TV ad), space (the size of the ad), color versus black & white, and animated versus a static image.  Prominence also refers to the location of an ad within a vehicle (the front pages of a magazine versus the back pages) or the location within a continuous group (pod) of ads, such as a TV or radio commercial break."
+Ad Seller,One who provides ads for sale to ad buyers.  Typically a publisher or ad network.
+Ad Serving,
+Advocacy,"When a consumer talks to others about a brand/product, generating additional awareness and persuasion.  This is also called ""Word of Mouth""."
+Agency,
+Agent,
+Awareness,"A consumer is aware when he or she recognizes the advertised brand or product.  There is ""aided awareness"", in which a consumer will recognize a brand/product when it is mentioned by someone else, and ""unaided awareness"" in which a consumer will be able to name the brand/product when listing all the brand/products he or she knows of in a product category.  It is generally believed that a consumer can not purchase a brand/product until that consumer is aware of the product.  It is also believed that a consumer can not have any persuasion for a brand/product until becoming aware.  Furthermore, persuasion is lost if a consumer becomes unaware (forgets about) a brand/product."
+Behavioral Targeting,"Tracks specific users' Web behavior and gathers demographic, geographic and page-view information about them.  This information is used to serve up highly targeted ads.  Usually offered as a service by online ad networks.  There is no easy way to do this for other types of media."
+Campaign,"A planed use of media to deliver messages to prospective customers.  Campaigns have goals in terms of target audience, geography, and intended effect in the audience (awareness, persuasion, trial, repeat).  Campaigns also have constraints in terms of time and budget."
+Category,"A grouping of products that are generally substitutable for each other, and therefore in competition for consumer choice.  Categories can be defined broadly (food), very narrowly (raisins) or somewhere in between (portable snacks).  "
+Consideration,
+Contextual Advertising,"Scans content of web pages to place contextually relevant ads-- automotive ads near automotive content, for example."
+Continuous Advertising,"Ads are presented at a constant rate to consumers, without interruption."
+Cookie,
+Creative,
+Day Part,"The time of day during which an ad is placed.  This applies to TV, Radio and Internet media.  For example, Radio has the day parts: AM Drive, Midday, PM Drive, and Evening.  "
+Demographic,"Classification of a person by age, gender, income, profession, ethnicity, home-ownership and other objective facts."
+Display Advertising,A graphical ad online (banner) or in print (Yellow Pages ad).
+DMA,"Designated Marketing Area.  The US is comprised of 210 DMAs. Defined by the Nielsen Company.  A DMA correlates with a population center, and came about from the reach of television stations.  DMAs follow county boundaries (with the exception of less than 10 counties in the US), but DMAS can space state boundaries."
+Geographic,"Classification of a person by where they live, such as country, state, DMA, city, county, zip code or area code"
+Household,
+Impression,
+Market Index1,An estimate of the expected share increase for a media plan.  This metric is specific to AdPlanit.
+Market Index2,"An estimate of the performance of a media plan, compared to a media plan that saturates persuasion.  This metric is specific to AdPlanit."
+Media,"The channels by which ads are communicated to consumers.  This includes broadcast media (TV, Radio), print media (magazines, newspapers & direct mail),  digital media (internet ads), out of home media (billboards, bus wrappers, cinema advertising), sponsorships, and non-traditional channels such as product placement, PR and word-of-mouth."
+Media Category,
+Media Channel,"Another term for ""medium""."
+Media Effectiveness,
+Media Mix,The combination of media used in an advertising campaign.  
+Media Plan,"A selection of media types and vehicles, across which a budget is allocated, for delivering ads to a target audience to accomplish specific marketing objectives."
+Medium,"A specific type of media, such as radio, TV, internet, etc.  Anything that delivers information can be considered a medium, including consumer-to-consumer communication (word of mouth)."
+Mobile Ad Network,An ad network that places ads on mobile phones.
+Number of Ads,
+Opt-In,
+Page-view,
+Persuasion,The property of ads to change the preference that consumers have fro the advertised brand.
+Persuasion Index,
+Pod,"A continuous group (pod) of ads, such as a TV or radio commercial break."
+Pre-Roll,A video ad shown before video content is presented.
+Psychographic,"Classification of a person by their attitudes, interests, and/or behaviors.  "
+Psychographics,"Psychographics is a generic term for consumers' personality traits (serious, funny, conservative), beliefs and attitudes about social issues (opinions about abortion, environment, globalization), personal interests (music, sports, movie going), and shopping orientations."
+Publisher,"An owner of a media vehicle. Publishers provide the space in which advertisements are placed.  Some publishers own multiple media vehicles, and/or own vehicles in multiple media (e.g. Disney or ESPN)."
+Pulsed Advertising,"Ads are presented in time in groups, with time between each group.  This allows a limited ad budget to be maintained over an entire campaign, while achieving a minimum level of advertising while ads are ""turned on.""  This practice is based on the belief that to low a level of advertising will influence no one, and by pulsing a campaign the advertiser will be able to influence consumers at least during the pulse.  It has also been shown that consumers influenced during the pulse will still be influenced during the gaps, though at a decreased rate as the gap length increases."
+Purchase Interval,The amount of time that elapses between purchases for a given consumer on a given product category.  This can vary from person to person.   You may wish to segment your target audience based on purchase interval.
+Reach,The percentage of people in a target audience that see one or more ads in a campaign over a specific period of time. 
+Recency,"Recency describes how close to the time of purchase an ad occurs.  Higher recency ads occur closer to the time of purchase.  Because the awareness and persuasion effects of an ad exposure decay with time, an ad with higher recency has more influence on purchase than an ad with lower recency, given the same level of awareness and persuasion for both of the ads.  There is a tradeoff among recency, awareness, and persuasion (as well as reach and other factors influencing media effectiveness) among different media types, so the medium with the most recency is not necessarily the most persuasive."
+Repeat,"When applied to the ""purchase funnel"", repeat is when a consumer makes a second or subsequent purchase of the advertised product or brand.  ""repeat"" also refers to the percentage of consumers that buy the brand/product two or more times."
+Rotation,"When a campaign has multiple ads, the campaign show these ads in a sequence.  It might alternate among two (or more) ads, pick ads randomly, or show a series of one ad, then a series of another.  This is called ""rotation"".  Online, it is possible to show a different ad each time a web page is reloaded.  "
+Sales Funnel,"sometimes called the ""sales pipeline"", this is a series of steps through which business seeks to drive its target audience.  The sales funnel usually comprises the steps of awareness, persuasion, trial, repeat, and advocacy."
+Segment,"A group of consumers that share some characteristics, such as demographic, geographic,  psychographic, or position in the sales pipeline"
+Simulation,The technique of representing the real world of customers by a computer program that creates a virtual world of customers.
+Streaming Media,"Online video and/or audio ads.  These ads can appear as a display ad, or ""pre-roll"" in video content.  Online streaming video ads can also be used on TV."
+Target Audience,"The specific people who ads in a campaign are intended to reach.  An audience might be defined by demographics, psychographics and/or geography."
+Text Ad,"An online ad that is simply text, without any graphics or sound.  Text ads are typically provided in search engine results pages (also known as SERPs)"
+Timing,"When an ad appears.  Timing can refer to time of day (see ""Daypart""), or time of week/month/year.  Timing can also refer to the pattern with which ads are used over time:  Continuous (without a break), flighted (with a break), or pulsed (continuous plus additional flighted)."
+Trial,Trial means that a consumer has tried a product at least once.  It is typically a measure of the percentage of consumers in the target population that have tried the product (see sales funnel
+Vehicle,"A specific instance within a medium.  For example, ""Time Magazine"" is a magazine vehicle.  ""The New York Times"" is a newspaper vehicle."

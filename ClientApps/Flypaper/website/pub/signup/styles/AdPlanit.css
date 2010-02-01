@@ -1,0 +1,53 @@
+@import url(MainStyles.css);
+
+body {margin: 0px;}
+img {border: 0px;}
+body,p,td {font-family: verdana; color: #000000; font-size: 12px;}
+p {margin-top: 0px; margin-bottom: 10px; padding: 0px; width: 470px; }
+a:link, a:active, a:visited {
+	text-decoration: none;
+	color: #0069AA;
+	}
+a:hover {
+	color: #0069AA;
+	text-decoration: underline;
+	}
+.header { margin: 0px; padding: 0px; }
+
+.Footer { position:relative; top: 260px; left:80px; }
+
+.Footer table tr td
+{font-family: Verdana, Arial, sans-serif; font-size: 9px; margin: 10px 0 0 2px; width: 500px;  color: #668; line-height: 1.5em; padding: 0; font-weight:700; }
+.Footer div table td tr a 
+{ text-decoration: underline; color: #668; }
+/*
+.footer {width: 800px; padding-top: 10px; padding-bottom: 10px; text-align: center; clear: both; font-size: 10px; color: white;  background-color: #0087a7}
+.footer a {color: white;}
+.footer a:hover {text-decoration: underline;} */
+
+#Logo, .Logo { position: absolute;top: 2px; margin-left: 4px;}
+.BetaStamp { position: absolute;top: 45px; margin-left: 304px; z-index: 1000;}
+#ErrorLabel { line-height: 1.3em; font-size: 12px; color: #FF0000; font-weight: bold; margin-bottom: 10px; padding-bottom: 0px; visibility:hidden; display:inline; }
+#WaitLabel { line-height: 1.3em; font-size: 12px; color: #004400; font-weight: bold; margin-bottom: 10px; padding-bottom: 0px; visibility:hidden; }
+
+.signupForm { width: 320px; margin-left: auto; margin-right: auto; }
+.formElement { margin-top: 0px; margin-bottom: 0px; padding: 0px; color: #333333; }
+.label {margin: 0px; padding: 0px; font-weight: 600;}
+form { margin: 0px; padding: 0px; }
+input { font-size: 12px; width: 156px; margin-top: 3px; margin-bottom: 0px; margin-bottom: 0px; }
+input.submit { width: 120px; float: right; }
+
+.rightColumn { position: absolute; top: 101px; width: 357px; height: 476px; border-style:solid; border-width:0px; border-color:#88CBDa; color:#404040;
+	background-color: #88C0Da; z-index:0; margin : 0px auto 0px 524px; }
+
+h2 { line-height: 1.3em; font-size: 19px; color: #015b93; font-weight: bold; margin-bottom: 10px; padding-bottom: 0px; margin-top: 10px;  color:#404040;  }
+
+.leftColumn { position: absolute; top: 101px; width: 514px; height: 469px; border-style:solid; border-width:0px; border-color:#88CBDa; 
+	background-color: #88C0Da; z-index:0; margin : 0px auto 0px px; background-color: #DCE6F2; background-position: bottom left; background-repeat: no-repeat; background-image: url("../images/adPlanIt_main2.gif"); }
+
+.copy { margin-left: 20px; margin-top: 0px; width: 470px; color:#404040; }
+.leftColumn li { margin-bottom: 10px; }
+
+#PhoneLabel { margin-left: 740px; top: 4px; color:#FFFFFF; font-weight:500; font-style:normal; font-family: Arial; font-weight:bold;  font-size: 14px;}
+
+#TopLabel { position: absolute; top: 28px; margin-left: 175px; font-size:22px; font-style:italic; color:#404040;  }

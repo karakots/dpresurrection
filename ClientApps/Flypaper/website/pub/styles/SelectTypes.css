@@ -1,0 +1,154 @@
+﻿@import url(MainStyles.css);
+
+#SegmentsPanel
+{
+	position:absolute;
+	left: 445px;
+	top: 30px;
+	width: 400px;
+	height: 560px;
+	max-height: 560px;
+	overflow:scroll;
+	background-color:#ABA;
+	padding-right: 25px;
+}
+
+#PlanItemssPanel
+{
+	position:absolute;
+	left: 10px;
+	top: 30px;
+	width: 400px;
+	height: 260px;
+	max-height: 260px;
+	overflow:scroll;
+	background-color:#6E6;
+	padding-right: 25px;
+}
+
+#OutItemsPanel
+{
+	position:absolute;
+	left: 10px;
+	top: 380px;
+	width: 400px;
+	height: 210px;
+	max-height: 260px;
+	overflow:scroll;
+	background-color:#EBA;
+	padding-right: 25px;
+}
+
+#BackgroundPanel
+{
+	height: 600px;
+	width: 880px;
+}
+
+#SegmentListLabel, #PlanListLabel, #OtherListLabel
+{
+	position:absolute;
+	left: 460px;
+	top: 10px;
+	font-size:11pt;
+	font-weight:bold;
+	color: #00A;
+}
+
+#SegmentListLabel
+{
+	font-size:10pt;
+}
+
+#PlanListLabel
+{
+	left: 20px;
+}
+
+#OtherListLabel
+{
+	left: 20px;
+	top: 360px;
+}
+
+#LocationDiv 
+{
+	position:absolute;
+	left: 100px;
+	top: 150px;
+	width: 400px;
+}
+
+#NextButton
+{
+	width:220px;
+	height:26px;
+	font-size:12px;
+	font-weight: 600;
+}
+#NextButtonDiv
+{
+	position: absolute;
+	left: 130px;
+	top: 325px;
+	z-index:1;
+}
+
+#ListDiv, #OverallListDiv, #OutListDiv 
+{
+	position: relative;
+	left: 10px;
+	top: 10px;
+	font-size:11pt;
+}
+
+.itemtable
+{
+	font-family:Calibri;
+	font-size:10pt;
+	border: solid 1px #00A;	
+	background: White;
+}
+
+.itemtable td
+{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+
+.headings, .headings td
+{
+	font-family:Arial;
+	font-size:8pt;
+	background-color: #ABE;
+	border-bottom: solid 2px #00A;	
+}
+
+.itemrow
+{
+}
+
+.itemname
+{
+	font-size:12pt;
+	font-weight:bold;
+}
+
+.itemscore
+{
+	font-size:10pt;
+	font-weight:bold;
+}
+
+.itembudget
+{
+	font-family:Arial Narrow;
+	font-size:8pt;
+}
+
+.itemreasons
+{
+	font-family:Arial Narrow;
+	font-size:8pt;
+}

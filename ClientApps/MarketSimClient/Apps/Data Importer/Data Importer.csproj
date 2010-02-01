@@ -1,0 +1,378 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2EA24173-CD25-4B54-988B-0AA18283C583}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataImporter</RootNamespace>
+    <AssemblyName>DataImporter</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataImporter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataImporter.designer.cs">
+      <DependentUpon>DataImporter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\AddFileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\AddFileForm.designer.cs">
+      <DependentUpon>AddFileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\AddFolderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\AddFolderForm.designer.cs">
+      <DependentUpon>AddFolderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\AddItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\AddItemForm.Designer.cs">
+      <DependentUpon>AddItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\AlternateWorksheetNameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\AlternateWorksheetNameForm.designer.cs">
+      <DependentUpon>AlternateWorksheetNameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\AutoCampaignSetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\AutoCampaignSetForm.Designer.cs">
+      <DependentUpon>AutoCampaignSetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\AutoNameSetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\AutoNameSetForm.Designer.cs">
+      <DependentUpon>AutoNameSetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\AwarenessPersuasionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\AwarenessPersuasionForm.Designer.cs">
+      <DependentUpon>AwarenessPersuasionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\MediaNameMappingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\MediaNameMappingForm.designer.cs">
+      <DependentUpon>MediaNameMappingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\DescriptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DescriptionForm.Designer.cs">
+      <DependentUpon>DescriptionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\ExcludeVariantsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ExcludeVariantsForm.Designer.cs">
+      <DependentUpon>ExcludeVariantsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\FileCombinerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\FileCombinerForm.designer.cs">
+      <DependentUpon>FileCombinerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\IWorksheetSelectingForm.cs" />
+    <Compile Include="Dialogs\MediaCampaignForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\MediaCampaignForm.Designer.cs">
+      <DependentUpon>MediaCampaignForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\NameMappingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\NameMappingForm.designer.cs">
+      <DependentUpon>NameMappingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\NewProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\NewProject.designer.cs">
+      <DependentUpon>NewProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\OutputFolderEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\OutputFolderEditForm.designer.cs">
+      <DependentUpon>OutputFolderEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\SaveProjectAsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\SaveProjectAsForm.designer.cs">
+      <DependentUpon>SaveProjectAsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\SelectBrandWorksheetsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\SelectBrandWorksheetsForm.designer.cs">
+      <DependentUpon>SelectBrandWorksheetsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\SelectWorksheetsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\SelectWorksheetsForm.Designer.cs">
+      <DependentUpon>SelectWorksheetsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\SetFileTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\SetFileTypeForm.designer.cs">
+      <DependentUpon>SetFileTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\SpecifyVariantsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\SpecifyVariantsForm.Designer.cs">
+      <DependentUpon>SpecifyVariantsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\StartImportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\StartImportForm.designer.cs">
+      <DependentUpon>StartImportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\VariantNamingAidForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\VariantNamingAidForm.Designer.cs">
+      <DependentUpon>VariantNamingAidForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\WorksheetSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\WorksheetSettingsForm.designer.cs">
+      <DependentUpon>WorksheetSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\YesNoAllEtcForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\YesNoAllEtcForm.Designer.cs">
+      <DependentUpon>YesNoAllEtcForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\YesNoAllForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\YesNoAllForm.Designer.cs">
+      <DependentUpon>YesNoAllForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExcelFileCombiner.cs" />
+    <Compile Include="FileSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ImportSettings\ProjectSettings.cs" />
+    <Compile Include="ImportSettings\WorksheetSettings.cs" />
+    <Compile Include="Library\DataItem.cs" />
+    <Compile Include="Library\ExcelWriter2.cs" />
+    <Compile Include="Library\XPoint.cs" />
+    <Compile Include="Output2\TwoPriceSheetWriter.cs" />
+    <Compile Include="Output2\DisplaySheetWriter.cs" />
+    <Compile Include="Output2\DistributionSheetWriter.cs" />
+    <Compile Include="Output2\IMarketPlanSheetWriter.cs" />
+    <Compile Include="Output2\MediaSheetWriter.cs" />
+    <Compile Include="Output2\RealSalesSheetWriter.cs" />
+    <Compile Include="Output2\SinglePriceSheetWriter.cs" />
+    <Compile Include="Output2\Utils.cs" />
+    <Compile Include="OutputManager.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DataImporter.resx">
+      <DependentUpon>DataImporter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\AddFileForm.resx">
+      <DependentUpon>AddFileForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\AddFolderForm.resx">
+      <DependentUpon>AddFolderForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\AddItemForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\AlternateWorksheetNameForm.resx">
+      <DependentUpon>AlternateWorksheetNameForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\AutoCampaignSetForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AutoCampaignSetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\AutoNameSetForm.resx">
+      <DependentUpon>AutoNameSetForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\AwarenessPersuasionForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AwarenessPersuasionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\MediaNameMappingForm.resx">
+      <DependentUpon>MediaNameMappingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DescriptionForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DescriptionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ExcludeVariantsForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExcludeVariantsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\FileCombinerForm.resx">
+      <DependentUpon>FileCombinerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\MediaCampaignForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MediaCampaignForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\NameMappingForm.resx">
+      <DependentUpon>NameMappingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\NewProject.resx">
+      <DependentUpon>NewProject.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\OutputFolderEditForm.resx">
+      <DependentUpon>OutputFolderEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SaveProjectAsForm.resx">
+      <DependentUpon>SaveProjectAsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SelectBrandWorksheetsForm.resx">
+      <DependentUpon>SelectBrandWorksheetsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SelectWorksheetsForm.resx">
+      <DependentUpon>SelectWorksheetsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SetFileTypeForm.resx">
+      <DependentUpon>SetFileTypeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SpecifyVariantsForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpecifyVariantsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\StartImportForm.resx">
+      <DependentUpon>StartImportForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\VariantNamingAidForm.resx">
+      <DependentUpon>VariantNamingAidForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\WorksheetSettingsForm.resx">
+      <DependentUpon>WorksheetSettingsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\YesNoAllEtcForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>YesNoAllEtcForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\YesNoAllForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>YesNoAllForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ScanManager.cs" />
+    <Compile Include="WorksheetScanner.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

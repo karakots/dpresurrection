@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MediaRules name="Media Rules" xmlns="http://www.decisionpower.com/MediaRules2.xsd">
+
+  <!-- Flighting Frequency Rules -->
+  <MediaRule type="Daily" name="3x Daily Flighting Frequency" weight="1.0" rule="SUM-MAX">
+    <Group name="PurchaseCycle" weight="1.0">
+      <ExpectedValue min="0" max="3" weight="1" reason="Items with short purchase cycles sell well with 3x/daily media flighting."/>
+    </Group>
+  </MediaRule>
+
+  <MediaRule type="Weekly" name="3x Weekly Flighting Frequency" weight="1.0" rule="SUM-MAX">
+    <Group name="PurchaseCycle" weight="1.0">
+      <ExpectedValue min="4" max="6" weight="1" reason="Items with weekly purchase cycles sell well with 3x/weekly media flighting."/>
+    </Group>
+  </MediaRule>
+
+  <MediaRule type="Monthly" name="3x Monthly Flighting Frequency" weight="1.0" rule="SUM-MAX">
+    <Group name="PurchaseCycle" weight="1.0">
+      <ExpectedValue min="7" max="16" reason="Items with long purchase cycles sell well with 3x/monthly media flighting."/>
+    </Group>
+  </MediaRule>
+
+</MediaRules>

@@ -1,0 +1,629 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3C7B7414-920A-4476-B04A-F7C112BB0527}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>MrktSimClient</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MrktSimClient</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>AAE592E8A638008FBB32CD471169BA7DBF90FA11</ManifestCertificateThumbprint>
+    <ManifestKeyFile>MrktSimClient_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>false</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <PublishUrl>C:\devl\test-deploy\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>\\Chaos\test-deploy\</InstallUrl>
+    <CreateWebPageOnPublish>false</CreateWebPageOnPublish>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Rrelease\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\..\Controls\Common\Common.csproj">
+      <Name>Common</Name>
+      <Project>{F07F47BD-FA04-4677-AEA5-B9616C3FCE6E}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Controls\ErrorInterface\ErrorInterface.csproj">
+      <Project>{3FA7049B-33B6-4E1E-8587-70DE9A7CE3E3}</Project>
+      <Name>ErrorInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Controls\Excel\ExcelInterface.csproj">
+      <Project>{EAAB971D-8B10-4112-B022-D76248BCB476}</Project>
+      <Name>ExcelInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Controls\ModelView\ModelView.csproj">
+      <Name>ModelView</Name>
+      <Project>{54D29646-AEC3-4D14-BED6-2B76F2F62875}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Controls\Parser\Parser.csproj">
+      <Name>Parser</Name>
+      <Project>{5A7B75F1-C813-4E72-AB08-D28A65EBBD6F}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Controls\Results\Results.csproj">
+      <Name>Results</Name>
+      <Project>{F801D47E-7E5D-419C-8FA7-46C3F89D8D2B}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Controls\Utilities\Utilities.csproj">
+      <Name>Utilities</Name>
+      <Project>{CD4858F6-6B33-474D-8619-47681F7DE173}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Controls\ZGrapher\ZedGraph.csproj">
+      <Project>{998CE547-E905-4931-91B6-5E0439177E7E}</Project>
+      <Name>ZedGraph</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Database\MrktSimDb\MrktSimDb.csproj">
+      <Name>MrktSimDb</Name>
+      <Project>{9DA9597C-A718-4779-B76C-CD68BFF97482}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\DatabaseManager\DatabaseManager.csproj">
+      <Project>{0FA57E04-3936-4D67-B6CD-D1F6FEC96B11}</Project>
+      <Name>DatabaseManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Math Utility\Math Utility\Math Utility.vcproj">
+      <Project>{392559CD-94FC-40ED-80F2-D3E27AD5529B}</Project>
+      <Name>Math Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SimControl\SimControl.csproj">
+      <Project>{C1FCA775-CBF6-4AB2-9FF9-1FC57B0AFBC4}</Project>
+      <Name>SimControl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+    </None>
+    <None Include="App.ico" />
+    <Content Include="default.udl" />
+    <Content Include="documentation\MarketSim Data Template.xls" />
+    <Content Include="documentation\NIMO Data Template.xls" />
+    <Content Include="documentation\NIMO Release Notes.doc" />
+    <None Include="MrktSimClient_TemporaryKey.pfx" />
+    <None Include="Properties\app.manifest" />
+    <None Include="refresh.ico" />
+    <Content Include="Connect.ico" />
+    <None Include="editModel.ico" />
+    <Content Include="NIMO.ico" />
+    <Content Include="OpenProject.ico" />
+    <None Include="Resources\Help\Output\images\Thumbs.db" />
+    <Content Include="Resources\Help\Output\NetworkModels_files\image001.jpg" />
+    <Content Include="Resources\Help\Output\NetworkModels_files\image003.gif" />
+    <Content Include="Resources\Help\Output\NetworkModels_files\image004.gif" />
+    <Content Include="Resources\Help\Output\NetworkModels_files\image004.jpg" />
+    <Content Include="Resources\Help\Output\NetworkModels_files\themedata.thmx" />
+    <Content Include="Resources\Help\Output\PriceType_files\themedata.thmx" />
+    <None Include="Resources\LicenseAgreement.rtf" />
+    <None Include="Resources\MarketSimLogoIcon48x48.gif" />
+    <Content Include="Resources\Help\Output\catalog.css" />
+    <Content Include="Resources\Help\Output\document.css" />
+    <Content Include="Resources\Help\Output\images\AllItemTree.jpg" />
+    <Content Include="Resources\Help\Output\images\BM_logo.gif" />
+    <Content Include="Resources\Help\Output\images\BM_logo.png" />
+    <Content Include="Resources\Help\Output\images\collapse.gif" />
+    <Content Include="Resources\Help\Output\images\expanded.gif" />
+    <Content Include="Resources\Help\Output\images\index.gif" />
+    <Content Include="Resources\Help\Output\images\indexx.gif" />
+    <Content Include="Resources\Help\Output\images\logo.gif" />
+    <Content Include="Resources\Help\Output\images\MarketSim-5-1-2.jpg" />
+    <Content Include="Resources\Help\Output\images\next.gif" />
+    <Content Include="Resources\Help\Output\images\nextx.gif" />
+    <Content Include="Resources\Help\Output\images\prev.gif" />
+    <Content Include="Resources\Help\Output\images\prevx.gif" />
+    <Content Include="Resources\Help\Output\images\seebttm.gif" />
+    <Content Include="Resources\Help\Output\images\seelflow.gif" />
+    <Content Include="Resources\Help\Output\images\seeright.gif" />
+    <Content Include="Resources\Help\Output\images\seertlow.gif" />
+    <Content Include="Resources\Help\Output\images\seertup.gif" />
+    <Content Include="Resources\Help\Output\images\toc.gif" />
+    <Content Include="Resources\Help\Output\images\tocx.gif" />
+    <Content Include="Resources\Help\Output\IX.html" />
+    <Content Include="Resources\Help\Output\MarketSim-1-1.html" />
+    <Content Include="Resources\Help\Output\MarketSim-2-1.html" />
+    <Content Include="Resources\Help\Output\MarketSim-3-1.html" />
+    <Content Include="Resources\Help\Output\MarketSim-4-1.html" />
+    <Content Include="Resources\Help\Output\MarketSim-5-1.html" />
+    <Content Include="Resources\Help\Output\MarketSim-6-1.html" />
+    <Content Include="Resources\Help\Output\MarketSim-7-1.html" />
+    <Content Include="Resources\Help\Output\MarketSim-8-1.html" />
+    <Content Include="Resources\Help\Output\NetworkModels.html" />
+    <Content Include="Resources\Help\Output\NetworkModels_files\colorschememapping.xml" />
+    <Content Include="Resources\Help\Output\NetworkModels_files\filelist.xml" />
+    <Content Include="Resources\Help\Output\NetworkModels_files\image002.png" />
+    <Content Include="Resources\Help\Output\PriceType.html" />
+    <Content Include="Resources\Help\Output\PriceType_files\colorschememapping.xml" />
+    <Content Include="Resources\Help\Output\PriceType_files\filelist.xml" />
+    <Content Include="Resources\Help\Output\scripts\expand.js" />
+    <Content Include="Resources\Help\Output\scripts\seealso.js" />
+    <Content Include="Resources\Help\Output\TOC.html" />
+    <Content Include="Resources\Help\Reports\External URLs Report.htm" />
+    <Content Include="Resources\Help\Reports\Topic Aliases Report.htm" />
+    <Content Include="Resources\Stop-disabled.bmp" />
+    <Content Include="Resources\Stop.bmp" />
+    <None Include="Resources\App.ico" />
+    <None Include="return.ico" />
+    <Content Include="Templates\Summary Report - Calibration Master.xls" />
+    <Content Include="Templates\Summary Report - F-W Report.xls" />
+    <Content Include="Templates\Summary Report - Trial Report.xls" />
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\BannerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\BannerControl.Designer.cs">
+      <DependentUpon>BannerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dialogs\Calibration\CalibrationTemplate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Dialogs\Calibration\CalibrationTemplate.Designer.cs">
+      <DependentUpon>CalibrationTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dialogs\Calibration\InitShareCalibration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Dialogs\Calibration\InitShareCalibration.Designer.cs">
+      <DependentUpon>InitShareCalibration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dialogs\Calibration\MediaCalibration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Dialogs\Calibration\MediaCalibration.Designer.cs">
+      <DependentUpon>MediaCalibration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dialogs\Calibration\PriceCalibration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Dialogs\Calibration\PriceCalibration.Designer.cs">
+      <DependentUpon>PriceCalibration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dialogs\ExtendScenarioForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Dialogs\ExtendScenarioForm.Designer.cs">
+      <DependentUpon>ExtendScenarioForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dialogs\ImportProjectFileSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Dialogs\ImportProjectFileSelectionForm.Designer.cs">
+      <DependentUpon>ImportProjectFileSelectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dialogs\PlanAwarenessPersuasionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Dialogs\PlanAwarenessPersuasionForm.Designer.cs">
+      <DependentUpon>PlanAwarenessPersuasionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dialogs\TransferPlanValuesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Dialogs\TransferPlanValuesForm.Designer.cs">
+      <DependentUpon>TransferPlanValuesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dialogs\TransferScenarioPlanValuesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Dialogs\TransferScenarioPlanValuesForm.Designer.cs">
+      <DependentUpon>TransferScenarioPlanValuesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ScenarioControl2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ScenarioControl2.Designer.cs">
+      <DependentUpon>ScenarioControl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dialogs\CalibrationEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Dialogs\CalibrationEditor.Designer.cs">
+      <DependentUpon>CalibrationEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dialogs\CalibrationSetUp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Dialogs\CalibrationSetUp.Designer.cs">
+      <DependentUpon>CalibrationSetUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dialogs\Calibration\AttributeCalibration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Dialogs\Calibration\AttributeCalibration.Designer.cs">
+      <DependentUpon>AttributeCalibration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dialogs\Calibration\GeneralCalibration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Dialogs\Calibration\GeneralCalibration.Designer.cs">
+      <DependentUpon>GeneralCalibration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dialogs\Calibration\VolumeCalibration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Dialogs\Calibration\VolumeCalibration.Designer.cs">
+      <DependentUpon>VolumeCalibration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dialogs\CreateSimulation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Dialogs\CreateSimulation.Designer.cs">
+      <DependentUpon>CreateSimulation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dialogs\SimulationSetUpControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Dialogs\SimulationSetUpControl.Designer.cs">
+      <DependentUpon>SimulationSetUpControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MarketPlanControl3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\DbControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\DbControl.Designer.cs">
+      <DependentUpon>DbControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dialogs\CreateCalibration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Dialogs\ParameterControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Dialogs\ParameterControl.Designer.cs">
+      <DependentUpon>ParameterControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dialogs\SimulationEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Dialogs\SimulationEditor.Designer.cs">
+      <DependentUpon>SimulationEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Dialogs\VariableControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Dialogs\VariableControl.Designer.cs">
+      <DependentUpon>VariableControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MarketPlans\GraphDataProcessor.cs" />
+    <Compile Include="Controls\MarketPlans\MarketPlanGraphControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MarketPlans\MarketPlanChannelPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MarketPlans\MarketPlanComponentPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MarketPlans\MarketPlanControlFilter.cs" />
+    <Compile Include="Controls\MarketPlans\MarketPlanDataControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MarketPlans\MarketPlanDatePicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MarketPlans\MarketPlanPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MarketPlans\MarketPlanScenarioPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MarketPlans\Validator.cs" />
+    <Compile Include="Controls\ModelControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ModelControl.Designer.cs">
+      <DependentUpon>ModelControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ProjectControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ProjectControl.Designer.cs">
+      <DependentUpon>ProjectControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ProjectTree.cs" />
+    <Compile Include="Controls\SimulationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SimulationControl.Designer.cs">
+      <DependentUpon>SimulationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModelEditor.Designer.cs">
+      <DependentUpon>ModelEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MrktSim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\BannerControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BannerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Dialogs\Calibration\CalibrationTemplate.resx">
+      <DependentUpon>CalibrationTemplate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Dialogs\Calibration\InitShareCalibration.resx">
+      <DependentUpon>InitShareCalibration.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Dialogs\Calibration\MediaCalibration.resx">
+      <DependentUpon>MediaCalibration.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Dialogs\Calibration\PriceCalibration.resx">
+      <DependentUpon>PriceCalibration.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Dialogs\ExtendScenarioForm.resx">
+      <DependentUpon>ExtendScenarioForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Dialogs\ImportProjectFileSelectionForm.resx">
+      <DependentUpon>ImportProjectFileSelectionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Dialogs\PlanAwarenessPersuasionForm.resx">
+      <DependentUpon>PlanAwarenessPersuasionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Dialogs\TransferPlanValuesForm.resx">
+      <DependentUpon>TransferPlanValuesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Dialogs\TransferScenarioPlanValuesForm.resx">
+      <DependentUpon>TransferScenarioPlanValuesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ScenarioControl2.resx">
+      <DependentUpon>ScenarioControl2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Dialogs\CalibrationEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CalibrationEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Dialogs\CalibrationSetUp.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CalibrationSetUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Dialogs\Calibration\AttributeCalibration.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AttributeCalibration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Dialogs\Calibration\GeneralCalibration.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GeneralCalibration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Dialogs\Calibration\VolumeCalibration.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>VolumeCalibration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Dialogs\CreateSimulation.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CreateSimulation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Dialogs\SimulationSetUpControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SimulationSetUpControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MarketPlanControl3.resx">
+      <DependentUpon>MarketPlanControl3.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DbControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DbControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Dialogs\CreateCalibration.resx">
+      <DependentUpon>CreateCalibration.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Dialogs\ParameterControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ParameterControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Dialogs\SimulationEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SimulationEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Dialogs\VariableControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>VariableControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MarketPlans\MarketPlanGraphControl.resx">
+      <DependentUpon>MarketPlanGraphControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MarketPlans\MarketPlanChannelPicker.resx">
+      <DependentUpon>MarketPlanChannelPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MarketPlans\MarketPlanComponentPicker.resx">
+      <DependentUpon>MarketPlanComponentPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MarketPlans\MarketPlanDataControl.resx">
+      <DependentUpon>MarketPlanDataControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MarketPlans\MarketPlanDatePicker.resx">
+      <DependentUpon>MarketPlanDatePicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MarketPlans\MarketPlanPicker.resx">
+      <DependentUpon>MarketPlanPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MarketPlans\MarketPlanScenarioPicker.resx">
+      <DependentUpon>MarketPlanScenarioPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ModelControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ModelControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ProjectControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProjectControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SimulationControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SimulationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ModelEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MrktSim.resx">
+      <DependentUpon>MrktSim.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

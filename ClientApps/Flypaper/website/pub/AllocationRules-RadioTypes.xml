@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MediaRules name="Media Rules" xmlns="http://www.decisionpower.com/MediaRules2.xsd">
+
+  <MediaRule type="RadioParts" name="Radio Part Allocation" weight="1.0" rule="CORR-SUM">
+      <ListColumnDefs valueName="Age" >
+        <ListColumnDef name="18-24" min="1" max="24"/>
+        <ListColumnDef name="25-34" min="25" max="34"/>
+        <ListColumnDef name="35-44" min="35" max="44"/>
+        <ListColumnDef name="45-49" min="45" max="49"/>
+        <ListColumnDef name="50-54" min="50" max="54"/>
+        <ListColumnDef name="55=64" min="55" max="64"/>
+        <ListColumnDef name="65+" min="65" max="120"/>
+      </ListColumnDefs>
+      <Group name="Males" weight="1.0">
+        <ExpectedValueList weights="9.42,	10.38	,11.72,	12.06,	11.54,	11.52,	10.48" name="ADULT CONTEMPORARY"/>
+        <ExpectedValueList weights="2,	2.2,	3.72,	3.48,	2.68,	1.9,	0.86" name="ADULT HITS"/>
+        <ExpectedValueList weights="7.16,	6.96,	4.64,	3.28,	2.66,	1.28,	0.3" name="ALTERNATIVE"/>
+        <ExpectedValueList weights="20.6,	13.32,	6.72,	3.94,	2.24,	1.54,	0.98" name="CONTEMPORARY HITS RADIO"/>
+        <ExpectedValueList weights="0.3,	0.2,	0.48,	0.54,	0.5,	1.76,	3.88" name="CLASSICAL"/>
+        <ExpectedValueList weights="7.44,	6.68,	7.52,	8.26,	8.34,	9.86,	11.06" name="COUNTRY"/>
+        <ExpectedValueList weights="0.32,	0.16,	0.18,	0.3,	0.3,	1.06,	3.6" name="ADULT STANDARDS"/>
+        <ExpectedValueList weights="0.88,	1.16,	2.1,	2.72,	4.14,	4.88,	3.9" name="NEW AC/SMOOTH JAZZ"/>
+        <ExpectedValueList weights="8.08,	13.24,	20.54,	25.28,	27.52,	33.1,	45.02" name="NEWS/TALK/INFORMATION"/>
+        <ExpectedValueList weights="3.68,	3.26,	5,	7.54,	9.9,	11.06,	5.28" name="OLDIES"/>
+        <ExpectedValueList weights="1.26,	1.02,	1.88,	2.12,	2.22,	2.18,	2.06" name="RELIGIOUS"/>
+        <ExpectedValueList weights="12.56,	12.7,	13.84,	13.32,	12.64,	6.26,	1.24" name="ROCK"/>
+        <ExpectedValueList weights="13.72,	18.78,	12.42,	7.9,	6.82,	6.46,	6.88" name="SPANISH"/>
+        <ExpectedValueList weights="12.52,	9.9,	9.2,	9.06,	8.28,	7.12,	4.32" name="URBAN"/>
+    </Group>
+    <Group name="Females" weight="1.0">
+        <ExpectedValueList weights="15.04,	19.74,	24.14,	23.72,	19.14,	20.92,	13.58" name="ADULT CONTEMPORARY"/>
+        <ExpectedValueList weights="1.54,	2.32,	3.44,	3.14,	2.34,	1.74,	0.82" name="ADULT HITS"/>
+        <ExpectedValueList weights="4.88,	4.62,	3.16,	2.66,	1.8,	0.92,	0.3" name="ALTERNATIVE"/>
+        <ExpectedValueList weights="30.22,	17.66,	10.24,	6.08,	4.26,	2.42,	1.2" name="CONTEMPORARY HITS RADIO"/>
+        <ExpectedValueList weights="0.14,	0.38,	0.46,	0.6,	1.02,	1.78,	4.36" name="CLASSICAL"/>
+        <ExpectedValueList weights="8.76,	8.66,	8.66,	10.58,	9.94,	11.62,	10.26" name="COUNTRY"/>
+        <ExpectedValueList weights="0.18,	0.14,	0.24,	0.42,	0.52,	1.2,	4.16" name="ADULT STANDARDS"/>
+        <ExpectedValueList weights="0.74,	1.3,	2.28,	3.7,	4.86,	4.74,	3.78" name="NEW AC/SMOOTH JAZZ"/>
+        <ExpectedValueList weights="2.32,	4.3,	6.84,	10.02,	13.88,	19.56,	39.962" name="NEWS/TALK/INFORMATION"/>
+        <ExpectedValueList weights="3.4,	3.06,	4.66,	7.98,	10.06,	10.16,	4.42" name="OLDIES"/>
+        <ExpectedValueList weights="1.36,	2.48,	3.72,	3.72,	3.74,	4.52,	4.2" name="RELIGIOUS"/>
+        <ExpectedValueList weights="4.22,	4.58,	5.86,	6.18,	5.34,	2.44,	0.62" name="ROCK"/>
+        <ExpectedValueList weights="12.44,	16.38,	11.68,	9.18,	7.66,	8.58,	5.66" name="SPANISH"/>
+        <ExpectedValueList weights="14.62,	14.3,	14.56,	11.88,	11.26,	9.24,	4.52" name="URBAN"/>
+    </Group>
+    <Group name="All" weight="1.0">
+        <ExpectedValueList weights="12.3424,	15.2472, 18.1784, 18.1232, 15.492, 16.408, 12.092" name="ADULT CONTEMPORARY"/>
+        <ExpectedValueList weights="1.7608,	2.2624,	3.5744,	3.3032,	2.5032,	1.8168,	0.8392" name="ADULT HITS"/>
+        <ExpectedValueList weights="5.9744,	5.7432,	3.8704,	2.9576,	2.2128,	1.0928,	0.3" name="ALTERNATIVE"/>
+        <ExpectedValueList weights="25.6024,	15.5768,	8.5504,	5.0528,	3.2904,	1.9976,	1.0944" name="CONTEMPORARY HITS RADIO"/>
+        <ExpectedValueList weights="0.2168,	0.2936,	0.4696,	0.5712,	0.7704,	1.7704,	4.1296" name="CLASSICAL"/>
+        <ExpectedValueList weights="8.1264,	7.7096,	8.1128,	9.4664,	9.172,	10.7752, 10.644" name="COUNTRY"/>
+        <ExpectedValueList weights="0.2472,	0.1496,	0.2112,	0.3624,	0.4144,	1.1328,	3.8912" name="ADULT STANDARDS"/>
+        <ExpectedValueList weights="0.8072,	1.2328,	2.1936,	3.2296,	4.5144,	4.8072,	3.8376" name="NEW AC/SMOOTH JAZZ"/>
+        <ExpectedValueList weights="5.0848,	8.5912,	13.416,	17.3448, 20.4272, 26.0592, 42.3888" name="NEWS/TALK/INFORMATION"/>
+        <ExpectedValueList weights="3.5344,	3.156,	4.8232,	7.7688,	9.9832,	10.592,	4.8328" name="OLDIES"/>
+        <ExpectedValueList weights="1.312,	1.7792,	2.8368,	2.952,	3.0104,	3.3968,	3.1728" name="RELIGIOUS"/>
+        <ExpectedValueList weights="8.2232,	8.4776,	9.6904,	9.6072,	8.844,	4.2736,	0.9176" name="ROCK"/>
+        <ExpectedValueList weights="13.0544,	17.532,	12.0352,	8.5656,	7.2568,	7.5624,	6.2456" name="SPANISH"/>
+        <ExpectedValueList weights="13.612,	12.188,	11.9872,	10.5264,	9.8296,	8.2224,	4.424" name="URBAN"/>
+    </Group>
+  </MediaRule>
+</MediaRules>

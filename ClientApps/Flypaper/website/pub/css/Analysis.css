@@ -1,0 +1,39 @@
+﻿@import url(Common.css);
+
+#NewPlanDiv { position:absolute; top: 121px; left: 0px; width: 100%; font-size: 10pt; color: #000;  }
+
+#SubTabDiv{ top: 5px; border-bottom: solid 2px #7799FF; width: 75%; z-index: 2; }
+#SubNavBar { top: 57px; }
+#PlanSummaryCell { vertical-align: top; position: relative; top: 62px; height:auto; }
+#LowerDiv{ vertical-align: top; height:auto; }
+#NameDiv { position: absolute; top: 95px; margin-left: 330px; font-size: 10pt; z-index: 3;  }
+
+#XContentDiv { padding-top: 61px; margin-top: 10px; }
+#XContentTable { height: 100px;  padding-top: 0px;margin-top: 0px; z-index: 1; }
+#XPlanSummaryCell {  padding-top: 60px; margin-top: 0px; }
+#HqRHCol {  background-color: #8fC2F4; width: 180px; height: 400px; vertical-align:top; padding-top: 10px; padding-left: 10px;  }
+#InnerTable, #InnerTable2 {  position: relative; top: 0px; } 
+/* #InnerTable {  position: relative; top: -100px; } */
+#XFooterCell { position: absolute; top: 500px; padding-left: 230px; width: 400px; }
+
+#StarsDiv { position: absolute; top: 98px; }
+
+#GraphSelectionRow, #GraphSelectionRow2 { font-size: 8pt; }
+#GraphSelectionRow select, #GraphSelectionRow2 select { font-size: 8pt; }
+#SelectionCell, #ChartSelection { font-size: 8pt; }
+#GraphSelectionRow td { padding-top: 10px; }
+#SuggestionSelectionRow, #SuggestionSelectionRow2, #SuggestionSelectionRow3, #SuggestionSelectionRow4 { font-size: 8pt; }
+#SuggestionSelectionRow select, #SuggestionSelectionRow2 select, #SuggestionSelectionRow2 input, #SuggestionSelectionRow3 select, #SuggestionSelectionRow4 input { font-size: 8pt; }
+#NewBudgetTextBox { position: relative; top: 2px; }
+#ImprovMetric { position: relative; top: 1px; }
+#GetSuggestionsButton { position: relative; top: 3px; 
+left: 4px;
+	height: 22px;
+	width: 135px;
+}
+
+.WaitMessage { color: Red; font-size: 9pt; font-weight: bold; display:inline; }
+.WaitMessageHidden { color: Red; font-size: 9pt; font-weight: bold; display: none; }
+
+#EnterCompetitionDiv { font-size: 8pt; width: 90%; padding: 5px; background-color: #CCFFFF; margin-top: 10px; }
+#EnterCompetitionDiv a { font-size: 8pt; }
