@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dpslim", "dpslim\dpslim.vcproj", "{0926631C-9462-4567-B2DA-4495BBAF0102}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Installer", "dpslim\Installer\Installer.vdproj", "{4099B9F8-2ED9-4BE3-ACDC-5721978DA5BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0926631C-9462-4567-B2DA-4495BBAF0102}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0926631C-9462-4567-B2DA-4495BBAF0102}.Debug|Win32.Build.0 = Debug|Win32
+		{0926631C-9462-4567-B2DA-4495BBAF0102}.Release|Win32.ActiveCfg = Release|Win32
+		{0926631C-9462-4567-B2DA-4495BBAF0102}.Release|Win32.Build.0 = Release|Win32
+		{4099B9F8-2ED9-4BE3-ACDC-5721978DA5BF}.Debug|Win32.ActiveCfg = Debug
+		{4099B9F8-2ED9-4BE3-ACDC-5721978DA5BF}.Debug|Win32.Build.0 = Debug
+		{4099B9F8-2ED9-4BE3-ACDC-5721978DA5BF}.Release|Win32.ActiveCfg = Release
+		{4099B9F8-2ED9-4BE3-ACDC-5721978DA5BF}.Release|Win32.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
