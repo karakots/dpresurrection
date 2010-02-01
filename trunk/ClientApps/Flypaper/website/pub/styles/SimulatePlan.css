@@ -1,0 +1,69 @@
+﻿@import "MainStyles.css";
+
+
+
+#Footer
+{
+	position: absolute;
+	top: 470px;
+}
+
+#BodyInfo 
+{
+	position: absolute;
+	top: 155px;
+	z-index:1;
+	font-size: 10pt;
+	margin-left: 100px;
+}
+
+#ProgressImage 
+{
+	position: absolute;
+	top: 255px;
+	z-index:1;
+	font-size: 10pt;
+	margin-left: 100px;
+}
+
+
+
+#DebugExtraText
+{
+	position: absolute;
+	top: 500px;
+	color: #008800;
+	font-size: 10pt;
+}
+
+#DebugProceedButton
+{
+	position: absolute;
+	top: 400px;
+	font-size: 10pt;
+}
+
+#DebugSkipSimButton
+{
+	position: absolute;
+	top: 430px;
+	font-size: 10pt;
+}
+
+#StoryDiv { position: absolute; top: 170px;  margin-left: 660px; font-size:10pt; color: Black; width: 220px; height: 30px; 
+vertical-align: top;  }
+
+#StoryBodyDiv { position: absolute; top: 193px;  margin-left: 660px; font-size:10pt; color: Black; 
+                   z-index: 10; width: 220px; height: 305px; overflow: auto; background-color: #ffffff; 
+                   border-bottom: solid 1px #AAA; border-left: solid 1px black; border-right: solid 1px black;  }
+
+#StoryFooterDiv { position: absolute; top: 497px;  margin-left: 660px; font-size:10pt; color: Black; width: 220px; height: 20px; background-color: #ffffff; 
+border-bottom: solid 1px black; border-left: solid 1px black; border-right: solid 1px black;  }
+
+#CampaignSummaryDiv { z-index: 10; height: 65px; overflow:auto; }
+
+
+#PhoneLabel { position: relative; top: 3px; }
+#BreadcrumbLabel { position: absolute; left: 180px;top: 0px; }
+
+#AbortButton{ position: absolute; left: 180px;top: 320px; width: 100px; }

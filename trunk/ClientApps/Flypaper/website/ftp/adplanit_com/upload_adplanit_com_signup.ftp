@@ -1,0 +1,26 @@
+open ftp.adplanit.com
+21266
+adplan1t
+cd httpdocs
+lcd ..
+lcd ..
+lcd pub
+lcd signup
+ascii
+mput *.aspx
+mput *.cs
+mput *.js
+mput *.htm
+cd styles
+lcd styles
+mput *.css
+cd ..
+cd images
+lcd ..
+lcd images
+binary
+mput *.gif
+cd nav
+lcd nav
+mput *.gif
+bye

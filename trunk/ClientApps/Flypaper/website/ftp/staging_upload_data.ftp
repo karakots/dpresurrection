@@ -1,0 +1,15 @@
+open ftp.adplanit.com
+21266
+2ql181vB
+cd subdomains
+cd staging
+cd httpdocs
+lcd staging_adplanit
+cd Data
+lcd Data
+binary
+mput *.dat
+ascii
+mput *.csv
+mput *.txt
+bye

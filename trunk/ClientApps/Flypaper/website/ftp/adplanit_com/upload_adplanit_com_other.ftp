@@ -1,0 +1,21 @@
+open  72.249.5.64
+21266
+adplan1t
+lcd ..
+lcd ..
+lcd pub
+lcd styles
+cd httpdocs
+cd beta
+cd styles
+ascii
+mput *.css
+lcd ..
+lcd images
+cd ..
+cd images
+mput *.gif
+lcd nav
+cd nav
+mput *.gif
+bye

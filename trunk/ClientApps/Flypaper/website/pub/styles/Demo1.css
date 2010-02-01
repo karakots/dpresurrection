@@ -1,0 +1,104 @@
+﻿@import url(MainStyles.css);
+
+#Movie2
+{
+	position: absolute;
+	top: 155px;
+	margin-left: 0px;
+	z-index: 10;
+}
+
+#DemoTextBkgDIv
+{
+	position: absolute;
+	top: 100px;
+	margin-left: 640px;
+	width: 240px;
+	height: 400px;
+    background-color: #88C0Da;
+
+	font-size: 14px;
+}
+
+#DemoTextDiv1
+{
+	position: absolute;
+	top: 155px;
+	margin-left: 660px;
+	width: 190px;
+	color: Black;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+#DemoTextDiv1 b
+{
+	color: Red;
+	font-size: 18pt;
+}
+/*
+#TextDiv3 b
+{
+	color: Green;
+	font-size: 12pt;
+}
+*/
+#DemoTextDiv1 h3
+{
+	display:inline;
+	font-size: 18pt;
+}
+/*
+#TextDiv2
+{
+	position: absolute;
+	top: 550px;
+	margin-left: 650px;
+	width: 230px;
+	color: Black;
+	font-size: 16pt;
+	font-family:Times New Roman, Serif;
+	font-weight: 600;
+}
+
+#TextDiv3
+{
+	position: absolute;
+	top: 380px;
+	margin-left: 670px;
+	width: 155px;
+	padding: 5px;
+	color: Black;
+	background-color: #DDD;
+	border-style:dotted;
+	border-width: 2px;
+	border-color: Black;
+	font-size: 10pt;
+	font-family:Arial, Sans Serif;
+	font-style:italic;
+}
+*/
+#DemoFooter
+{
+	position: absolute;
+	font-family: Verdana, Arial, sans-serif; font-size: 9px; margin: 10px 0 0 2px; width: 650px;  color: #668; line-height: 1.5em; padding: 0; font-weight:700;
+	top: 550px;
+	margin-left: 60px;
+	color: #404040;
+}
+
+#DemoFooter, #DemoFooter td
+{
+	font-family: Verdana, Arial, sans-serif; font-size: 9px; margin: color: #668; line-height: 1.5em; padding: 0; font-weight:700;
+}
+/*
+#BodyInfo 
+{
+	position: absolute;
+	top: 155px;
+	z-index:1;
+	font-size: 10pt;
+	margin-left: 100px;
+}
+*/
+#PhoneLabel { margin-left: 740px; top: 4px; color:#FFFFFF; font-weight:bold; font-style:normal; font-family: Arial; font-size: 14px;}

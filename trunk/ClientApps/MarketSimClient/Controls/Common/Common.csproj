@@ -1,0 +1,671 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F07F47BD-FA04-4677-AEA5-B9616C3FCE6E}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Common</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Common</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>http://localhost/Common/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\..\Database\MrktSimDb\MrktSimDb.csproj">
+      <Name>MrktSimDb</Name>
+      <Project>{9DA9597C-A718-4779-B76C-CD68BFF97482}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\ErrorInterface\ErrorInterface.csproj">
+      <Name>ErrorInterface</Name>
+      <Project>{3FA7049B-33B6-4E1E-8587-70DE9A7CE3E3}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\Excel\ExcelInterface.csproj">
+      <Name>ExcelInterface</Name>
+      <Project>{EAAB971D-8B10-4112-B022-D76248BCB476}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Name>Utilities</Name>
+      <Project>{CD4858F6-6B33-474D-8619-47681F7DE173}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\ZGrapher\ZedGraph.csproj">
+      <Project>{998CE547-E905-4931-91B6-5E0439177E7E}</Project>
+      <Name>ZedGraph</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AttributeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChannelControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dialogs\AttributeReaderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ChangeProductType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ConfirmDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ConfirmDialog.Designer.cs">
+      <DependentUpon>ConfirmDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\ChangePlanProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ChangePlanProduct.Designer.cs">
+      <DependentUpon>ChangePlanProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\MrktSimConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\MrktSimConfig.Designer.cs">
+      <DependentUpon>MrktSimConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\DbUtils.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DbUtils.Designer.cs">
+      <DependentUpon>DbUtils.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\InitialConditionsReaderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\MrktSimSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\MrktSimSettings.Designer.cs">
+      <DependentUpon>MrktSimSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\ImportNameAndDescr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ImportNameAndDescr.Designer.cs">
+      <DependentUpon>ImportNameAndDescr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\CreateTopLevelPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\EditScenario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\CreateAttribute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\CreateComponentPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\CreateComponentPlan2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\CreateConsumerPreference.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\CreateCouponData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\CreateDisplayData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\CreateDistributionData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\CreateEventData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\CreateMarketUtility.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\CreateMediaData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\CreatePriceData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\CreateProductAttribute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\CreateProductDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\CreateProductType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DeleteProductType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\MarketPlanParameter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\CompletionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\CompletionDialog.Designer.cs">
+      <DependentUpon>CompletionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\ChangePlanDates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ChangePlanDates.Designer.cs">
+      <DependentUpon>ChangePlanDates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\MoveProductNode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\NameAndDescr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\NameAndDescr2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\NameAndDescr2.Designer.cs">
+      <DependentUpon>NameAndDescr2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\OpenProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\EditPackSize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\EditPackSize.Designer.cs">
+      <DependentUpon>EditPackSize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\ProcessStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ProductAttributeOptionsDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\SelectMarketPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\SelectProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\SimLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\SimStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExternalDataGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InitialConditionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MarketComponentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MarketPlanControlRelater.cs" />
+    <Compile Include="MarketSummary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModelParameter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModelSummary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NetworkModels.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PackSize.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PackSize.Designer.cs">
+      <DependentUpon>PackSize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PriceType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PriceType.Designer.cs">
+      <DependentUpon>PriceType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProductMatrixControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProductTypeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SegmentGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SocialNetwork.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TaskControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utilities\ChannelPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utilities\MrktPlanComponent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utilities\PlanData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utilities\ProductPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utilities\ScenarioPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utilities\SegmentPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utilities\SimStatusControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utilities\StartEndDate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utilities\TasktPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utilities\Timing.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="AttributeControl.resx">
+      <DependentUpon>AttributeControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChannelControl.resx">
+      <DependentUpon>ChannelControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\AttributeReaderForm.resx">
+      <DependentUpon>AttributeReaderForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ChangeProductType.resx">
+      <DependentUpon>ChangeProductType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ConfirmDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ConfirmDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ChangePlanProduct.resx">
+      <DependentUpon>ChangePlanProduct.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\MrktSimConfig.resx">
+      <DependentUpon>MrktSimConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DbUtils.resx">
+      <DependentUpon>DbUtils.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\InitialConditionsReaderForm.resx">
+      <DependentUpon>InitialConditionsReaderForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\MrktSimSettings.resx">
+      <DependentUpon>MrktSimSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ImportNameAndDescr.resx">
+      <DependentUpon>ImportNameAndDescr.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\CreateTopLevelPlan.resx">
+      <DependentUpon>CreateTopLevelPlan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\EditScenario.resx">
+      <DependentUpon>EditScenario.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\CreateAttribute.resx">
+      <DependentUpon>CreateAttribute.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\CreateComponentPlan.resx">
+      <DependentUpon>CreateComponentPlan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\CreateComponentPlan2.resx">
+      <DependentUpon>CreateComponentPlan2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\CreateConsumerPreference.resx">
+      <DependentUpon>CreateConsumerPreference.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\CreateCouponData.resx">
+      <DependentUpon>CreateCouponData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\CreateDisplayData.resx">
+      <DependentUpon>CreateDisplayData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\CreateDistributionData.resx">
+      <DependentUpon>CreateDistributionData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\CreateEventData.resx">
+      <DependentUpon>CreateEventData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\CreateMarketUtility.resx">
+      <DependentUpon>CreateMarketUtility.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\CreateMediaData.resx">
+      <DependentUpon>CreateMediaData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\CreatePriceData.resx">
+      <DependentUpon>CreatePriceData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\CreateProductAttribute.resx">
+      <DependentUpon>CreateProductAttribute.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\CreateProductDialog.resx">
+      <DependentUpon>CreateProductDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\CreateProductType.resx">
+      <DependentUpon>CreateProductType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DeleteProductType.resx">
+      <DependentUpon>DeleteProductType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\MarketPlanParameter.resx">
+      <DependentUpon>MarketPlanParameter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\CompletionDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CompletionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ChangePlanDates.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ChangePlanDates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\MoveProductNode.resx">
+      <DependentUpon>MoveProductNode.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\NameAndDescr.resx">
+      <DependentUpon>NameAndDescr.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\NameAndDescr2.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NameAndDescr2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\OpenProject.resx">
+      <DependentUpon>OpenProject.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\EditPackSize.resx">
+      <DependentUpon>EditPackSize.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ProcessStatus.resx">
+      <DependentUpon>ProcessStatus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ProductAttributeOptionsDlg.resx">
+      <DependentUpon>ProductAttributeOptionsDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SelectMarketPlan.resx">
+      <DependentUpon>SelectMarketPlan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SelectProducts.resx">
+      <DependentUpon>SelectProducts.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SimLog.resx">
+      <DependentUpon>SimLog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SimStatus.resx">
+      <DependentUpon>SimStatus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExternalDataGrid.resx">
+      <DependentUpon>ExternalDataGrid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InitialConditionControl.resx">
+      <DependentUpon>InitialConditionControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarketComponentControl.resx">
+      <DependentUpon>MarketComponentControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarketSummary.resx">
+      <DependentUpon>MarketSummary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelParameter.resx">
+      <DependentUpon>ModelParameter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelSummary.resx">
+      <DependentUpon>ModelSummary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NetworkModels.resx">
+      <DependentUpon>NetworkModels.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PackSize.resx">
+      <DependentUpon>PackSize.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PriceType.resx">
+      <DependentUpon>PriceType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductGrid.resx">
+      <DependentUpon>ProductGrid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductMatrixControl.resx">
+      <DependentUpon>ProductMatrixControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductTypeControl.resx">
+      <DependentUpon>ProductTypeControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SegmentGrid.resx">
+      <DependentUpon>SegmentGrid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SocialNetwork.resx">
+      <DependentUpon>SocialNetwork.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskControl.resx">
+      <DependentUpon>TaskControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilities\ChannelPicker.resx">
+      <DependentUpon>ChannelPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilities\MrktPlanComponent.resx">
+      <DependentUpon>MrktPlanComponent.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilities\PlanData.resx">
+      <DependentUpon>PlanData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilities\ProductPicker.resx">
+      <DependentUpon>ProductPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilities\ScenarioPicker.resx">
+      <DependentUpon>ScenarioPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilities\SegmentPicker.resx">
+      <DependentUpon>SegmentPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilities\SimStatusControl.resx">
+      <DependentUpon>SimStatusControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilities\StartEndDate.resx">
+      <DependentUpon>StartEndDate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilities\TasktPicker.resx">
+      <DependentUpon>TasktPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilities\Timing.resx">
+      <DependentUpon>Timing.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

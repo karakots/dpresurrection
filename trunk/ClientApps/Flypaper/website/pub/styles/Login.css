@@ -1,0 +1,105 @@
+﻿@import url(MainStyles.css);
+
+#Footer, .Footer
+{
+   position: absolute;
+	top: 470px;
+	font-family: Verdana, Arial, sans-serif; font-size: 9px; margin: 10px 0 0 2px; width: 500px;  color: #668; line-height: 1.5em; padding: 0; font-weight:700; 
+   margin-left: 80px;
+}
+
+#FooterDiv,.FooterDiv, #FooterDiv table, #FooterDiv table tr
+{
+		font-family: Verdana, Arial, sans-serif; font-size: 9px;color:Red;
+}
+
+#Footer a 
+{ text-decoration: underline; color: #668; }
+
+#LoginPanel 
+{
+   position: absolute;
+   top: 30px;
+   width: 500px;
+   height: 170px;
+   margin-left: -40px;
+   padding-right: 20px;
+   width: 357px;
+}
+
+#LostPwDiv, #NewUserDiv
+{
+   position : absolute;
+   top: 220px;
+   font-size  : 10pt; 
+   margin-left: 60px;
+   font-family: Arial, Verdana, Sans-Serif;
+   font-size: 9pt;
+   color: #DDD;
+}
+
+#NewUserDiv 
+{
+	   top: 250px;
+}
+
+.LoginButton { margin-left: 80px; }
+
+
+/*
+#NewUserButtonDiv 
+{
+   position: absolute;
+   top: 350px;
+   height: 26px;
+   font-size  : 10pt; 
+   margin-left: 180px;
+}
+*/
+
+#AnotherButton
+{
+   position : absolute;
+   top: 350px;
+   height: 26px;
+   font-size  : 10pt; 
+   margin-left: 140px;
+}
+
+.UserLogin
+{
+   position: relative;
+   left: 30px;
+   top: 20px;
+}
+
+.UserLogin, .UserLoginControl,  .UserLoginPwControl, .LoginButton
+{
+	font-size: 9pt;
+}
+
+.UserLoginControl 
+{
+	width: 220px;
+}
+.UserLoginPwControl 
+{
+	width: 220px;
+}
+
+.LoginButton 
+ {
+	font-size: 10pt;
+ }
+ 
+.LoginButtonDiv
+ {
+	width:100px; 
+ }
+ 
+ .Ad1
+{
+	position: absolute; top: 120px; margin-left: 500px;
+}
+
+#RememberMe {position: absolute; top: 120px; }

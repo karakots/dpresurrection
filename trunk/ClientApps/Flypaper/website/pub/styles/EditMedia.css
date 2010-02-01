@@ -1,0 +1,457 @@
+﻿@import url(MainStyles.css);
+
+.RedBoldLink a
+{ color: Red; font-weight: bold; }
+
+.vehicleName { display: inline;  font-size:12pt; font-weight: 800; }
+.vehicleSubtype { display: inline; font-size:8pt; }
+
+/* ------------------------------- POPUP DIALOG - Confirm Removing Media Item (subtype) ------------------------------ */
+/* Background */
+.ShowConfPopupBackground, .ConfPopupBackground
+{ background-color: Gray; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 1000; opacity: .5; filter: alpha(opacity=50); visibility: visible; }
+
+/* Main dialog panel */
+.ShowConfPopupPanel, .ConfPopupPanel
+{ width: 400px; height: 193px; position: absolute; left: 250px; top: 210px; z-index: 1001; visibility: visible;	
+	background-color	:White; border: inset 3px black; font-family: Arial Narrow; font-size: 10pt; }
+	
+/* popup dialog shadow */
+ .ShowConfPopupShadow, .ConfPopupShadow
+ { width: 402px; height: 195px; 	position: absolute; left: 260px; top: 220px; z-index: 1001; visibility:visible; background-color:#555; }
+
+.ConfPopupPanel
+{ visibility:hidden; font-family:Arial Narrow; }
+
+.ConfPopupBackground, .ConfPopupShadow, .HideList
+{ visibility:hidden; }
+
+/* Popup dialog content panel */
+.ConfPopupInsetPanel
+{ margin: 1px; border-color: black; border-style: double; border-width: 3px; border-top-style:none; height: 98%; }
+
+/* Popup dialog title panel */
+.ConfPopupTitlePanel
+{ width: 100%; height: 20px; 	background-color: Gray; padding-top: 3px; border-bottom: solid 1px black; }
+
+/* Popup dialog title */
+#ConfPopupTitle
+{ font-family:Arial; font-weight: bold; color: #FFF; margin-left: 10px; }
+
+/* Main body of popup */
+#ConfPopupBody
+{ padding: 30px 50px 30px 50px; font-size: 11pt; background-image: url("../images/DialogBackground.jpg"); height: 102px; }
+
+#ConfPopupBody h3
+{ display: inline; }
+
+#OkConfButton, #CancelConfButton
+{ width: 100px;  margin-left: 40px; width:100px; height: 23px; }
+
+#CancelConfButton
+{  margin-left: 10px; }
+
+
+/* ------------------------------- POPUP DIALOG - Confirm Removing Media Type ------------------------------ */
+/* Background */
+.ShowConf2PopupBackground, .Conf2PopupBackground
+{ background-color: Gray; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 1000; opacity: .5; filter: alpha(opacity=50); visibility: visible; }
+
+/* Main dialog panel */
+.ShowConf2PopupPanel, .Conf2PopupPanel
+{ width: 550px; height: 223px; position: absolute; left: 300px; top: 210px; z-index: 1001; visibility: visible;	
+	background-color	:White; border: inset 3px black; font-family: Arial Narrow; font-size: 10pt; }
+	
+/* popup dialog shadow */
+ .ShowConf2PopupShadow, .Conf2PopupShadow
+ { width: 552px; height: 225px; 	position: absolute; left: 310px; top: 220px; z-index: 1001; visibility:visible; background-color:#555; }
+
+.Conf2PopupPanel
+{ visibility:hidden; font-family:Arial Narrow; }
+
+.Conf2PopupBackground, .Conf2PopupShadow, .HideList
+{ visibility:hidden; }
+
+/* Popup dialog content panel */
+.Conf2PopupInsetPanel
+{ margin: 1px; border-color: black; border-style: double; border-width: 3px; border-top-style:none; height: 98%; }
+
+/* Popup dialog title panel */
+.Conf2PopupTitlePanel
+{ width: 100%; height: 20px; 	background-color: Gray; padding-top: 3px; border-bottom: solid 1px black; }
+
+/* Popup dialog title */
+#Conf2PopupTitle
+{ font-family:Arial; font-weight: bold; color: #FFF; margin-left: 10px; }
+
+/* Main body of popup */
+#Conf2PopupBody
+{ padding: 30px 50px 30px 50px; font-size: 11pt; background-image: url("../images/DialogBackground.jpg"); height: 132px; }
+
+#Conf2PopupBody h3
+{ display: inline; }
+
+#OkConf2Button, #CancelConf2Button
+{ width: 120px;  margin-left: 110px; width:100px; height: 23px; }
+
+#CancelConf2Button { margin-left: 10px; }
+
+
+/* ------------------------------- POPUP DIALOG - Add Media Type ------------------------------ */
+/* Background */
+.ShowAddTypePopupBackground, .AddTypePopupBackground
+{ background-color: Gray; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 1000; opacity: .5; filter: alpha(opacity=50); visibility: visible; }
+
+/* Main dialog panel */
+.ShowAddTypePopupPanel, .AddTypePopupPanel
+{ width: 550px; height: 398px; position: absolute; left: 300px; top: 160px; z-index: 1001; visibility: visible;	
+	background-color	:White; border: inset 3px black; font-family: Arial Narrow; font-size: 10pt; }
+	
+/* popup dialog shadow */
+ .ShowAddTypePopupShadow, .AddTypePopupShadow
+ { width: 552px; height: 400px; 	position: absolute; left: 310px; top: 170px; z-index: 1001; visibility:visible; background-color:#555; }
+
+.AddTypePopupPanel
+{ visibility:hidden; font-family:Arial Narrow; }
+
+.AddTypePopupBackground, .AddTypePopupShadow, .HideList
+{ visibility:hidden; }
+
+/* Popup dialog content panel */
+.AddTypePopupInsetPanel
+{ margin: 1px; border-color: black; border-style: double; border-width: 3px; border-top-style:none; height: 98%; }
+
+/* Popup dialog title panel */
+.AddTypePopupTitlePanel
+{ width: 100%; height: 20px; 	background-color: Gray; padding-top: 3px; border-bottom: solid 1px black; }
+
+/* Popup dialog title */
+#AddTypePopupTitle
+{ font-family:Arial; font-weight: bold; color: #FFF; margin-left: 10px; }
+
+/* Main body of popup */
+#AddTypePopupBody
+{ padding: 30px 50px 30px 50px; font-size: 11pt; background-image: url("../images/DialogBackground.jpg"); height: 308px; }
+
+#AddTypePopupBody h3
+{ display: inline; }
+
+#OkAddTypeButton, #CancelAddTypeButton
+{ width: 100px;  margin-left: 110px; width:100px; height: 23px; }
+
+#CancelAddTypeButton { margin-left: 10px; }
+
+
+/* ------------------------------- POPUP DIALOG - Add Media Subtype ------------------------------ */
+/* Background */
+.ShowAddSubtypePopupBackground, .AddSubtypePopupBackground
+{ background-color: Gray; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 1000; opacity: .5; filter: alpha(opacity=50); visibility: visible; }
+
+/* Main dialog panel */
+.ShowAddSubtypePopupPanel, .AddSubtypePopupPanel
+{ width: 550px; height: 298px; position: absolute; left: 300px; top: 210px; z-index: 1001; visibility: visible;	
+	background-color	:White; border: inset 3px black; font-family: Arial Narrow; font-size: 10pt; }
+	
+/* popup dialog shadow */
+ .ShowAddSubtypePopupShadow, .AddSubtypePopupShadow
+ { width: 552px; height: 300px; 	position: absolute; left: 310px; top: 220px; z-index: 1001; visibility:visible; background-color:#555; }
+
+.AddSubtypePopupPanel
+{ visibility:hidden; font-family:Arial Narrow; }
+
+.AddSubtypePopupBackground, .AddSubtypePopupShadow, .HideList
+{ visibility:hidden; }
+
+/* Popup dialog content panel */
+.AddSubtypePopupInsetPanel
+{ margin: 1px; border-color: black; border-style: double; border-width: 3px; border-top-style:none; height: 98%; }
+
+/* Popup dialog title panel */
+.AddSubtypePopupTitlePanel
+{ width: 100%; height: 20px; 	background-color: Gray; padding-top: 3px; border-bottom: solid 1px black; }
+
+/* Popup dialog title */
+#AddSubtypePopupTitle
+{ font-family:Arial; font-weight: bold; color: #FFF; margin-left: 10px; }
+
+/* Main body of popup */
+#AddSubtypePopupBody
+{ padding: 30px 50px 30px 50px; font-size: 11pt; background-image: url("../images/DialogBackground.jpg"); height: 208px;  }
+
+#AddSubtypePopupBody h3, #MediaTypeLabel
+{ display: inline; }
+
+#AddSubtypePopupBody h3
+{ margin-bottom: 10px; }
+
+#OkAddSubtypeButton, #CancelAddSubtypeButton
+{ width: 100px;  margin-left: 110px; width:100px; height: 23px; }
+
+#CancelAddSubtypeButton { margin-left: 10px; }
+
+
+/* ------------------------------- POPUP DIALOG - Set Total Budget ------------------------------ */
+/* Background */
+.ShowTotBudgPopupBackground, .TotBudgPopupBackground
+{ background-color: Gray; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 1000; opacity: .5; filter: alpha(opacity=50); visibility: visible; }
+
+/* Main dialog panel */
+.ShowTotBudgPopupPanel, .TotBudgPopupPanel
+{ width: 400px; height: 203px; position: absolute; left: 300px; top: 210px; z-index: 1001; visibility: visible;	
+	background-color	:White; border: inset 3px black; font-family: Arial Narrow; font-size: 10pt; }
+	
+/* popup dialog shadow */
+ .ShowTotBudgPopupShadow, .TotBudgPopupShadow
+ { width: 402px; height: 205px; 	position: absolute; left: 310px; top: 220px; z-index: 1001; visibility:visible; background-color:#555; }
+
+.TotBudgPopupPanel
+{ visibility:hidden; font-family:Arial Narrow; }
+
+.TotBudgPopupBackground, .TotBudgPopupShadow, .HideList
+{ visibility:hidden; }
+
+/* Popup dialog content panel */
+.TotBudgPopupInsetPanel
+{ margin: 1px; border-color: black; border-style: double; border-width: 3px; border-top-style:none; height: 98%; }
+
+/* Popup dialog title panel */
+.TotBudgPopupTitlePanel
+{ width: 100%; height: 20px; 	background-color: Gray; padding-top: 3px; border-bottom: solid 1px black; }
+
+/* Popup dialog title */
+#TotBudgPopupTitle
+{ font-family:Arial; font-weight: bold; color: #FFF; margin-left: 10px; }
+
+/* Main body of popup */
+#TotBudgPopupBody
+{ padding: 30px 50px 30px 50px; font-size: 11pt; background-image: url("../images/DialogBackground.jpg"); height: 110px; }
+
+#TotBudgPopupBody h3
+{ display: inline; }
+
+#OkTotBudgButton, #CancelTotBudgButton
+{ width: 100px;  margin-left: 50px;  width:100px; height: 23px; }
+
+#CancelTotBudgButton { margin-left: 10px; }
+
+/* ------------------------------- POPUP DIALOG - Set Media Item Prominence ------------------------------ */
+/* Background */
+.ShowPromPopupBackground, .PromPopupBackground
+{ background-color: Gray; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 1000; opacity: .5; filter: alpha(opacity=50); visibility: visible; }
+
+/* Main dialog panel */
+.ShowPromPopupPanel, .PromPopupPanel
+{ width: 540px; height: 253px; position: absolute; left: 300px; top: 210px; z-index: 1001; visibility: visible;	
+	background-color	:White; border: inset 3px black; font-family: Arial Narrow; font-size: 10pt; }
+	
+/* popup dialog shadow */
+ .ShowPromPopupShadow, .PromPopupShadow
+ { width: 542px; height: 255px; 	position: absolute; left: 310px; top: 220px; z-index: 1001; visibility:visible; background-color:#555; }
+
+.PromPopupPanel
+{ visibility:hidden; font-family:Arial Narrow; }
+
+.PromPopupBackground, .PromPopupShadow, .HideList
+{ visibility:hidden; }
+
+/* Popup dialog content panel */
+.PromPopupInsetPanel
+{ margin: 1px; border-color: black; border-style: double; border-width: 3px; border-top-style:none; height: 98%; }
+
+/* Popup dialog title panel */
+.PromPopupTitlePanel
+{ width: 100%; height: 20px; 	background-color: Gray; padding-top: 3px; border-bottom: solid 1px black; }
+
+/* Popup dialog title */
+#PromPopupTitle
+{ font-family:Arial; font-weight: bold; color: #FFF; margin-left: 10px; }
+
+/* Main body of popup */
+#PromPopupBody
+{ padding: 30px 50px 30px 50px; font-size: 11pt; background-image: url("../images/DialogBackground.jpg"); height: 160px; }
+
+#PromPopupBody h3
+{ display: inline; }
+
+#OkPromButton, #CancePromButton
+{ width: 100px;  margin-left: 110px; width:100px; height: 23px; }
+
+#CancePromButton { margin-left: 20px; }
+
+
+/* ------------------------------- POPUP DIALOG - Set Media Item Budget ------------------------------ */
+/* Background */
+.ShowBudgetPopupBackground, .BudgetPopupBackground
+{ background-color: Gray; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 1000; opacity: .5; filter: alpha(opacity=50); visibility: visible; }
+
+/* Main dialog panel */
+.ShowBudgetPopupPanel, .BudgetPopupPanel
+{ width: 500px; height: 223px; position: absolute; left: 300px; top: 210px; z-index: 1001; visibility: visible;	
+	background-color	:White; border: inset 3px black; font-family: Arial Narrow; font-size: 10pt; }
+	
+/* popup dialog shadow */
+ .ShowBudgetPopupShadow, .BudgetPopupShadow
+ { width: 502px; height: 225px; 	position: absolute; left: 310px; top: 220px; z-index: 1001; visibility:visible; background-color:#555; }
+
+.BudgetPopupPanel
+{ visibility:hidden; font-family:Arial Narrow; }
+
+.BudgetPopupBackground, .BudgetPopupShadow, .HideList
+{ visibility:hidden; }
+
+/* Popup dialog content panel */
+.BudgetPopupInsetPanel
+{ margin: 1px; border-color: black; border-style: double; border-width: 3px; border-top-style:none; height: 98%; }
+
+/* Popup dialog title panel */
+.BudgetPopupTitlePanel
+{ width: 100%; height: 20px; 	background-color: Gray; padding-top: 3px; border-bottom: solid 1px black; }
+
+/* Popup dialog title */
+#BudgetPopupTitle
+{ font-family:Arial; font-weight: bold; color: #FFF; margin-left: 10px; }
+
+/* Main body of popup */
+#BudgetPopupBody
+{ padding: 30px 50px 30px 50px; font-size: 11pt; background-image: url("../images/DialogBackground.jpg"); height: 130px; }
+
+#BudgetPopupBody h3
+{ display: inline; }
+
+#OkBudgetButton, #CancelBudgetButton
+{ width: 100px;  margin-left: 90px;   margin-top: 10px;  width:100px; height: 23px; }
+
+#CancelBudgetButton { margin-left: 10px; }
+
+
+/* ------------------------------- POPUP DIALOG - Set Media Item Ad Count ------------------------------ */
+/* Background */
+.ShowAdCountPopupBackground, .AdCountPopupBackground
+{ background-color: Gray; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 1000; opacity: .5; filter: alpha(opacity=50); visibility: visible; }
+
+/* Main dialog panel */
+.ShowAdCountPopupPanel, .AdCountPopupPanel
+{ width: 500px; height: 223px; position: absolute; left: 300px; top: 210px; z-index: 1001; visibility: visible;	
+	background-color	:White; border: inset 3px black; font-family: Arial Narrow; font-size: 10pt; }
+	
+/* popup dialog shadow */
+ .ShowAdCountPopupShadow, .AdCountPopupShadow
+ { width: 502px; height: 225px; 	position: absolute; left: 310px; top: 220px; z-index: 1001; visibility:visible; background-color:#555; }
+
+.AdCountPopupPanel
+{ visibility:hidden; font-family:Arial Narrow; }
+
+.AdCountPopupBackground, .AdCountPopupShadow, .HideList
+{ visibility:hidden; }
+
+/* Popup dialog content panel */
+.AdCountPopupInsetPanel
+{ margin: 1px; border-color: black; border-style: double; border-width: 3px; border-top-style:none; height: 98%; }
+
+/* Popup dialog title panel */
+.AdCountPopupTitlePanel
+{ width: 100%; height: 20px; 	background-color: Gray; padding-top: 3px; border-bottom: solid 1px black; }
+
+/* Popup dialog title */
+#AdCountPopupTitle
+{ font-family:Arial; font-weight: bold; color: #FFF; margin-left: 10px; }
+
+/* Main body of popup */
+#AdCountPopupBody
+{ padding: 30px 50px 30px 50px; font-size: 11pt; background-image: url("../images/DialogBackground.jpg"); height: 130px; }
+
+#AdCountPopupBody h3
+{ display: inline; }
+
+#OkAdCounttButton, #CancelAdCountButton
+{ width: 100px;  margin-left: 90px;   margin-top: 10px;  width:100px; height: 23px; }
+
+#CancelAdCountButton { margin-left: 10px; }
+
+
+/* ------------------------------- POPUP DIALOG - Set Media Item Flighting ------------------------------ */
+/* Background */
+.ShowFlightPopupBackground, .FlightPopupBackground
+{ background-color: Gray; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 1000; opacity: .5; filter: alpha(opacity=50); visibility: visible; }
+
+/* Main dialog panel */
+.ShowFlightPopupPanel, .FlightPopupPanel
+{ width: 600px; height: 400px; position: absolute; left: 150px; top: 100px; z-index: 1001; visibility: visible;	
+	background-color	:White; border: inset 3px black; font-family: Arial Narrow; font-size: 10pt; }
+	
+/* popup dialog shadow */
+ .ShowFlightPopupShadow, .FlightPopupShadow
+ { width: 602px; height: 402px; 	position: absolute; left: 160px; top: 110px; z-index: 1001; visibility:visible; background-color:#555; }
+
+.FlightPopupPanel
+{ visibility:hidden; font-family:Arial Narrow; }
+
+.FlightPopupBackground, .FlightPopupShadow, .HideList
+{ visibility:hidden; }
+
+/* Popup dialog content panel */
+.FlightPopupInsetPanel
+{ margin: 1px; border-color: black; border-style: double; border-width: 3px; border-top-style:none; height: 98%; }
+
+/* Popup dialog title panel */
+.FlightPopupTitlePanel
+{ width: 100%; height: 20px; 	background-color: Gray; padding-top: 3px; border-bottom: solid 1px black; }
+
+/* Popup dialog title */
+#FlightPopupTitle
+{ font-family:Arial; font-weight: bold; color: #FFF; margin-left: 10px; }
+
+/* Main body of popup */
+#FlightPopupBody
+{ padding: 30px 50px 3px 50px; font-size: 11pt; background-image: url("../images/DialogBackground.jpg"); height: 340px; }
+
+#FlightPopupBody h3
+{ display: inline; }
+
+#OkFlightButton, #CancelFlightButton
+{ width: 80px;  margin-left: 10px; width:100px; height: 23px; }
+
+
+/* ------------------------------- POPUP DIALOG - Set Plan Dates ------------------------------ */
+/* Background */
+.ShowDatesPopupBackground, .DatesPopupBackground
+{ background-color: Gray; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 1000; opacity: .5; filter: alpha(opacity=50); visibility: visible; }
+
+/* Main dialog panel */
+.ShowDatesPopupPanel, .DatesPopupPanel
+{ width: 400px; height: 223px; position: absolute; left: 300px; top: 210px; z-index: 1001; visibility: visible;	
+	background-color	:White; border: inset 3px black; font-family: Arial Narrow; font-size: 10pt; }
+	
+/* popup dialog shadow */
+ .ShowDatesPopupShadow, .DatesPopupShadow
+ { width: 402px; height: 225px; 	position: absolute; left: 310px; top: 220px; z-index: 1001; visibility:visible; background-color:#555; }
+
+.DatesPopupPanel
+{ visibility:hidden; font-family:Arial Narrow; }
+
+.DatesPopupBackground, .DatesPopupShadow, .HideList
+{ visibility:hidden; }
+
+/* Popup dialog content panel */
+.DatesPopupInsetPanel
+{ margin: 1px; border-color: black; border-style: double; border-width: 3px; border-top-style:none; height: 98%; }
+
+/* Popup dialog title panel */
+.DatesPopupTitlePanel
+{ width: 100%; height: 20px; 	background-color: Gray; padding-top: 3px; border-bottom: solid 1px black; }
+
+/* Popup dialog title */
+#DatesPopupTitle
+{ font-family:Arial; font-weight: bold; color: #FFF; margin-left: 10px; }
+
+/* Main body of popup */
+#DatesPopupBody
+{ padding: 30px 50px 30px 50px; font-size: 11pt; background-image: url("../images/DialogBackground.jpg"); height: 130px; }
+
+#DatesPopupBody h3
+{ display: inline; }
+
+#OkDatesButton, #CancelDatesButton
+{ width: 80px;  margin-left: 44px;  width:100px; height: 23px; margin-top: 10px;  }
+
+#CancelDatesButton { margin-left: 10px; }

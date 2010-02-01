@@ -1,0 +1,10 @@
+open 99.173.30.122
+ken
+lama99
+cd App_Code
+lcd ..
+lcd pub
+lcd App_Code
+ascii
+mput *.cs
+bye

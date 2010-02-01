@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="OptInfo" targetNamespace="http://tempuri.org/OptInfo.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/OptInfo.xsd" xmlns:mstns="http://tempuri.org/OptInfo.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="OptInfo" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="optimization_explore_mode">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="explore_mode_id" type="xs:unsignedByte" />
+							<xs:element name="explore_mode" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="optimization_mode_exec">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="mode_exec_id" type="xs:unsignedByte" />
+							<xs:element name="mode_exec" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="optimization_optimize_for">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="optimize_for_id" type="xs:unsignedByte" />
+							<xs:element name="optimize_for" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="optimization_params">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="model_id" type="xs:int" />
+							<xs:element name="scenario_id" type="xs:int" />
+							<xs:element name="component_name" type="xs:string" />
+							<xs:element name="parameter" type="xs:string" />
+							<xs:element name="lower" type="xs:double" />
+							<xs:element name="upper" type="xs:double" />
+							<xs:element name="leader" type="xs:boolean" />
+							<xs:element name="slave" type="xs:boolean" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="optimization_plan">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="scenario_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="scenario_name" type="xs:string" />
+							<xs:element name="optimize_for" type="xs:unsignedByte" />
+							<xs:element name="num_steps" type="xs:int" />
+							<xs:element name="mode_exec_id" type="xs:unsignedByte" />
+							<xs:element name="explore_mode_id" type="xs:unsignedByte" />
+							<xs:element name="is_active" type="xs:boolean" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="OptInfoKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:optimization_plan" />
+			<xs:field xpath="mstns:scenario_id" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

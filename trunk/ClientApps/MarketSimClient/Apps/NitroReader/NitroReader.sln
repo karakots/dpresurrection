@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NitroReader", "NitroReader.csproj", "{CECF45DC-BC80-45F1-9F1D-8CBF383BB7A3}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Installer", "Installer\Installer.vdproj", "{F3B5F81F-CDA5-47ED-9BF4-8FD40A4E5AA3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CECF45DC-BC80-45F1-9F1D-8CBF383BB7A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CECF45DC-BC80-45F1-9F1D-8CBF383BB7A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CECF45DC-BC80-45F1-9F1D-8CBF383BB7A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CECF45DC-BC80-45F1-9F1D-8CBF383BB7A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3B5F81F-CDA5-47ED-9BF4-8FD40A4E5AA3}.Debug|Any CPU.ActiveCfg = Debug
+		{F3B5F81F-CDA5-47ED-9BF4-8FD40A4E5AA3}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,64 @@
+﻿@import url(MainStyles.css);
+
+#WelcomeDiv { position: absolute; top: 112px;  margin-left: 660px; font-size:14px; color: Black; width: 220px; height: 60px; font-family:Arial Narrow;
+vertical-align: top; z-index: 50; text-align: center; }
+
+#EnterPlanDiv { position: absolute; top: 110px;  margin-left: 0px; font-size:10pt; color: Black; width: 298px; height: 280px; 
+vertical-align: top;  }
+
+#GeneratePlanDiv { position: absolute; top: 110px;  margin-left: 330px; font-size:10pt; color: Black; width: 299px; height: 280px; 
+vertical-align: top;  }
+
+#ResultsListDiv { position: absolute; top: 420px;  margin-left: 0px; font-size:10pt; color: Black; width: 650px; height: 130px; 
+vertical-align: top;  }
+
+#ResultsDivTitle {Position: relative; top: 6px; left: 6px; }
+#PlanListDiv {Position: relative; top: 16px; left: 0px; }
+
+#ResultsListTable { position: absolute; top: 490px;  margin-left: 0px; font-size:10pt; color: Black; width: 660px; height: 130px; 
+vertical-align: top;  }
+
+#EnterPlanDiv h3, #GeneratePlanDiv h3, #ResultsListDiv h3 { font-size: 16px; display: inline; }
+#EnterPlanDiv h4, #GeneratePlanDiv h4 { font-size: 13px; font-style: normal; font-family: Arial, Sans-Serif; }
+#EnterPlanDiv, #GeneratePlanDiv { background-color: #88C0Da; background-color: #DCE6F2; padding: 8px; }
+#ResultsListDiv { background-color: #88C0Da; background-color: #DCE6F2; padding: 0px; }
+
+#EnterPlanButton, #GeneratePlanButton { position: absolute; top: 103px; margin-left: 25px; }
+#EnterPlanButton { margin-left: 55px; }
+
+#CampaignSourceDiv { position: absolute; top: 140px; width: 290px; max-width: 290px; text-align:center; }
+#CampaignSource {  position: relative; top: 3px; width: 290px;  max-width: 290px; display:block; }
+#GenCampaignSourceDiv { position: absolute; top: 140px; width: 290px; max-width: 290px; text-align:center;  }
+#GenCampaignSource {  position: relative; top: 3px; width: 290px; max-width: 290px;  }
+
+
+.explain { position: absolute; top: 190px; font-size: 8pt; padding-left: 20px; padding-right: 40px; }
+
+#StoryDiv { position: absolute; top: 170px;  margin-left: 660px; font-size:10pt; color: Black; width: 220px; height: 30px; 
+vertical-align: top;z-index: 50;  }
+
+#StoryBodyDiv { position: absolute; top: 193px;  margin-left: 660px; font-size:10pt; color: Black; 
+                   z-index: 10; width: 220px; height: 305px; overflow: auto; background-color: #ffffff; 
+                   border-bottom: solid 1px #AAA; border-left: solid 1px black; border-right: solid 1px black;z-index: 50;  }
+                   
+#StoryBodyDiv li  { position: relative; left: -20px; }
+
+#StoryFooterDiv { position: absolute; top: 497px;  margin-left: 660px; font-size:10pt; color: Black; width: 220px; height: 20px; background-color: #ffffff; 
+border-bottom: solid 1px black; border-left: solid 1px black; border-right: solid 1px black;  }
+
+#CampaignSummaryDiv { z-index: 10; height: 65px; overflow:auto; }
+
+.itemrow
+{ background-color: #DCE6F2; height: 34px; }
+
+.itemrowalt
+{ background-color: #DCE6F2; height: 34px; }
+
+.itemseprow
+{ background-color: #DCE6F2; height: 34px; }
+
+.PlanNameItem { padding-top: 4px; }
+
+#PhoneLabel { position: relative; top: 2px; }
+#HelpEmailLink { position: absolute; left: 280px; top: 0px; font-family: Arial; font-size: 9pt; padding-top: 4px; color:White; }
+#HelpEmailLink a { color:White; }

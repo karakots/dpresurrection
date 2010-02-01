@@ -1,0 +1,37 @@
+﻿@import url(Common.css);
+
+.LoginPanel { position: absolute; top: 130px; left: 488px; font-size: 8pt; color: Black; border: solid 1px black; padding: 20px; padding-left: 40px; padding-right: 40px;  }
+.UserLoginControl { font-size: 8pt; width: 190px; }
+.UserLoginPwControl { font-size: 8pt; width: 190px; }
+
+.SendPlanPanel{ position: absolute; top: 130px; left: 88px; font-size: 8pt; color: Black; width: 700px; }
+.NameEntry{ font-size: 8pt; width: 190px; }
+#GoButton, #PreviewButton, #RefuseButton, #OKButton, #CancelButton { font-size: 8pt; }
+#OKButton { width: 200px; }
+#CancelButton { width: 100px; }
+#RefuseButton, #GoButton { margin-left: 10px; }
+#MessageTextBox { font-family: Verdana; font-size:9pt; }
+#EmailInfoLabel { font-size: 7pt; padding: 0;  }
+
+.RcvPlanPanel { position: absolute; top: 150px; left: 78px; font-size: 8pt; color: Black; width: 300px; }
+.RcvPlanPanelWide { position: absolute; top: 150px; left: 78px; font-size: 8pt; color: Black; width: 600px; }
+
+h1  { position: absolute; top: 97px; left: 1px; font-size: 14pt; font-weight: normal; margin-top: 5px; margin-bottom: 5px; padding-bottom: 3px; }
+.PlanInfo { font-weight: bold; }
+.PlanInfoInput { width: 300px; }
+.InputError { color: Red; }
+#SendInfoTable tr { padding: 5px;  background-color: #EEE;  }
+#SendInfoTable td { padding: 5px;  }
+#SentLabel { font-size: 10pt; }
+
+#Footer { position: absolute; top: 640px; left: 290px; }
+
+.ErrorLabel { color: Red; }
+.NoErrorLabel { color: Black; }
+
+#ScoreboardTable { position: absolute; top: 160px;  width: 903px; border: solid 3px #88E; color: Black; }
+#ScoreboardTable td { text-align: center; border: solid 1px #CCC; }
+#CompetitionNameLabel{ position: absolute; top: 127px; left: 1px; }
+
+.CompVis { width: 300px; visibility: visible; }
+.CompVisHidden { width: 300px; visibility: hidden; }

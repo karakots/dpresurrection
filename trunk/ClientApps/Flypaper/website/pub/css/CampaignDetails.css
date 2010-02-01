@@ -1,0 +1,4 @@
+﻿@import url(Common.css);
+
+#PageDataCell{ font-size: 8pt; }
+#SubSubregionsList, #SubSubregionLabel { visibility:visible; }

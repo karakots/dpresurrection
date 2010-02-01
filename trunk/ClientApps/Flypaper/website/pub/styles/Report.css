@@ -1,0 +1,85 @@
+﻿@import url(MainStyles.css);
+
+#SubTitle { margin-left: 20px; }
+
+#ShopListLink
+{
+	position: absolute;
+	top: 120px;
+	margin-left: 300px;
+	font-size: 12pt;
+}
+
+#ReportDiv
+{
+	position: absolute;
+	top: 142px;
+	color: Black;
+	font-size: 10pt;
+}
+
+#ReportSummaryDiv
+{
+	position: absolute;
+	top: 110px;
+	margin-left: 730px;
+	max-width: 150px;
+	width: 150px;
+	height: 150px;
+	color: Black;
+	text-align: center;
+	font-size: 12pt;
+}
+
+#ReportSummaryDiv table, #ReportSummaryDiv tr,  #ReportSummaryDiv td
+{
+	width: 150px;
+}
+
+
+#ReportDiv strong
+{
+	font-size: 11pt;
+}
+
+#ReportDiv b
+{
+	font-size: 10pt;
+}
+
+
+/*
+#Footer
+{
+	position: absolute;
+	top: 470px;
+}
+
+#BodyInfo 
+{
+	position: absolute;
+	top: 155px;
+	z-index:1;
+	font-size: 10pt;
+	margin-left: 100px;
+}
+*/
+
+
+#PhoneLabel { position: relative; top: 3px; }
+#HelpEmailLink { position: absolute; left: 280px; top: 0px; font-family: Arial; font-size: 9pt; padding-top: 4px; color:White; }
+#HelpEmailLink a { color:White; }
+#BreadcrumbLabel { position: absolute; left: 180px;top: 0px; }
+
+#ResultsNav1, #ResultsNav2, #ResultsNav3
+{
+	position: absolute;
+	top: 117px;
+	margin-left: 150px;
+}
+
+#ResultsNav2 { margin-left: 225px; }
+#ResultsNav3 { margin-left: 350px; }
+
+#SubTitle { top: 110px; margin-left: 5px; font-size: 26px; }
+#Footer{ margin-left: 160px; }

@@ -1,0 +1,56 @@
+﻿@import url(MainStyles.css);
+
+#InfoTextPanel
+{ position: absolute; top: 160px; font-size: 10pt; color: Black; width: 450px; }
+
+#PlanEditingDiv 
+{  position: absolute; top: 240px; margin-left: 0px; }
+
+
+/* Advertisements */
+/*.Ad1
+{ position: absolute; top: 150px; margin-left: 680px; } */
+
+/* next-page buton */
+#NextButton
+{ width:270px; height:23px; font-size:10pt; font-weight:bold; margin-top:15px; margin-left:80px; }
+
+/* next-page buton */
+#NextButton2
+{ width:270px; height:23px; font-size:10pt; font-weight:bold; margin-top:15px; margin-left:80px; }
+
+/* #CampaignSummaryDiv { height:23px; margin-left: 510px; width: 370px; background-color: #88C0Da; } */
+/*
+#CampaignSummaryDiv {  background-color: #88C0Da; }
+#CampaignSummaryDiv { z-index: 10; height: 65px; overflow:auto; }
+
+#SpecialInstructionsDiv { position: absolute; top: 170px;  margin-left: 660px; font-size:10pt; color: Black; width: 220px; height: 365px; overflow:auto;
+                          border: solid 1px black; visibility:hidden; }
+*/                    
+#StoryDiv { position: absolute; top: 170px;  margin-left: 660px; font-size:10pt; color: Black; width: 220px; height: 30px; 
+vertical-align: top;  }
+
+#StoryBodyDiv { position: absolute; top: 193px;  margin-left: 660px; font-size:10pt; color: Black; 
+                   z-index: 10; width: 220px; height: 305px; overflow: auto; background-color: #ffffff; 
+                   border-bottom: solid 1px #AAA; border-left: solid 1px black; border-right: solid 1px black;  }
+
+#StoryFooterDiv { position: absolute; top: 497px;  margin-left: 660px; font-size:8pt; color: Black; width: 220px; height: 20px; background-color: #ffffff; 
+border-bottom: solid 1px black; border-left: solid 1px black; border-right: solid 1px black;  }}
+
+#CampaignSummaryDiv { z-index: 10; height: 65px; overflow:auto; }
+
+#SubTitle { margin-left: 0px; }
+#Footer { margin-top: 80px; }
+h4 { color: Red; display: inline; }
+#Footer { margin-left: 100px; }
+
+
+#PhoneLabel { position: relative; top: 3px; }
+#HelpEmailLink { position: absolute; left: 280px; top: 0px; font-family: Arial; font-size: 9pt; padding-top: 4px; color:White; }
+#HelpEmailLink a { color:White; }
+#BreadcrumbLabel { position: absolute; left: 180px;top: 0px; }
+
+#MediaVehicleList { max-width: 200px; }
+#Span2 select { max-width: 200px; }
+
+#InputGraph { position: absolute; top: 180px; margin-left; 0px; }

@@ -1,0 +1,83 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{94347719-2492-4116-B52E-B063BA745ED8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DecisionPower.MarketSim.ScenarioManagerLibrary</RootNamespace>
+    <AssemblyName>MarketSimScenarioManagerLibrary</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Components\Component.cs" />
+    <Compile Include="Components\CouponsComponent.cs" />
+    <Compile Include="Components\DisplayComponent.cs" />
+    <Compile Include="Components\DistributionComponent.cs" />
+    <Compile Include="Components\MarketUtilityComponent.cs" />
+    <Compile Include="Components\MediaComponent.cs" />
+    <Compile Include="Components\PriceComponent.cs" />
+    <Compile Include="Database.cs" />
+    <Compile Include="Data\ComponentData.cs" />
+    <Compile Include="Data\CouponsComponentData.cs" />
+    <Compile Include="Data\DisplayComponentData.cs" />
+    <Compile Include="Data\DistributionComponentData.cs" />
+    <Compile Include="Data\MarketUtilityComponentData.cs" />
+    <Compile Include="Data\MediaComponentData.cs" />
+    <Compile Include="Data\PriceComponentData.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="ErrorInfo.cs" />
+    <Compile Include="MarketPlan.cs" />
+    <Compile Include="Model.cs" />
+    <Compile Include="MrktSimException.cs" />
+    <Compile Include="Project.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scenario.cs" />
+    <Compile Include="SimpleItems.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Database\MrktSimDb\MrktSimDb.csproj">
+      <Project>{9DA9597C-A718-4779-B76C-CD68BFF97482}</Project>
+      <Name>MrktSimDb</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ComponentData\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

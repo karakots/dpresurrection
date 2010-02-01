@@ -1,0 +1,44 @@
+﻿@import url(MainStyles.css);
+
+#Footer
+{
+	margin-top: 460px;
+   margin-left:160px;
+}
+
+#AddUserPanel 
+{
+   position: absolute;
+   top: 130px;
+   width: 380px;
+   height: 170px;
+   background-color: White;
+   border: solid 1px #00A;
+   margin-left:160px;
+   padding-right: 0px;
+}
+
+#UserNameLabel
+{
+	width: 150px;
+}
+
+
+.CreateUser 
+{
+   position: relative;
+   top: 15px;
+	width: 380px;
+	margin-right: 10px;
+}
+
+.CreateUser, .CreateUserControl
+{
+	font-size: 9pt;
+/*	width: 200px;*/
+}
+
+.Ad1
+{
+	position: absolute; top: 120px; margin-left: 500px;
+}

@@ -1,0 +1,32 @@
+open 99.173.30.122
+ken
+lama99
+cd demo
+lcd ..
+lcd pub
+ascii
+mput *.aspx
+put Global.asax
+mput *.cs
+mput *.js
+mput *.xml
+cd styles
+lcd styles
+mput *.css
+cd ..
+cd App_Code
+lcd ..
+lcd App_Code
+mput *.cs
+lcd ..
+lcd bin
+cd ..
+cd bin
+binary
+put WebLibrary.dll
+put BusinessLogic.dll
+put SimInterface.dll
+put HouseholdLibrary.dll
+put GeoLibrary.dll
+put DpSimQueue.dll
+bye

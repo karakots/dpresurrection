@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="GeoFormatter.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="geoDir" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\stuff</Value>
+    </Setting>
+    <Setting Name="webDir" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\stuff</Value>
+    </Setting>
+    <Setting Name="mediaConnectionStr" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=dpmedia;Data Source=chaos</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

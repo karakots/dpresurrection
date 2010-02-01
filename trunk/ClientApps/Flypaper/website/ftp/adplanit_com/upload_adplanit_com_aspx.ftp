@@ -1,0 +1,29 @@
+open  72.249.5.64
+21266
+adplan1t
+lcd ..
+lcd ..
+lcd pub
+cd httpdocs
+cd beta
+ascii
+mput *.aspx
+put Global.asax
+mput *.cs
+mput *.js
+cd css
+lcd css
+mput *.css
+cd ..
+cd App_Code
+lcd ..
+lcd App_Code
+mput *.cs
+lcd ..
+lcd bin
+cd ..
+cd bin
+binary
+put WebLibrary.dll
+put BusinessLogic.dll
+bye

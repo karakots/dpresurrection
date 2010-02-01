@@ -1,0 +1,42 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="HouseholdManager.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="hhinput_directory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\devl\flypaper_data\sim_input</Value>
+    </Setting>
+    <Setting Name="rawdata_directory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\devl\flypaper_data\raw_data</Value>
+    </Setting>
+    <Setting Name="output_directory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\devl\flypaper_data</Value>
+    </Setting>
+    <Setting Name="persuasion_decay" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0.02</Value>
+    </Setting>
+    <Setting Name="awareness_decay" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0.02</Value>
+    </Setting>
+    <Setting Name="recency_decay" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0.01</Value>
+    </Setting>
+    <Setting Name="persuasion_saturation" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="category_constant" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="mediaConnection" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=dpmedia;Data Source=chaos</Value>
+    </Setting>
+    <Setting Name="simConnection" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=dpsim;Data Source=chaos</Value>
+    </Setting>
+    <Setting Name="censusConnection" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=census;Data Source=chaos</Value>
+    </Setting>
+    <Setting Name="rawMediaDbConnection" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=AdPlanit;Data Source=chaos</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

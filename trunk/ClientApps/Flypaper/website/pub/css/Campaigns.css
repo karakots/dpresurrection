@@ -1,0 +1,22 @@
+﻿@import url(Common.css);
+
+/* --------------- Items for Specific Pages ---------------- */
+
+#InfoDiv { padding-top: 10px; height: 1px; max-height: 1px; padding-bottom: 0px;  } 
+#InfoDiv h1 { color:#4477CC; display: inline;  }
+#InfoDiv p { width: 100%; border-top: solid 2px #8fC2F4; margin: 0; padding: 0;  padding-top: 2px; margin-top: 5px; font-size: 8pt; padding-bottom: 5px;  }
+#YourMedia { background-color: Green; width: 100%; }
+
+/*#TitleDiv { color:Black; padding-top: 4px; }*/
+#AvailMedia { background-color: Red; width: 100%;  }
+
+/*#RHCol {  background-color: #6699FF; width: 185px; height: 300px; }*/
+
+#CampaignsListDiv { vertical-align: top; position: relative; top: 0px; padding-top:5px; }
+
+.itemrowalt { background-color: #eff; }
+
+#Col2VideoDiv1 { position: absolute; top: 229px; 
+width: 170px; height: 60px; text-align: center; font-size: 9pt; font-weight: 500; background-image: url('../Images/RHFade1.gif');
+	left: 720px;
+}

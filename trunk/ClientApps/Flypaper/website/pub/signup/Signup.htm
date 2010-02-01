@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>AdPlanit - Where Advertising Starts</title>
+    <link href="styles/adPlanIt.css" rel="stylesheet" type="text/css" media="all" />
+		<script type="text/javascript">
+		<!-- 
+		function verify()
+			{
+			if ((document.forms[0].company.value == "") || (document.forms[0].phone.value == "") || (document.forms[0].first_name.value == "") || (document.forms[0].last_name.value == "") || (document.forms[0].email.value == "")) { alert("Please fill out all required fields"); return false; }
+			else 
+			{
+			document.forms[0].submit();
+			}
+			}
+		-->
+		</script></head>
+<body>
+    <form id="form1" runat="server">
+    <div id="MainDIv"  >
+      <%-- Start of standard header --%>
+           <img class="Logo" ID="Logo" src="images/Logo.gif" style="position: absolute;top: 2px; margin-left: 4px;" />    
+
+       <div ID="NavBar" runat="server" class="NavBar">
+      </div>
+
+<br /><br />
+        <ul class="nav">
+            <li></li>
+            <li><a href="#" id="A2" class="nav_support" onclick="return false;" ></a></li>
+            <li><a href="#"  onclick="return false;" id="ctl00_NavCampaign" class="nav_savedplans"></a></li>
+            <li><a href="#" id="ctl00_NavSchedule" class="nav_newplan"  onclick="return false;" ></a></li>                    
+            <li><a href="#" id="A1" class="nav_about" onclick="return false;" ></a></li>
+            <li><a href="#" id="ctl00_NavHome" class="nav_home" onclick="return false;" ></a></li>
+        </ul>
+       <%-- End of standard header --%>
+       
+       	 <div class="leftColumn">
+	  <div class="copy" style="margin-top: 10px;">
+	   <h2>Dramatically Improve your Media Plans with AdPlanIt&trade;</h2>
+	   <p>Use AdPlanIt, the revolutionary online planning tool for small and medium-sized businesses, and quickly maximize the return on your advertising budget.</p>
+				<p>By becoming a Beta user for this product you can use it for free! And to show our appreciation, we'll throw in some free media coaching too.  No obligations or sales pitch&#8212;just a chance to define a new world of advertising</p>
+	  </div>
+	 </div>
+	 <div class="rightColumn">
+	  <div class="signupForm" style="*margin-top: 10px;">
+		  <h2>Sign Up to Learn More:</h2><br>
+		  <form name="signup" action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+					<input type=hidden name="oid" value="00D300000006P02">
+     <input type=hidden name="retURL" value="http://67.95.207.86:8500/AdPlanIt-Dev/signup/Confirm.htm">
+     <!-- <input type="hidden" name="debug" value=1> -->
+     <!-- <input type="hidden" name="debugEmail" value="mtorres253@gmail.com"> -->
+					<input type=hidden id="lead_source" name="lead_source" value="AdPlanIt Campaign">
+		   <div class="formElement"><strong>First Name:</strong><font color="red">*</font><br><input type="text" name="first_name" id="first_name"></div>
+		   <div class="formElement"><strong>Last Name:</strong><font color="red">*</font><br><input type="text" name="last_name" id="last_name"></div>
+		   <div class="formElement"><strong>Company:</strong><font color="red">*</font><br><input type="text" name="company" id="company"></div>
+		   <div class="formElement"><strong>Phone:</strong><font color="red">*</font><br><input type="text" name="phone" id="phone"></div>
+		   <div class="formElement"><strong>Email Address:</strong><font color="red">*</font><br><input type="text" name="email" id="email"></div>
+		   <div class="formElement"><strong>Web Site:</strong><br><input type="text" name="URL" id="URL"></div>
+		   <div style="float: right;"><img src="images/submit_form.gif" alt="Submit" border="0" onclick="verify();" class="submit"></div>
+		  </form>
+	  </div>
+	 </div>
+       
+       <div id="Footer" class="Footer">
+       <table  id="Footer" class="Footer" cellpadding="0" cellspacing="0" width="350"><tr><td colspan="3" align="center">Copyright © 2008 DecisionPower, Inc. - All Rights Reserved</td></tr><tr><td width="150"><a href="PrivacyPolicy.aspx">Privacy Policy</a></td>
+                     <td align ="left" width="50"><a href="UserOptions.aspx">options</a></td><td align ="right"  width="150" ><a href="TermsAndConditions.aspx">Terms and Conditions</a></td></tr></table>
+      </div>           
+   </div>
+    </form>
+</body>
+</html>

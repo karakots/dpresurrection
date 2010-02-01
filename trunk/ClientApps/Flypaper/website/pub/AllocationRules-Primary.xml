@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MediaRules name="Media Rules" xmlns="http://www.decisionpower.com/MediaRules2.xsd">
+
+  <MediaRule type="RADIO" name="General Radio Allocation" weight="1.0" rule="SUM-MAX">
+    
+    <WeightDefinition string="H" value="4.0" reasonColor="DarkGreen" />
+    <WeightDefinition string="M" value="2.0" reasonColor="Gray" />
+    <WeightDefinition string="L" value="1.0" reasonColor="Red" />
+    <WeightDefinition string="x" value="0.0" reasonColor="Violet" />
+
+    <Group name="PurchaseCycle" weight="1.0">
+      <ExpectedValue min="0" max="3" weight="H" reason="Items with short purchase cycles sell well on radio."/>
+      <ExpectedValue min="4" max="7" weight="H" reason="Items with weekly purchase cycles sell well on radio."/>
+      <ExpectedValue min="8" max="12" weight="L" reason="Items with monthly purchase cycles sell fairly well on radio."/>
+      <ExpectedValue min="13" max="16" weight="L" reason="Items with long purchase cycles do not sell well on radio."/>
+    </Group>
+    <Group name="PurchaseType" weight="1.0">
+      <ExpectedValue min="0" max="3" weight="H" reason="Impulse-purchase items sell well on radio."/>
+      <ExpectedValue min="4" max="6" weight="x" reason="Habit-purchase items may or may not sell well on radio."/>
+      <ExpectedValue min="7" max="9" weight="L" reason="Considered-purchase items do not sell well on radio."/>
+    </Group>
+    <Group name="MonthlySpendRate" weight="1.0">
+      <ExpectedValue max="5000" weight="L" reason="Radio does not sell well at lower spending rates."/>
+      <ExpectedValue min="5000" max="10000" weight="M" reason="Radio sells fairly well at medium spending rates."/>
+      <ExpectedValue min="10000" weight="H" reason="Radio sells well at higher spending rates."/>
+    </Group>
+    <Group name="GeoTargetingLevel" weight="1.0">
+      <ExpectedValue value="0" weight="L" reason="Radio does not sell well to a national market."/>
+      <ExpectedValue value="1" weight="L" reason="Radio does not sell well to a statewide market."/>
+      <ExpectedValue value="2" weight="H" reason="Radio sells well to a local market."/>
+    </Group>
+    <Group name="DemoTargetingLevel" weight="1.0">
+      <ExpectedValue value="0" weight="H" reason="Radio sells well to untargeted demographics."/>
+      <ExpectedValue value="1" weight="H" reason="Radio sells well to weakly targeted demographics."/>
+      <ExpectedValue value="2" weight="L" reason="Radio does not sell well to highly targeted demographics."/>
+      <ExpectedValue value="3" weight="L" reason="Radio does not sell well to highly targeted demographics."/>
+    </Group>
+  </MediaRule>
+
+  <MediaRule type="MAGAZINES" name="General Magazine Allocation" typeWeight="1.0" partWeight="1.0" rule="SUM-MAX">
+    <Group name="PurchaseCycle" weight="1.0">
+      <ExpectedValue min="0" max="3" weight="L" reason="Items with short purchase cycles do not sell well in magazines."/>
+      <ExpectedValue min="4" max="7" weight="L" reason="Items with weekly purchase cycles do not sell well in magazines."/>
+      <ExpectedValue min="8" max="12" weight="H" reason="Items with monthly purchase cycles sell well in magazines."/>
+      <ExpectedValue min="13" max="16" weight="H" reason="Items with long purchase cycles sell well in magazines."/>
+    </Group>
+    <Group name="PurchaseType" weight="1.0">
+      <ExpectedValue min="0" max="3" weight="L" reason="Impulse-purchase items do not sell well in magazines."/>
+      <ExpectedValue min="4" max="6" weight="x" reason="Habit-purchase items may or may not sell well in magazines."/>
+      <ExpectedValue min="7" max="9" weight="H" reason="Considered-purchase items sell well in magazines."/>
+    </Group>
+    <Group name="MonthlySpendRate" weight="1.0">
+      <ExpectedValue max="5000" weight="L" reason="Magazines do not sell well at lower spending rates."/>
+      <ExpectedValue min="5000" max="10000" weight="M" reason="Magazines sell fairly well at medium spending rates."/>
+      <ExpectedValue min="10000" weight="H" reason="Magazines sell well at higher spending rates."/>
+    </Group>
+    <Group name="GeoTargetingLevel" weight="1.0">
+      <ExpectedValue value="0" weight="H" reason="Magazines sell well to a national market."/>
+      <ExpectedValue value="1" weight="L" reason="Magazines do not sell well to a statwide market."/>
+      <ExpectedValue value="2" weight="L" reason="Magazines do not sell well to a local market."/>
+    </Group>
+    <Group name="DemoTargetingLevel" weight="1.0">
+      <ExpectedValue value="0" weight="M" reason="Magazines sell moderately well to untargeted demographics."/>
+      <ExpectedValue value="1" weight="M" reason="Magazines sell moderately well to weakly targeted demographics."/>
+      <ExpectedValue value="2" weight="H" reason="Magazines sell well to highly targeted single-segment demographics."/>
+      <ExpectedValue value="3" weight="M" reason="Magazines sell moderately well to highly targeted demographics with multiple segments."/>
+    </Group>
+  </MediaRule>
+  
+  <MediaRule type="INTERNET" name="General Internet Allocation" typeWeight="1.0" partWeight="1.0" rule="SUM-MAX">
+    <Group name="PurchaseCycle" weight="1.0">
+      <ExpectedValue min="0" max="3" weight="M" reason="Items with short purchase cycles sell moderely well on the internet."/>
+      <ExpectedValue min="4" max="7" weight="M" reason="Items with weekly purchase cycles sell moderely well on the internet."/>
+      <ExpectedValue min="8" max="12" weight="H" reason="Items with monthly purchase cycles sell well on the internet."/>
+      <ExpectedValue min="13" max="16" weight="H" reason="Items with long purchase cycles sell well on the internet."/>
+    </Group>
+    <Group name="PurchaseType" weight="1.0">
+      <ExpectedValue min="0" max="3" weight="H" reason="Impulse-purchase items sell well on the internet."/>
+      <ExpectedValue min="4" max="6" weight="x" reason="Habit-purchase items may or may not sell well on the internet."/>
+      <ExpectedValue min="7" max="9" weight="H" reason="Considered-purchase items sell well on the internet."/>
+    </Group>
+    <Group name="MonthlySpendRate" weight="1.0">
+      <ExpectedValue max="5000" weight="H" reason="The internet sells well at lower spending rates."/>
+      <ExpectedValue min="5000" max="10000" weight="H" reason="The internet sells well at medium spending rates."/>
+      <ExpectedValue min="10000" weight="H" reason="The internet sells well at higher spending rates."/>
+    </Group>
+    <Group name="GeoTargetingLevel" weight="1.0">
+      <ExpectedValue value="0" weight="H" reason="The internet sells well to a national market."/>
+      <ExpectedValue value="1" weight="M" reason="The internet sells moderatrly well to a national market."/>
+      <ExpectedValue value="2" weight="L" reason="The internet does not sell well to a national market."/>
+    </Group>
+    <Group name="DemoTargetingLevel" weight="1.0">
+      <ExpectedValue value="0" weight="L" reason="The internet does not sell well to untargeted demographics."/>
+      <ExpectedValue value="1" weight="M" reason="The internet sells moderately well to weakly targeted demographics."/>
+      <ExpectedValue value="2" weight="H" reason="The internet sells well to highly targeted demographics."/>
+      <ExpectedValue value="3" weight="H" reason="The internet sells well to highly targeted demographics."/>
+    </Group>
+  </MediaRule>
+</MediaRules>

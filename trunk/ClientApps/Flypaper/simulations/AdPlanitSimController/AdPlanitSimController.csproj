@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5DD355F9-FA7C-4B32-887C-6E5CFC730DBD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AdPlanitSimController</RootNamespace>
+    <AssemblyName>AdPlanitSimController</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>AdPlanitSimController.Program</StartupObject>
+    <ApplicationIcon>CrazyEye_Dance.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdPlanitSim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdPlanitSim.Designer.cs">
+      <DependentUpon>AdPlanitSim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdPlanitSimController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdPlanitSimController.Designer.cs">
+      <DependentUpon>AdPlanitSimController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopSizeDialogue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopSizeDialogue.Designer.cs">
+      <DependentUpon>PopSizeDialogue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdPlanitSim.resx">
+      <DependentUpon>AdPlanitSim.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdPlanitSimController.resx">
+      <DependentUpon>AdPlanitSimController.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopSizeDialogue.resx">
+      <DependentUpon>PopSizeDialogue.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SimulationGlobals.resx">
+      <DependentUpon>SimulationGlobals.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SimulationGlobals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SimulationGlobals.Designer.cs">
+      <DependentUpon>SimulationGlobals.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\common\DemographicLibrary\DemographicLibrary.csproj">
+      <Project>{042635F8-77B9-4A08-B14C-FACDCEC02395}</Project>
+      <Name>DemographicLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\common\DpSimQueue\DpSimQueue.csproj">
+      <Project>{73F9A774-7B05-4418-84AB-68DF155D2C84}</Project>
+      <Name>DpSimQueue</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\common\GeoLibrary\GeoLibrary.csproj">
+      <Project>{008A0919-4554-4AB2-A6F5-C67F8996257F}</Project>
+      <Name>GeoLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\common\HouseholdLibrary\HouseholdLibrary.csproj">
+      <Project>{13FDDD02-D803-4F17-BFA9-2905D3C0521C}</Project>
+      <Name>HouseholdLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\common\MediaLibrary\MediaLibrary.csproj">
+      <Project>{B26B3E59-D5C1-4021-B6CC-466B154F4939}</Project>
+      <Name>MediaLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\common\SimFrame\SimFrame.csproj">
+      <Project>{AB097D92-6A0D-436D-B074-B4D008001866}</Project>
+      <Name>SimFrame</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\HouseholdManager\Calibration\Calibration.csproj">
+      <Project>{CE0840DF-478E-4FE6-845F-F62A41DC60F7}</Project>
+      <Name>Calibration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FlySim\FlySim.csproj">
+      <Project>{44DD31E3-B3E1-4C2C-A1A0-06D0747F7E80}</Project>
+      <Name>FlySim</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CrazyEye_Dance.ico" />
+    <Content Include="CrazyEye_Sad.ico" />
+    <Content Include="CrazyEye_Sleep.ico" />
+    <Content Include="icons\CrazyEye.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\CrazyEye_Anger.ico" />
+    <Content Include="icons\CrazyEye_Dance.ico" />
+    <Content Include="icons\CrazyEye_Run.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\CrazyEye_Sad.ico" />
+    <Content Include="icons\CrazyEye_Sleep.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

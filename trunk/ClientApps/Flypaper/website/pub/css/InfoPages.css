@@ -1,0 +1,64 @@
+﻿@import url(Common.css);
+
+#ReturnButton { position: absolute; top: 400px; width: 220px; }
+#ReturnButton { left: 230px; }
+
+#TextCell { position: absolute; top: 80px; width: 605px; font-size: 8pt; color: Black; }
+#TextCell h3 { font-size: 10px; }
+#TCRHDiv { height: 1700px; }
+
+#PrivacyTextCell { position: absolute; top: 80px; width: 605px; font-size: 8pt; color: Black; }
+#PrivacyTextCell h3 { font-size: 10px; color: #0069AA; }
+#PrivacyTextCell li { margin-bottom: 5px; }
+#PrivacyRHDiv { height: 600px; }
+
+.formElement, .formButton { margin-left: 200px; }
+.formElement input { width: 300px; }
+
+.LoginPanel { position: absolute; top: 130px; left: 88px; font-size: 8pt; color: Black; border: solid 1px black; padding: 50px; }
+#GoButton { font-size: 8pt; }
+#EmailTextbox { font-size: 8pt; width: 250px; }
+
+/* Home Page */
+/*
+#Column1 { font-size: 8pt; vertical-align: top; width: 450px; }
+#Column1 h1 { font-size: 14pt;  color: #0069AA; padding-bottom: 0px; margin-bottom: 5px; margin-top: 6px;  border-bottom: solid 2px #7799FF; width: 500px; }
+#Column1 h2 { font-size: 9pt; margin-bottom: 5px;margin-top: 15px; display:inline;  }
+#Column1 ul { margin-left: 20px; background-color: Green;   }
+#Column1 li {  margin-top: 0px;  }
+#Column2 { font-size: 8pt; vertical-align: top;  width: 200px;  }
+#Col2TopTopDiv{ margin-top: 29px;   border-bottom: solid 2px #7799FF; }
+#Col2TopDiv{ padding: 10px;  background-image: url("../Images/QuoteFade.gif"); width: 171px; border: solid 2px #7799FF; margin-top: 12px; margin-right: 10px;  }
+#Col2BottomDiv{ padding: 7px; }
+.quote { font-size: 8pt; margin-top: 0px; margin-bottom: 0px; color: #0069AA; }
+.quotee { font-size: 8pt; margin-top: 0px; margin-bottom: 6px; text-align: right; font-style: italic; color: #0069AA; }
+.subhd { font-size: 10pt; font-style: italic;  text-align: center; color: #0069AA; font-weight: 600; }
+#MainImage { margin-left: 0px; width: 500px; height: 280px; }
+#HomeRHDiv { font-size: 8pt;  color: Black; width: 180px; padding-bottom: 10px; height: 487px; }
+
+#HomeRHBottomDiv { color: White; padding-top: 20px; margin-top: 5px; border-top: solid 2px #7799FF; width: 170px;  }
+
+#HomeRHBottomDiv ul { margin-left: 20px;  }
+.WhiteDot { position: relative; top: 6px; }
+.BlackDot { position: relative; top: 0px; margin-top: 7px; }
+.CheckMark { position: relative; top: -1px; }
+
+#Col2VideoDiv1 { position: absolute; top: 365px; width: 170px; height: 60px; text-align: center; font-size: 9pt; font-weight: 500; background-image: url("../Images/RHFade1.gif"); }
+#Col2VideoDiv2 {position: absolute; top: 424px; width: 170px; height: 60px; margin-top: 10px; text-align: center;  font-size: 9pt; font-weight: 500; background-image: url("../Images/RHFade1.gif");  }
+.vidLabel { text-align: right; font-size: 8pt; font-style:italic; margin-left: 110px; }
+.UserLoginControl { font-size: 8pt; }
+.UserLoginControl { font-size: 8pt; width: 150px; }
+.UserLoginPwControl { font-size: 8pt; width: 150px; }
+#LostPwDiv { margin-left: 40px ;font-size: 7pt;  }
+#NewUserDiv { margin-left: 20px; font-size: 7pt;  }
+#LoginPanel { border-top: solid 2px #7799FF; width: 170px; }
+.NavBar { width: 900px; }
+#ContentDiv { width: 900px; height: 0px; }
+#MainDIv { width: 900px;  max-width: 900px;  }
+#FooterTable  { width: 900px; }
+#Footer { width: 100%; padding-top: 15px; padding-left: 330px; }
+
+.bigbr { margin: 0; padding: 0;display: inline; }
+bigbr2 { margin: 0; padding: 0; display: inline; }
+#BetaMarker { position: absolute; top: 12px; left: 400px; }
+*/

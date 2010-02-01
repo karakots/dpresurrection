@@ -1,0 +1,35 @@
+open ftp.adplanit.com
+21266
+adplan1t
+cd subdomains
+cd devl
+cd httpdocs
+lcd ..
+lcd pub
+ascii
+mput *.aspx
+put Global.asax
+mput *.cs
+mput *.js
+cd css
+lcd css
+mput *.css
+cd ..
+cd App_Code
+lcd ..
+lcd App_Code
+mput *.cs
+lcd ..
+cd ..
+cd Simulation
+lcd Simulation
+mput *.cs
+mput *.aspx
+lcd ..
+cd ..
+cd Help
+lcd Help
+mput *.csv
+cd ..
+lcd..
+bye

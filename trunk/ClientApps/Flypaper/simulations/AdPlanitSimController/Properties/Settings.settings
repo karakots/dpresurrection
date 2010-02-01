@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="AdPlanitSimController.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="simdir" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\devl\flypaper_data\sim_input</Value>
+    </Setting>
+    <Setting Name="simConnection" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Password=sim2007;Persist Security Info=True;User ID=mrktsim;Initial Catalog=devlsim;Data Source=99.173.30.122</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
